@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import re
 import urllib.request
 import pandas as pd
+import requests
 
 ARTIST_INDEX_URL = "https://www.library.hbs.edu/hc/cc/artistindex.html"
 GALLERY_PAGES = {
@@ -51,6 +52,7 @@ def main():
             artwork_dict['catalog_number'] = artwork.find("strong", "catalogNumber").text
             artwork_dict['title'] = artwork.find("dt").find("a").text
             artwork_dict['url'] = artwork.find("dd", "img").find("a")['href']
+            artwork_dict['redirect_url'] = requests.get(artwork_dict['url']).url
             artwork_dict['artist_info'] = artwork.find("div", "artistInfo").text
             artwork_dict['print_info'] = artwork.find("div", "printInfo").text
             artwork_dict['description'] = artwork.find("div", "description").text
