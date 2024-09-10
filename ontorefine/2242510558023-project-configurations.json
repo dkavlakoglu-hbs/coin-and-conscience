@@ -1,0 +1,3013 @@
+{
+  "importOptions": [
+    {
+      "encoding": "",
+      "separator": ",",
+      "ignoreLines": -1,
+      "headerLines": 1,
+      "skipDataLines": 0,
+      "limit": -1,
+      "storeBlankRows": true,
+      "guessCellValueTypes": false,
+      "processQuotes": true,
+      "quoteCharacter": "\"",
+      "storeBlankCellsAsNulls": true,
+      "includeFileSources": false,
+      "includeArchiveFileName": false,
+      "trimStrings": false,
+      "disableAutoPreview": false,
+      "projectName": "coin and conscience data augmented csv",
+      "projectTags": [],
+      "fileSource": "coin_and_conscience_data_augmented.csv",
+      "archiveFileName": null
+    }
+  ],
+  "operations": [
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "related_work"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "related_work"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "related_work"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "creditText"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_info"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "size"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "print_info"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "about"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "topic"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "DefinedTerm"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": []
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "related_work"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "creditText"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_info"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "size"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "print_info"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "about"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "topic"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "DefinedTerm"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": []
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "related_work"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "creditText"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_info"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "size"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "print_info"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "about"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "url"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "redirect_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "topic"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "DefinedTerm"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "baseColumnName": "redirect_url",
+      "expression": "jython:import re\nreturn re.findall('[0-9]+$', value)[0]",
+      "onError": "set-to-blank",
+      "newColumnName": "iiif_id",
+      "columnInsertIndex": 6,
+      "description": "Create column iiif_id at index 6 based on column redirect_url using expression jython:import re\nreturn re.findall('[0-9]+$', value)[0]"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "baseColumnName": "iiif_id",
+      "expression": "jython:return \"https://ids.lib.harvard.edu/ids/iiif/{}/full/full/0/default.jpg\".format(value)",
+      "onError": "set-to-blank",
+      "newColumnName": "image_url",
+      "columnInsertIndex": 7,
+      "description": "Create column image_url at index 7 based on column iiif_id using expression jython:return \"https://ids.lib.harvard.edu/ids/iiif/{}/full/full/0/default.jpg\".format(value)"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "baseColumnName": "print_info",
+      "expression": "jython:import re\nreturn re.sub('[A-Z]{2} .*', '', value)",
+      "onError": "set-to-blank",
+      "newColumnName": "size_info",
+      "columnInsertIndex": 10,
+      "description": "Create column size_info at index 10 based on column print_info using expression jython:import re\nreturn re.sub('[A-Z]{2} .*', '', value)"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "related_work"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "creditText"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_info"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "size"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "size_info"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "about"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "url"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "redirect_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "image"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "image_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "topic"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "DefinedTerm"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "redirect_url"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "creditText"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_info"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "size"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "size_info"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "about"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "url"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "redirect_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "image"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "image_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "topic"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "DefinedTerm"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "cc": "https://librarydata.hbs.edu/coins-and-conscience/"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "redirect_url"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "creditText"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_info"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "size"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "size_info"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "about"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "transformation": {
+                      "language": "prefix",
+                      "expression": "cc"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "url"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "redirect_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "image"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "image_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "topic"
+              },
+              "transformation": {
+                "language": "prefix",
+                "expression": "cc"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "DefinedTerm"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "baseColumnName": "topic",
+      "expression": "jython:import re\nreturn re.sub(\" \", \"_\", value).lower()",
+      "onError": "set-to-blank",
+      "newColumnName": "topic_id",
+      "columnInsertIndex": 13,
+      "description": "Create column topic_id at index 13 based on column topic using expression jython:import re\nreturn re.sub(\" \", \"_\", value).lower()"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "sdo": "https://schema.org/",
+          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "cc": "https://librarydata.hbs.edu/coins-and-conscience/"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "artist_wikidata_uri"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_name"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "redirect_url"
+              },
+              "transformation": {
+                "language": "raw"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "CreativeWork"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "identifier"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "related_work"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "title"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "description"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "contributor"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_wikidata_uri"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "creditText"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "artist_info"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "size"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "size_info"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "string"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "about"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic_id"
+                    },
+                    "transformation": {
+                      "language": "prefix",
+                      "expression": "cc"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "url"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "redirect_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "image"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "image_url"
+                    },
+                    "valueType": {
+                      "type": "datatype_literal",
+                      "datatype": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "anyURI"
+                        },
+                        "transformation": {
+                          "language": "prefix",
+                          "expression": "xsd"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "topic_id"
+              },
+              "transformation": {
+                "language": "prefix",
+                "expression": "cc"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "DefinedTerm"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "sdo"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "sdo"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "topic"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    },
+    {
+      "op": "core/text-transform",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "topic_id",
+      "expression": "jython:import re\nreturn re.sub(\",\", \"\", value)",
+      "onError": "keep-original",
+      "repeat": false,
+      "repeatCount": 10,
+      "description": "Text transform on cells in column topic_id using expression jython:import re\nreturn re.sub(\",\", \"\", value)"
+    }
+  ]
+}

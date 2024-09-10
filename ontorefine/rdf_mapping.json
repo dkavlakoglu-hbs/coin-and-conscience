@@ -1,0 +1,419 @@
+{
+  "baseIRI": "http://example.com/base/",
+  "namespaces": {
+    "sdo": "https://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "cc": "https://librarydata.hbs.edu/coins-and-conscience/"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "name"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "artist_name",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "string"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "language": "raw"
+        },
+        "valueSource": {
+          "columnName": "artist_wikidata_uri",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "sdo",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Person"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "identifier"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "related_work",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "name"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "title",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "string"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "description"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "description",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "contributor"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "language": "raw"
+              },
+              "valueSource": {
+                "columnName": "artist_wikidata_uri",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "creditText"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "artist_info",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "size"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "size_info",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "string"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "about"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "cc",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "topic_id",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "url"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "redirect_url",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "anyURI"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "image"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "image_url",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "datatype_literal",
+                "datatype": {
+                  "transformation": {
+                    "expression": "xsd",
+                    "language": "prefix"
+                  },
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "anyURI"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "language": "raw"
+        },
+        "valueSource": {
+          "columnName": "redirect_url",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "sdo",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "CreativeWork"
+          }
+        }
+      ]
+    },
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "sdo",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "name"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "topic",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "cc",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "topic_id",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "sdo",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "DefinedTerm"
+          }
+        }
+      ]
+    }
+  ]
+}

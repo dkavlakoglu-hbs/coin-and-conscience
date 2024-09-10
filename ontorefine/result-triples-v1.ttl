@@ -1,0 +1,1037 @@
+@base <http://example.com/base/> .
+@prefix sdo: <https://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cc: <https://librarydata.hbs.edu/coins-and-conscience/> .
+
+<http://www.wikidata.org/entity/Q12058270> a sdo:Person;
+  sdo:name "Galle, Joannes" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910425> a sdo:CreativeWork;
+  sdo:identifier "1";
+  sdo:name "The Unhappy Lot of the Rich";
+  sdo:description "Plate one of his series of six engravings after Heemskerck with this title, published in 1563. A later state, shown here, called Divitum Misera Sors, was issued by Joannes Galle. Illustration of Matthew 19:23-24. A rich man tries to enter the gate to Heaven, but his money bags hold him back. Behind him, three men try to lead a camel through the eye of a needle."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q12058270>, <http://www.wikidata.org/entity/Q1379395>,
+    <http://www.wikidata.org/entity/Q538350>;
+  sdo:creditText "Engraving by Phillip Galle (1537–1612), after Maarten van Heemskerck (1498–1574). Joannes Galle (1600–76). \"exc.\" [Antwerp, 1563]."@en;
+  sdo:size "17.1 x 23.2 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910425"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910425/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:vanity_and_virtue a sdo:DefinedTerm;
+  sdo:name "Vanity and Virtue"@en .
+
+<http://www.wikidata.org/entity/Q1379395> a sdo:Person;
+  sdo:name "Galle, Philip" .
+
+<http://www.wikidata.org/entity/Q538350> a sdo:Person;
+  sdo:name "Heemskerck, Maarten van" .
+
+<http://www.wikidata.org/entity/Q167220> a sdo:Person;
+  sdo:name "Cort, Cornelis" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910443> a sdo:CreativeWork;
+  sdo:identifier "10";
+  sdo:name "Justice Rewards Toil";
+  sdo:description "Justice, holding scales in one hand, offers riches to a kneeling peasant."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q167220>, <http://www.wikidata.org/entity/Q602742>,
+    <http://www.wikidata.org/entity/Q345605>;
+  sdo:creditText "Engraving by Cornelis Cort (1533–78), after Federigo Zuccaro (or Zucchero, 1540–1609). Anton Lafreri, \"formis.\" Romæ, 1566."@en;
+  sdo:size "26.5 x 31.5 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910443"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910443/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q602742> a sdo:Person;
+  sdo:name "Lafreri, Anton" .
+
+<http://www.wikidata.org/entity/Q345605> a sdo:Person;
+  sdo:name "Zuccaro, Federigo" .
+
+<http://www.wikidata.org/entity/Q711775> a sdo:Person;
+  sdo:name "Saenredam, Jan" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910445> a sdo:CreativeWork;
+  sdo:identifier "11";
+  sdo:name "Avarice";
+  sdo:description "Depiction of a man clutching money bags. \"The miser, hoarding his treasure, lives amid riches, yet is always destitute.\" (Latin caption). The frog in the foreground is a symbol associated with sin, particularly that of hoarding worldly things."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q711775>;
+  sdo:creditText "Engraving, in the style of Jan Saenredam (1565–1607). [Netherlands? ca. 1600]."@en;
+  sdo:size "21 x 14 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910445"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910445/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910447> a sdo:CreativeWork;
+  sdo:identifier "12";
+  sdo:name "Divitiæ";
+  sdo:description "Riches, portrayed as a woman holding money, jewels, and silver, sits near a little girl who holds a mirror. She is Pride, the daughter of Riches."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1379395>, <http://www.wikidata.org/entity/Q6369402>,
+    <http://www.wikidata.org/entity/Q555022>;
+  sdo:creditText "Engraving by Karel van Mallery (ca. 1571–ca. 1635), after Marten de Vos (ca. 1531–1603). Philip Galle (1537–1612), \"excud.\" [Antwerp, ca. 1600]."@en;
+  sdo:size "17.5 x 22.5 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910447"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910447/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q6369402> a sdo:Person;
+  sdo:name "Mallery, Karel van" .
+
+<http://www.wikidata.org/entity/Q555022> a sdo:Person;
+  sdo:name "Vos, Marten de" .
+
+<http://www.wikidata.org/entity/Q329811> a sdo:Person;
+  sdo:name "Bloemaert, Abraham" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910449> a sdo:CreativeWork;
+  sdo:identifier "13";
+  sdo:name "Allegory of the Vanity and Transitory Nature of Worldly Possessions";
+  sdo:description "This is a later state, with J. Razet's address. A woman sits beside a table laden with gold coins and other riches. She holds an urn with smoke rising out of it, a symbol of transience, and a peacock stands behind her, signifying vanity."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q329811>, <http://www.wikidata.org/entity/Q21531043>,
+    <http://www.wikidata.org/entity/Q1961244>;
+  sdo:creditText "Engraving by Willem Isaakz Swanenburgh I (1581–1612), after Abraham Bloemaert (1564–1651). J. Razet, \"divulg.\" [Netherlands] 1608."@en;
+  sdo:size "26 x 18.5 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910449"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910449/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q21531043> a sdo:Person;
+  sdo:name "Razet, J." .
+
+<http://www.wikidata.org/entity/Q1961244> a sdo:Person;
+  sdo:name "Swanenburgh, Willem Isaakz, I" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910451> a sdo:CreativeWork;
+  sdo:identifier "14";
+  sdo:name "Allegory of Wealth and Luxury";
+  sdo:description "An earlier state was published in 1609. A similar engraving to 13; the woman sits at a table of money, silver chalices, and jewels. In the foreground are a crown and scepter, behind which smoke and bubbles rise from a cup—symbolizing the transience of power and glory."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q329811>, <http://www.wikidata.org/entity/Q1961244>;
+  sdo:creditText "Engraved and published by Willem Isaakz Swanenburgh I (1581–1612), after Abraham Bloemaert (1564–1651). [Netherlands] 1611."@en;
+  sdo:size "23.6 x 18.7 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910451"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910451/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q5598> a sdo:Person;
+  sdo:name "Rembrandt van Rhyn" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910453> a sdo:CreativeWork;
+  sdo:identifier "15";
+  sdo:name "Jan Uytenbogaert, 'The Goldweigher'";
+  sdo:description "Second state. Uytenbogaert was the Receiver General in Amsterdam for the state of Holland. He made the first payment on Rembrandt's new house in 1639, since one of his clients owed the artist money for two paintings. Rembrandt probably did this portrait in thanks for Uytenbogaert's generosity."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q5598>;
+  sdo:creditText "Etching and drypoint by Rembrandt van Rhyn (1606–69). [Netherlands] 1639."@en;
+  sdo:size "24.5 x 20.8 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910453"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910453/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:misers_moneylenders_and_thieves a sdo:DefinedTerm;
+  sdo:name "Misers, Moneylenders, and Thieves"@en .
+
+<http://www.wikidata.org/entity/Q3383022> a sdo:Person;
+  sdo:name "Basan, Pierre François" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910455> a sdo:CreativeWork;
+  sdo:identifier "16";
+  sdo:name "Le Plaisir des Vieillards";
+  sdo:description "Below image: \"Tiré du Cabinet de Mr. le Comte de Vence.\" An old couple weighing coins."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3383022>, <http://www.wikidata.org/entity/Q335022>;
+  sdo:creditText "Engraved and published by Pierre François Basan (1735–97), after the painting by David Teniers the Younger (1610–90). Paris [18th century]."@en;
+  sdo:size "26.5 x 19.2 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910455"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910455/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q335022> a sdo:Person;
+  sdo:name "Teniers, David, the Younger" .
+
+<http://www.wikidata.org/entity/Q76135> a sdo:Person;
+  sdo:name "Hess, Carl Ernst Christoph" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910457> a sdo:CreativeWork;
+  sdo:identifier "17";
+  sdo:name "Peasant with Coins";
+  sdo:description "Below image: \"Aus der Sammlung des Canonicus Speth.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q76135>, <http://www.wikidata.org/entity/Q352438>;
+  sdo:creditText "Engraving and drypoint by Carl Ernst Christoph Hess (1755–1828), after the painting by Adrian van Ostade (1610–85). [Germany, 18th century]."@en;
+  sdo:size "28.5 x 19.7 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910457"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910457/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q352438> a sdo:Person;
+  sdo:name "Ostade, Adrian van" .
+
+<http://www.wikidata.org/entity/Q140096> a sdo:Person;
+  sdo:name "Passe, Crispijn de, the Elder" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910459> a sdo:CreativeWork;
+  sdo:identifier "18";
+  sdo:name "Banquet with Musicians";
+  sdo:description "A woman steals the purse of a peasant while they sit at a meal. Below image: \"Die burss, vnd frische frewlein den bawren bringen vmb das sein.\" From his Stirpium Insignium Nobilitatis, \"in Verlegung Ludwig Kunings vo Basel,\" first edition published before 1612, another edition dated 1617. The prints were also published in other sets."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q140096>;
+  sdo:creditText "Engraving by Crispijn de Passe the Elder (ca. 1565–1637). [n.p., ca. 1600]."@en;
+  sdo:size "10 x 14 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910459"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910459/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q3108083> a sdo:Person;
+  sdo:name "Mitelli, Giuseppe Maria" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910461> a sdo:CreativeWork;
+  sdo:identifier "19";
+  sdo:name "Dove L'Oro Parla, Ogni Lingua Tace";
+  sdo:description "Number thirteen from his series of fifty engravings illustrating Italian proverbs. A man murders, then steals the victim's purse, offering a witness money to keep quiet."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3108083>;
+  sdo:creditText "Etching and engraving by Giuseppe Maria Mitelli (1634–1718). [Bologna, 1678]."@en;
+  sdo:size "27 x 20 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910461"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910461/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910427> a sdo:CreativeWork;
+  sdo:identifier "2";
+  sdo:name "The Unhappy Lot of the Rich";
+  sdo:description "First state. Plate four of his series of six engravings after Heemskerck with this title. Depiction of the qualities that accompany money: Queen Money's car is drawn by Danger and Fear, while Robbery hides under her cloak. She is followed by Folly, Envy, Theft, and the Entire Populace."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1379395>, <http://www.wikidata.org/entity/Q538350>;
+  sdo:creditText "Engraving by Philip Galle (1537–1612), after Maarten van Heemskerck (1498–1574). [Antwerp, 1563]."@en;
+  sdo:size "17 x 23 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910427"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910427/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910463> a sdo:CreativeWork;
+  sdo:identifier "20";
+  sdo:name "La Commodità Fà l'Huomo Ladro";
+  sdo:description "Number twenty-two from his series of fifty engravings illustrating Italian proverbs. A thief steals the purse of a sleeping old man."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3108083>;
+  sdo:creditText "Etching and engraving by Giuseppe Maria Mitelli (1634–1718). [Bologna, 1678]."@en;
+  sdo:size "27 x 20 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910463"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910463/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q102841270> a sdo:Person;
+  sdo:name "Julien, Joseph Laurent" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910465> a sdo:CreativeWork;
+  sdo:identifier "21";
+  sdo:name "Le Riche du Jour ou le Préteur sur Gages";
+  sdo:description "An old woman pawns her jewels to a sinister-looking pawnbroker, whose sign reads: \"Je prête Madame, à mes concitoyens à deux cent pour cent d'intérèts.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q102841270>;
+  sdo:creditText "Hand-colored engraving by Joseph Laurent Julien (d.1805). Paris, chez l'auteur; et chez Depeuille, [late 18th century]."@en;
+  sdo:size "32.5 x 37 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910465"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910465/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q3085083> a sdo:Person;
+  sdo:name "Ciartres, F.L.D.", "Langlois, François (F.L.D. Ciartres)" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910467> a sdo:CreativeWork;
+  sdo:identifier "22";
+  sdo:name "Le Cornard Contant";
+  sdo:description "Possibly a plate from his Oiseaux et Grotesques. The \"happy cuckold\" does not mind his lost honor, because his \"horns of plenty\" bring him immeasurable happiness. (French caption)."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3085083>;
+  sdo:creditText "Engraving; F.L.D. Ciartres \"excud.\" (François Langlois, 1589–1647). [France, early 17th century]."@en;
+  sdo:size "31 x 22 cm, image";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910467"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910467/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910469> a sdo:CreativeWork;
+  sdo:identifier "23";
+  sdo:name "Le Diable d'Argent";
+  sdo:description "One of the earliest prints of the flying \"money devil,\" who is pursued by people of all trades. Many thematically similar prints were published in Paris and Épinal over the next 150 years. (See 24-26)."@en;
+  sdo:creditText "Etching and engraving by unknown artist. Paris, Chez Daumont, [early 18th century]."@en;
+  sdo:size "22.5 x 31.5 cm";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910469"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910469/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:money_devil a sdo:DefinedTerm;
+  sdo:name "Money Devil"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910471> a sdo:CreativeWork;
+  sdo:identifier "24";
+  sdo:name "Le Grand Diable d'Argent Patron de la Finance";
+  sdo:description """Pour courir au diable d'argent
+On se donne un mal impayable
+On se dit partout indigent
+Tant de monde est insatiable. (Below image)"""@en;
+  sdo:creditText "Hand-colored etching by unknown artist. [France, early 19th century]."@en;
+  sdo:size "25.5 x 34.9 cm, image";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910471"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910471/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910473> a sdo:CreativeWork;
+  sdo:identifier "25";
+  sdo:name "Les Vérités du Jour, ou le Grand Diable d'Argent";
+  sdo:description "An example of one of the hundreds of prints published by the Pellerin firm during the height of its renown as creator of \"images populaires.\""@en;
+  sdo:creditText "Hand-colored wood engraving. Épinal, Fabrique de Pellerin, [ca. 1840]."@en;
+  sdo:size "29.5 x 49.5 cm";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910473"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910473/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q3164685> a sdo:Person;
+  sdo:name "Pellerin" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910475> a sdo:CreativeWork;
+  sdo:identifier "26";
+  sdo:name "Le Grand Diable d'Argent, Patron de la Finance";
+  sdo:description "Below image is a nine-stanza poem, to be sung to the tune of: \"J'ai vu partout dans mes voyages; ou La pipe de tabac.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3164685>;
+  sdo:creditText "Colored lithograph, signed \"J.P. del, C.M. lith.\" Épinal, Fabrique de Pellerin, [188–?]."@en;
+  sdo:size "20.5 x 32 cm";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910475"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910475/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q729057> a sdo:Person;
+  sdo:name "Badalocchio, Sisto" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910477> a sdo:CreativeWork;
+  sdo:identifier "27";
+  sdo:name "The Queen of Sheba Bringing Gifts to King Solomon. 1 Kings 10";
+  sdo:description "Plate fifty from Historia del Testamento Vecchio dipinta in Roma nel Vaticano da Raffaelle di Urbino, published by Giovanni Orlandini in Rome, 1607. It was comprised of fifty-one etchings (twenty-three by Badalocchio, the others by Giovanni Lanfranco, 1582–1647) after Raphael's frescos in the loggias of the Vatican."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q729057>;
+  sdo:creditText "Etching by Sisto Badalocchio (1581 or 85–1647). [Rome, 1607]."@en;
+  sdo:size "13.4 x 18 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910477"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910477/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:biblical_and_mythological_scenes a sdo:DefinedTerm;
+  sdo:name "Biblical and Mythological Scenes"@en .
+
+<http://www.wikidata.org/entity/Q18516699> a sdo:Person;
+  sdo:name "Doetechum, Lucas van" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910479> a sdo:CreativeWork;
+  sdo:identifier "28";
+  sdo:name "The Parable of the Talents. Mt. 25: 14";
+  sdo:description "A later state of a print first issued as part of a series of fourteen engravings from the New Testament: Memorabilium, Novi Testamenti . . . Antwerp, exc. Gerard de Jode."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q18516699>, <http://www.wikidata.org/entity/Q20011635>,
+    <http://www.wikidata.org/entity/Q1094674>;
+  sdo:creditText "Engraving by Lucas van Doetechum (fl. 1559), after Gerhard Paludanus (von Groeningen, fl. 1560–90). Jan Claesz Visscher \"excudit.\" [Netherlands, early 17th century]."@en;
+  sdo:size "20.5 x 28.7 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910479"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910479/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q20011635> a sdo:Person;
+  sdo:name "Paludanus, Gerhard (von Groeningen)" .
+
+<http://www.wikidata.org/entity/Q1094674> a sdo:Person;
+  sdo:name "Visscher, Jan Claesz" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910481> a sdo:CreativeWork;
+  sdo:identifier "29";
+  sdo:name "The Parable of Ananias and Sapphira. Acts 5: 1";
+  sdo:description "Ananias and his wife Sapphira were struck dead for holding back some of their property that was to be communally owned."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q538350>, <http://www.wikidata.org/entity/Q1094674>;
+  sdo:creditText "Engraving after Maarten van Heemskerck (1498–1574). Jan Claesz Visscher \"excudebat.\" [Amsterdam, early 17th century]."@en;
+  sdo:size "20.9 x 26.4 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910481"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910481/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q640361> a sdo:Person;
+  sdo:name "Cock, Hieronymu" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910429> a sdo:CreativeWork;
+  sdo:identifier "3";
+  sdo:name "The Triumph of Riches";
+  sdo:description "First state. Plate two of the series of eight engravings after Heemskerck entitled Circulus vicissitudinis rerum humanarum (Cycle of the vicissitudes of human affairs.) Riches, the mother of Pride, rides on the car named Fame, which is pulled by Fraud and Rapine. Following Betrayal, Usury, and Lust are False Joy and other Idle Pleasures."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q640361>, <http://www.wikidata.org/entity/Q765465>,
+    <http://www.wikidata.org/entity/Q167220>, <http://www.wikidata.org/entity/Q538350>;
+  sdo:creditText "Engraving by Dirck Volkertsz. Coornhert (1519–90), or Cornelis Cort (1533–78), after Maarten van Heemskerck (1498–1574). Published by Hieronymus Cock (1510–70). [Antwerp, 1564]."@en;
+  sdo:size "22.2 x 29.4 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910429"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910429/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q765465> a sdo:Person;
+  sdo:name "Coornhert, Dirck Volkertsz." .
+
+<http://www.wikidata.org/entity/Q3161745> a sdo:Person;
+  sdo:name "Sadeler, Jan (Johannes), I" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910483> a sdo:CreativeWork;
+  sdo:identifier "30";
+  sdo:name "The Apostles Distribute the Money to those in Need. Acts 4: 32-35";
+  sdo:contributor <http://www.wikidata.org/entity/Q3161745>, <http://www.wikidata.org/entity/Q555022>;
+  sdo:creditText "Engraving by Jan (Johannes) Sadeler I (1550–1600), after Marten de Vos (1532–1603). [n.p., ca. 1600]."@en;
+  sdo:size "16.5 x 23.8 cm, image";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910483"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910483/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q869133> a sdo:Person;
+  sdo:name "Galle, Cornelis, the Elder" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910485> a sdo:CreativeWork;
+  sdo:identifier "31";
+  sdo:name "Christ and the Pharisees with the Tribute Money. Mt. 22";
+  sdo:contributor <http://www.wikidata.org/entity/Q869133>, <http://www.wikidata.org/entity/Q47551>;
+  sdo:creditText "Engraved and published by Cornelis Galle the Elder (ca. 1576–1650), after Tiziano Vecellio (Titian, 1477–1575). [n.p., early 17th century]."@en;
+  sdo:size "24 x 18.8 cm, image";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910485"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910485/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q47551> a sdo:Person;
+  sdo:name "Titian, (Tiziano Vecellio)" .
+
+<http://www.wikidata.org/entity/Q7824> a sdo:Person;
+  sdo:name "Carracci, Annibale" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910487> a sdo:CreativeWork;
+  sdo:identifier "32";
+  sdo:name "St. Roch Giving Alms to the Poor";
+  sdo:description "St. Roch, born in France, was venerated in Italy for his charity toward the sick and his gift of healing."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q7824>, <http://www.wikidata.org/entity/Q109061>,
+    <http://www.wikidata.org/entity/Q56334603>;
+  sdo:creditText "Etching by Guido Reni (1572–1642), after the painting by Annibale Carracci (1560–1609). Published by Pietro Stefanoni (b. 1589). [Italy], 1610."@en;
+  sdo:size "29.3 x 45.5 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910487"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910487/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q109061> a sdo:Person;
+  sdo:name "Reni, Guido" .
+
+<http://www.wikidata.org/entity/Q56334603> a sdo:Person;
+  sdo:name "Stefanoni, Pietro" .
+
+<http://www.wikidata.org/entity/Q19829357> a sdo:Person;
+  sdo:name "Ertinger, Franz" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910489> a sdo:CreativeWork;
+  sdo:identifier "33";
+  sdo:name "Le Veau d'Or. Exod. 32";
+  sdo:description "Adoration of the golden calf."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q19829357>, <http://www.wikidata.org/entity/Q3420968>,
+    <http://www.wikidata.org/entity/Q2107767>;
+  sdo:creditText "Etching by Franz Ertinger (1640–1710), after Raymond Lafage (1656–90). \"Sculp. Parisium 1683.\" Published by Gerard Valck, Amsterdam."@en;
+  sdo:size "46.5 x 31.2 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910489"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910489/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q3420968> a sdo:Person;
+  sdo:name "Lafage, Raymond" .
+
+<http://www.wikidata.org/entity/Q2107767> a sdo:Person;
+  sdo:name "Valck, Gerard" .
+
+<http://www.wikidata.org/entity/Q1378723> a sdo:Person;
+  sdo:name "Le Sueur, Eustache" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910491> a sdo:CreativeWork;
+  sdo:identifier "34";
+  sdo:name "Darius, out of Greed, Orders the Tomb of Queen Nitocris to be Opened";
+  sdo:description "The French caption below image tells the legend of King Darius, who plundered the tomb of Queen Nitocris for the riches promised within, only to find a corpse and a curse upon his avarice."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1378723>, <http://www.wikidata.org/entity/Q559929>;
+  sdo:creditText "Engraving by Bernard Picart (1673–1733), after Eustache Le Sueur (1617–55). [Amsterdam?] 1725."@en;
+  sdo:size "36.4 x 22.4 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910491"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910491/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q559929> a sdo:Person;
+  sdo:name "Picart, Bernard" .
+
+<http://www.wikidata.org/entity/Q19569543> a sdo:Person;
+  sdo:name "Desplaces, Louis" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910493> a sdo:CreativeWork;
+  sdo:identifier "35";
+  sdo:name "Danaë";
+  sdo:description "Below image: \"Tableau du Cabinet de Monsieur de la Faye, Secretaire du Cabinet du Roy.\" Depiction of the myth of Danaë, who was seduced by Zeus, disguised as a shower of gold."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q19569543>, <http://www.wikidata.org/entity/Q538998>;
+  sdo:creditText "Engraving by Louis Desplaces (1682–1739), after the painting by Carlo Maratti (1625–1713). [France, 18th century]."@en;
+  sdo:size "30.5 x 38.7 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910493"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910493/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q538998> a sdo:Person;
+  sdo:name "Maratti, Carlo" .
+
+<http://www.wikidata.org/entity/Q165367> a sdo:Person;
+  sdo:name "Goltzius, Hendrick" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910495> a sdo:CreativeWork;
+  sdo:identifier "36";
+  sdo:name "Marriage for Wealth Officiated by the Devil";
+  sdo:description "The second of three numbered engravings after Goltzius called the Marriage Trilogy. A devil joins the hands of a couple as she blows a stream of coins and smoke, symbolizing the transience of honor and material possessions."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q165367>, <http://www.wikidata.org/entity/Q711775>;
+  sdo:creditText "Engraving by Jan Saenredam (1565–1607), after Hendrick Goltzius (1558–1617). [Netherlands, ca. 1600]."@en;
+  sdo:size "23.5 x 16.2 cm";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910495"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910495/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:love_and_money a sdo:DefinedTerm;
+  sdo:name "Love and Money"@en .
+
+<http://www.wikidata.org/entity/Q5580> a sdo:Person;
+  sdo:name "Dürer, Albrecht" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910497> a sdo:CreativeWork;
+  sdo:identifier "37";
+  sdo:name "Der Liebesantrag—the Ill-Assorted Couple";
+  sdo:description "There is much controversy surrounding both the Dürer original and this copy. The original engraving is one of Dürer's earliest; possibly a depiction of Judah and Tamar (Gen. 38: 14-18), or of Berthold Tucher and Anna Pfinzing of Nürnberg. The copy has been attributed to Marcantonio Raimondi (1480–1534)."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q5580>, <http://www.wikidata.org/entity/Q728375>;
+  sdo:creditText "Engraved contemporary copy, in mirror image, of Albrecht Dürer's engraving by this title. [n.p., original ca. 1495]."@en;
+  sdo:size "14.3 x 13.5 cm, image";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910497"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910497/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q728375> a sdo:Person;
+  sdo:name "Raimondi, Marcantonio" .
+
+<http://www.wikidata.org/entity/Q97477673> a sdo:Person;
+  sdo:name "Berger, Jenny" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910499> a sdo:CreativeWork;
+  sdo:identifier "38";
+  sdo:name "Ni l'Un ni l'Autre";
+  sdo:description "A woman is pictured standing between two men, one of whom offers her jewels, the other, money."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q97477673>, <http://www.wikidata.org/entity/Q4491034>;
+  sdo:creditText "Etching (part stipple) by Friedrich Fleischmann (1791–1834), after Jenny Berger (née Desoras). Nürnberg, Published by Fr. Campe, [early 19th century]."@en;
+  sdo:size "33 x 23 cm (oval image)";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910499"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910499/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q4491034> a sdo:Person;
+  sdo:name "Fleischmann, Friedrich" .
+
+<http://www.wikidata.org/entity/Q2744998> a sdo:Person;
+  sdo:name "Eisen, Charles" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910501> a sdo:CreativeWork;
+  sdo:identifier "39";
+  sdo:name "L'Accord de Mariage";
+  sdo:description "A man gives a young woman money to seal a marriage agreement."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q2744998>, <http://www.wikidata.org/entity/Q18577866>;
+  sdo:creditText "Engraved and published by René Gaillard (ca. 1719–90), after Charles Eisen (1722–78). Paris, [18th century]."@en;
+  sdo:size "38 x 27 cm";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910501"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910501/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q18577866> a sdo:Person;
+  sdo:name "Gaillard, René" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910431> a sdo:CreativeWork;
+  sdo:identifier "4";
+  sdo:name "An Allegorical Hunt";
+  sdo:description "Money is chased by a peasant whose hounds are Frugality, Industry, and Labor; Prodigality, whose hounds are Rapine and Chance; and Avarice, whose hounds are Usury and Fraud. Justice is trampled under foot."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1379395>, <http://www.wikidata.org/entity/Q143595>;
+  sdo:creditText "Engraved and published by Philip Galle (1537–1612), after Johannes Stradanus (1536–1605). [Antwerp, 1578]."@en;
+  sdo:size "21.7 x 24 cm; lower plate mark trimmed";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910431"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910431/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q143595> a sdo:Person;
+  sdo:name "Stradanus, Johannes" .
+
+<http://www.wikidata.org/entity/Q53504581> a sdo:Person;
+  sdo:name "Mesnil (Ménil), Élie" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910503> a sdo:CreativeWork;
+  sdo:identifier "40";
+  sdo:name "La Double Tentation";
+  sdo:description "\"Gravé d'apres le tableau original de même grandeur qui se trouve dans la galerie de S.E.M. le Comte de Brühl, Premier ministre de sa Majesté le Roi de Pologne, Electeur de Saxe.\" A woman is tempted by an old man who tries to seduce her with money."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q53504581>, <http://www.wikidata.org/entity/Q959236>;
+  sdo:creditText "Engraving by Élie Mesnil (or Ménil, b. 1726), after the painting by Frans van Mieris (1635–81). [France? 18th century]."@en;
+  sdo:size "35.5 x 27.5 cm";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910503"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910503/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q959236> a sdo:Person;
+  sdo:name "Mieris, Frans van" .
+
+<http://www.wikidata.org/entity/Q520806> a sdo:Person;
+  sdo:name "Gillray, James" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983668> a sdo:CreativeWork;
+  sdo:identifier "41";
+  sdo:name "Political Ravishment, or the Old Lady of Threadneedle-Street in Danger!";
+  sdo:description "A man attacks an old woman who wears a dress of one-pound notes. She sits on a locked chest labeled \"Bank of England.\" Satire on the suspension of gold payments by the Bank of England. Prime minister William Pitt was forced to implement the issue of paper money when the Bank announced a gold shortage, due to loans it had made to finance the war with France. Rumors circulated that the Bank's coin was merely being held in reserve to send to the Continent in support of the war. Hence the significance of the locked chest, and the coins in the pockets of the lady's paper money dress."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q520806>;
+  sdo:creditText "Hand-colored etching by James Gillray (1757–1815). [London], Published by H. Humphrey, May 22, 1797."@en;
+  sdo:size "24.8 x 34 cm, image";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3983668"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3983668/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:politics_and_war a sdo:DefinedTerm;
+  sdo:name "Politics and War"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910507> a sdo:CreativeWork;
+  sdo:identifier "42";
+  sdo:name "Midas, Transmuting all into Gold Paper";
+  sdo:description "Another satire on the creation of legal tender bank notes by the Bank of England. (See 41). William Pitt is pictured spewing paper money out of his mouth, while gold coins are locked up in his stomach."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q520806>;
+  sdo:creditText "Etching by James Gillray (1757–1815). [London], Published by H. Humphrey, March 9, 1797."@en;
+  sdo:size "35.5 x 25.5 cm";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910507"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910507/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910509> a sdo:CreativeWork;
+  sdo:identifier "43";
+  sdo:name "La Bonnet-Rouge: –or– John Bull Evading the Hat Tax";
+  sdo:description "Satire on the Pitt administration's doubling of the duty on fur hats and other items, to raise revenue for the war with France. John Bull (the English citizen) is pictured avoiding the hat tax by wearing the French revolutionary cap, or \"bonnet-rouge,\" a symbol not in favor with the English government."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q520806>;
+  sdo:creditText "Etching by James Gillray (1757–1815). [London], Published by H. Humphrey, April 5, 1797."@en;
+  sdo:size "36.5 x 26.5 cm";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910509"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910509/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910511> a sdo:CreativeWork;
+  sdo:identifier "44";
+  sdo:name "The Political Balloon; or, The Fall of East India Stock";
+  sdo:description "Refers to British Foreign Secretary Charles James Fox's bill to replace the directors of the East India Company with seven commissioners. Supporters of the bill hoped it would rid the Company of the directors' treachery and corruption in India. It was rejected by the House of Lords."@en;
+  sdo:creditText "Etching by unknown artist. [London], Published by W. Wells, December 4, 1783."@en;
+  sdo:size "35 x 25 cm";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910511"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910511/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q2871156> a sdo:Person;
+  sdo:name "Desperet, A." .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910513> a sdo:CreativeWork;
+  sdo:identifier "45";
+  sdo:name "Pauvres Aveugles";
+  sdo:description "Plate 282 from La Caricature, no. 136 (June 13, 1833). Louis-Philippe is followed by his ministers, carrying bags of money as they descend into the \"Gouffre de l'illigalité.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q2871156>;
+  sdo:creditText "Lithograph by A. Desperet (d. 1865). [Paris], Chez Aubert, [1833]."@en;
+  sdo:size "19 x 27 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910513"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910513/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:louis-philippe a sdo:DefinedTerm;
+  sdo:name "Louis-Philippe"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910515> a sdo:CreativeWork;
+  sdo:identifier "46";
+  sdo:name "Caricature of Louis-Philippe and Guizot";
+  sdo:description "Louis-Philippe and Guizot stealing money from the \"trésor public.\""@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Lith. Gosselin, [184–?]."@en;
+  sdo:size "25.5 x 19 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910515"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910515/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910517> a sdo:CreativeWork;
+  sdo:identifier "47";
+  sdo:name "La Poire Tapée";
+  sdo:description "A pear-headed Louis-Philippe runs from an angry crowd while money falls out of a bag he carries. The title is a play on words—it can mean a pear that has been dried in the oven, or it can refer to the slang meaning of \"taper,\" to borrow money from someone."@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Chez Aubert, [ca. 1848]."@en;
+  sdo:size "20 x 16 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910517"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910517/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910519> a sdo:CreativeWork;
+  sdo:identifier "48";
+  sdo:name "Caricature of Louis-Philippe";
+  sdo:description "\"Crowned by the Academy of Overripe Pears.\" The head of Louis-Philippe appears as the fruit of a potted plant, beneath which is printed \"empoté en 1830, dépoté en 1848.\" Guizot is a poisonous parasite on the plant."@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Chez Lordereau, [1848?]."@en;
+  sdo:size "24 x 18.5 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910519"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910519/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910521> a sdo:CreativeWork;
+  sdo:identifier "49";
+  sdo:name "Le Grand Saut . . . Sot";
+  sdo:description "Louis-Philippe is pictured jumping over the Channel from France to England. The title is a play on words, which can be read \"the big leap\" or \"the big fool.\""@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Lith. de Lordereau, [1848?]."@en;
+  sdo:size "25.5 x 23 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910521"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910521/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q43270> a sdo:Person;
+  sdo:name "Breughel, Pieter, the Elder" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910433> a sdo:CreativeWork;
+  sdo:identifier "5";
+  sdo:name "The Fight of the Money-Bags and the Coffers";
+  sdo:description "Second state. Caption below image is in Latin, French and Dutch: Riches make thieves, or, gold and silver have destroyed many."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q43270>, <http://www.wikidata.org/entity/Q12058270>,
+    <http://www.wikidata.org/entity/Q2094287>;
+  sdo:creditText "Engraving by Pieter van der Heyden (fl. 1557), after Pieter Breughel the Elder (1525–69.) Joannes Galle (1600–76), \"excudit.\" [Belgium, 1558?]."@en;
+  sdo:size "23.7 x 30.4 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910433"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910433/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q2094287> a sdo:Person;
+  sdo:name "Heyden, Pieter van der" .
+
+<http://www.wikidata.org/entity/Q55467951> a sdo:Person;
+  sdo:name "Brichet, Robert" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910523> a sdo:CreativeWork;
+  sdo:identifier "50";
+  sdo:name "Le Speculateur";
+  sdo:description "Plate twenty-eight from Exercises d'Imagination de Différents Caractères et Formes Humaines . . . Augsburg, 1784–85, of which plates one to eighty-four were engraved by Brichet, and plates eighty-five to one hundred by Goez. A once well-dressed man is reduced to rags by bad speculation."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q55467951>, <http://www.wikidata.org/entity/Q6283227>;
+  sdo:creditText "Etching and engraving by Robert Brichet, after Joseph Franz von Goez (1754–1815). [Augsburg] 1784."@en;
+  sdo:size "23.5 x 16.2 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910523"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910523/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:speculation_and_credit a sdo:DefinedTerm;
+  sdo:name "Speculation and Credit"@en .
+
+<http://www.wikidata.org/entity/Q6283227> a sdo:Person;
+  sdo:name "Goez, Joseph Franz von" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910525> a sdo:CreativeWork;
+  sdo:identifier "51";
+  sdo:name "Le Financier";
+  sdo:description "Plate five from Exercises d'Imagination . . . (see 50). Depiction of a corpulent man demanding payment for a bill."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q55467951>, <http://www.wikidata.org/entity/Q6283227>;
+  sdo:creditText "Etching and engraving by Robert Brichet, after Joseph Franz von Goez (1754–1815). Augsburg, [1784]."@en;
+  sdo:size "22.3 x 15.7 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910525"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910525/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910527> a sdo:CreativeWork;
+  sdo:identifier "52";
+  sdo:name "A Lucky and Unlucky Speculator";
+  sdo:description "Below image: \"Hélas! de vous à moi tel est la différence!!! C'est incroyable. . .\""@en;
+  sdo:creditText "Etching and engraving (part stipple) by unidentified artist; \"Rentier fecit.\" Paris, Chez les Marchands des nouveautés, [late 18th century]."@en;
+  sdo:size "26.5 x 32.5 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910527"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910527/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q15407088> a sdo:Person;
+  sdo:name "Bettanier" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910529> a sdo:CreativeWork;
+  sdo:identifier "53";
+  sdo:name "La Hausse. In Luck. En Alza";
+  sdo:description "Pictured is an elegantly dressed woman riding in a coach with her footman."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q15407088>, <http://www.wikidata.org/entity/Q21464861>,
+    <http://www.wikidata.org/entity/Q62101888>;
+  sdo:creditText "Hand-colored lithograph by Régnier and Bettanier, after Philippe Jacques Linder. Paris, Dusacq & Cie., [last half of 19th century]."@en;
+  sdo:size "29.8 x 22 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910529"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910529/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q21464861> a sdo:Person;
+  sdo:name "Linder, Philippe Jacques" .
+
+<http://www.wikidata.org/entity/Q62101888> a sdo:Person;
+  sdo:name "Régnier" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983670> a sdo:CreativeWork;
+  sdo:identifier "54";
+  sdo:name "La Baisse. Out of Luck. En Baja";
+  sdo:description "The same woman as in 53, wearing a black dress, crouching under an umbrella and running through the rain."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q15407088>, <http://www.wikidata.org/entity/Q21464861>,
+    <http://www.wikidata.org/entity/Q62101888>;
+  sdo:creditText "Hand-colored lithograph by Régnier and Bettanier, after Philippe Jacques Linder. Paris, Dusacq & Cie. [last half of 19th century]."@en;
+  sdo:size "30 x 22.4 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3983670"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3983670/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910533> a sdo:CreativeWork;
+  sdo:identifier "55";
+  sdo:name "Allegory on the Death of Credit";
+  sdo:description """A funeral procession carries a coffin toward a grave, in front of which are a man and woman weeping. Translation of the German caption below image:
+Great mourning and sorrow, grief and lamentation,
+The best helper is now laid to rest.
+Who do you think it is? Monsieur Credit is dead,
+He who so often rescued you and me from distress."""@en;
+  sdo:creditText "Engraving by unknown artist. [Germany? Early 18th century]."@en;
+  sdo:size "27.5 x 18 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910533"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910533/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910535> a sdo:CreativeWork;
+  sdo:identifier "56";
+  sdo:name "Crédit est Mort";
+  sdo:description "A similar allegory to 55, with the caption: \"Les mauvais payeurs l'ont tué.\" Pictured are an artist, a musician, and a soldier, who have killed another man, lying at their feet. This image inspired many provincial copies, notably at Épinal."@en;
+  sdo:creditText "Hand-colored etching by unknown artist. Paris, Chez Genty, [early 19th century]."@en;
+  sdo:size "26 x 34.5 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910535"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910535/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910537> a sdo:CreativeWork;
+  sdo:identifier "57";
+  sdo:name "Die Wind Kauffer, werden mit Wind bezahlt, und finden sich auf die letzst betrogen";
+  sdo:description "A rare German version of one of the seventy-four plates usually found in the popular Dutch satirical volume, Het Groote Tafereel der Dwaasheid (The Great Mirror of Folly). It commemorates the period of speculative mania which swept France, England, and Holland in the year 1720. Pictured here is the inner court of the old Amsterdam exchange (see 66), where distraught shareholders are calling out, \"I am ruined; Who will loan me money? I am still living on hope; I cannot sleep,\" etc. The term \"Wind-Handel\" was often used satirically to connote the flimsiness of the stocks being traded."@en;
+  sdo:creditText "Etching and engraving by unknown artist. [n.p., ca. 1720]."@en;
+  sdo:size "29.7 x 19.3 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910537"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910537/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q3047890> a sdo:Person;
+  sdo:name "Lavrate" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910539> a sdo:CreativeWork;
+  sdo:identifier "58";
+  sdo:name "Une Assemblée d'Actionnaires";
+  sdo:description "A meeting of shareholders, all of whom have animal bodies and human heads. The officers in charge have animal heads and human bodies."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3047890>;
+  sdo:creditText "Hand-colored lithograph, signed \"Lavrate.\" [France, 19th century]."@en;
+  sdo:size "28 x 37.5 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910539"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910539/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q23939409> a sdo:Person;
+  sdo:name "Chollet, Antoin Joseph" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910541> a sdo:CreativeWork;
+  sdo:identifier "59";
+  sdo:name "J'ai Perdu!";
+  sdo:description "A poor, pregnant woman with three small children holds a losing lottery ticket in her hand."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q23939409>, <http://www.wikidata.org/entity/Q2824901>;
+  sdo:creditText "Engraving by Antoin Joseph Chollet (b. 1793), after Adolphe Roehn (1780–1867). Paris, Chez Chaillou-Potrelle; Chez Roehn, 1824."@en;
+  sdo:size "56 x 42.8 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910541"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910541/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q2824901> a sdo:Person;
+  sdo:name "Roehn, Adolphe" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910435> a sdo:CreativeWork;
+  sdo:identifier "6";
+  sdo:name "Der Bruder Esel mit dem Gelt";
+  sdo:description "An ass is pictured defecating coins while peasants, merchants, and noblemen run to catch them."@en;
+  sdo:creditText "Etching and engraving. [Germany? Early 17th century]."@en;
+  sdo:size "19.5 x 32 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910435"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910435/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q998339> a sdo:Person;
+  sdo:name "Kilian, Wolfgang" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910543> a sdo:CreativeWork;
+  sdo:identifier "60";
+  sdo:name "Karl Fugger";
+  sdo:description "A member of the powerful German family of merchant princes descended from Hans Fugger, a fourteenth century weaver. The Fugger dynasty acquired its fortune through trade and banking, becoming the wealthiest family in Europe in the sixteenth century. Its decline paralleled that of the Hapsburg monarchy, whose wars they financed. (Plate 128 from Custos, Domenik. Contrafehe der Herrn Fugger . . . 2nd ed., 1620.)"@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q998339>;
+  sdo:creditText "Engraving by Wolfgang Kilian (1581–1662). [Augsburg, ca. 1620]."@en;
+  sdo:size "15 x 11 cmF g2";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910543"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910543/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:bankers_financiers_and_statesmen a sdo:DefinedTerm;
+  sdo:name "Bankers, Financiers, and Statesmen"@en .
+
+<http://www.wikidata.org/entity/Q18511523> a sdo:Person;
+  sdo:name "Kohl, Andrews" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910545> a sdo:CreativeWork;
+  sdo:identifier "61";
+  sdo:name "Georg Fussel (b. 1601)";
+  sdo:description "The Bancho Publico in Nürnberg was one of the oldest banks in Germany, founded in 1621, and in operation until 1827. Fussel was its banker from 1654 to 1674."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q18511523>, <http://www.wikidata.org/entity/Q30303204>;
+  sdo:creditText "Engraving by Andreas Kohl (1624–57), after Georg Strauch (1613–75). [Nürnberg, ca. 1654]."@en;
+  sdo:size "18.5 x 13.5 cmF g5";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910545"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910545/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q30303204> a sdo:Person;
+  sdo:name "Strauch, Georg" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910547> a sdo:CreativeWork;
+  sdo:identifier "62";
+  sdo:name "Sir Thomas Gresham (1519?–79)";
+  sdo:description "Gresham is known as the founder of the Royal Exchange and of Gresham College, London. As the royal financial agent in Antwerp, he was shrewd in discharging the debts of the crown, and negotiating new loans from the wealthy families of Europe. He also amassed a great personal fortune as a banker, merchant, and mercer."@en;
+  sdo:creditText "Engraving and aquatint by unknown artist. London, Published by N. Smith, June 10, 1793."@en;
+  sdo:size "22.5 x 17.5 cmF gb4 x";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910547"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910547/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q33134321> a sdo:Person;
+  sdo:name "Hainzelman, Johann" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910549> a sdo:CreativeWork;
+  sdo:identifier "63";
+  sdo:name "Philippe Du Four";
+  sdo:description "Du Four was Counselor and Secretary to the king, Treasurer General of France, and President of the Bureau des Finances in Paris."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q33134321>;
+  sdo:creditText "Designed and engraved by Johann Hainzelman (1641–93). [Paris], 1682."@en;
+  sdo:size "23.5 x 18 cmF f1 x";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910549"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910549/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q29545626> a sdo:Person;
+  sdo:name "Schenk, Leonard" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910551> a sdo:CreativeWork;
+  sdo:identifier "64";
+  sdo:name "John Law (1671–1729)";
+  sdo:description "A Scottish financier who became Controller General of Finances of France, Law is mainly remembered as the founder of the ill-fated Mississippi Company. He merged this huge stock company with the royal bank and took over the public debt and administration of revenue. In 1720, a rash of speculation in land swept France, setting off frenzied selling at high profits. When the bubble burst, thousands of investors went bankrupt, and Law fled the country in disgrace."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q29545626>, <http://www.wikidata.org/entity/Q78163>;
+  sdo:creditText "Engraving by Leonard Schenk (fl. 1715–46). Pieter Schenk (b. 1660), \"exc.\" Amsterdam, [ca. 1719]."@en;
+  sdo:size "27.5 x 18 cmF f30 x";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910551"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910551/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q78163> a sdo:Person;
+  sdo:name "Schenk, Pieter" .
+
+<http://www.wikidata.org/entity/Q39351810> a sdo:Person;
+  sdo:name "Mordant, Daniel Charles" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910553> a sdo:CreativeWork;
+  sdo:identifier "65";
+  sdo:name "James Edouard de Rothschild (1844–81)";
+  sdo:description "He was the son of Nathaniel (Paris branch), and the grandson of Nathan Meyer Rothschild, who founded the famed London branch of the family."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q39351810>;
+  sdo:creditText "Engraving and drypoint by Daniel Charles Mordant (1853–1914). [Paris], Impr. Ch. Chardon, [187–?]."@en;
+  sdo:size "31.5 x 25 cm, imageF f41 xxx";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910553"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910553/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910555> a sdo:CreativeWork;
+  sdo:identifier "66";
+  sdo:name "De Beurs. [Amsterdam]";
+  sdo:description "The Amsterdam exchange, situated on the Amstel River, was designed by Hendrick de Keijser and opened in 1611. Trading was carried on in the open inner court."@en;
+  sdo:creditText "Etching and engraving by unknown artist. [Netherlands? early 17th century]."@en;
+  sdo:size "19.2 x 29.8 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910555"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910555/full/full/0/default.jpg"^^xsd:anyURI .
+
+cc:stock_exchanges a sdo:DefinedTerm;
+  sdo:name "Stock Exchanges"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910557> a sdo:CreativeWork;
+  sdo:identifier "67";
+  sdo:name "Borse. [Antwerp]";
+  sdo:description "The Antwerp exchange was dedicated in 1532 \"for the use of tradesmen of all countries and languages, and as an ornament to its city.\" (Latin inscription.) It was the first financial exchange in Europe, standing until 1858, when it was destroyed by fire."@en;
+  sdo:creditText "Engraving by unknown artist. [n.p., early 17th century]."@en;
+  sdo:size "14.2 x 19.7 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910557"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910557/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q18577046> a sdo:Person;
+  sdo:name "Bowles, Thomas" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910559> a sdo:CreativeWork;
+  sdo:identifier "68";
+  sdo:name "A View of the Royal Exchange London. [second exchange]";
+  sdo:description "The first Royal Exchange opened in 1567 and was destroyed in the London fire of 1666. The second Royal Exchange opened in 1669 and was again destroyed by fire in 1838. The foundation of the third Royal Exchange was laid in 1842, and the building was opened on Jan. 1, 1845."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q18577046>;
+  sdo:creditText "Etching and engraving by Thomas Bowles (b. ca. 1712). [London], Printed for and sold by Robert Sayer, August 20, 1751."@en;
+  sdo:size "26 x 40 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910559"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910559/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q53498257> a sdo:Person;
+  sdo:name "Auvray, Pierre Laurent" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910561> a sdo:CreativeWork;
+  sdo:identifier "69";
+  sdo:name "Vue de la Bourse et du Magazin des Marchandises en remontant la petite Neva. [St. Petersburg]";
+  sdo:description "Plate from Nicolas Gabriel Leclerc's Histoire physique, morale, civile et politique de la Russie moderne. Paris et Versailles, 1783–85, which Auvray illustrated."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q53498257>, <http://www.wikidata.org/entity/Q22009289>;
+  sdo:creditText "Engraving by Pierre Laurent Auvray (b. 1736), after Louis Nicolas de Lespinasse (1734–1808). [France, ca. 1785]."@en;
+  sdo:size "24.8 x 35.5 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910561"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910561/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q22009289> a sdo:Person;
+  sdo:name "Lespinasse, Louis Nicolas de" .
+
+<http://www.wikidata.org/entity/Q3299661> a sdo:Person;
+  sdo:name "Greuter, Mathias" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910437> a sdo:CreativeWork;
+  sdo:identifier "7";
+  sdo:name "Gellt Zeucht die Weltt. Mundum Trahit Pecunia";
+  sdo:description "First state. Gold coins form the wheels of a chariot, upon which is the World, while two noblemen blinded by money walk alongside. A group of peasants is held back by Poverty, standing on the wheel of Fortune."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3299661>;
+  sdo:creditText "Engraved, designed, and published by Mathias Greuter (1564–1638). [Strasbourg(?)] 1589."@en;
+  sdo:size "23 x 27.8 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910437"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910437/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q19279961> a sdo:Person;
+  sdo:name "Geissler, Friedrich" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910563> a sdo:CreativeWork;
+  sdo:identifier "70";
+  sdo:name "Die Hamburger Börse. [the old exchange]";
+  sdo:description "The earliest exchange in Hamburg opened in 1558, and was greatly enlarged during the years 1577–83, 1669, and the following century. It was destroyed in the great Hamburg fire of 1842. Fortunately, construction of a new exchange building on the Adolphsplatz had already begun in 1839, and was dedicated in 1841. It was enlarged several times during the remainder of the nineteenth century."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q19279961>;
+  sdo:creditText "Engraving by Friedrich Geissler (1778–1853). [Germany?] 1822."@en;
+  sdo:size "10.8 x 18.8 cm, image";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910563"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910563/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910439> a sdo:CreativeWork;
+  sdo:identifier "8";
+  sdo:name "The Two Deaths";
+  sdo:description "A narrative in two parts. At left, a pious man receives riches from heaven; at right, Death prepares to strike a miser amidst his wealth."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q640361>, <http://www.wikidata.org/entity/Q555022>,
+    <http://www.wikidata.org/entity/Q2778104>;
+  sdo:creditText "Engraving by Hieronymus Wierx (1553–1619), after Marten de Vos (ca. 1531–1603). Published by Hieronymus Cock, \"Aux .4. Vents.\" [Antwerp, late 16th century]."@en;
+  sdo:size "29.8 x 32.5 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910439"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910439/full/full/0/default.jpg"^^xsd:anyURI .
+
+<http://www.wikidata.org/entity/Q2778104> a sdo:Person;
+  sdo:name "Wierx, Hieronymus" .
+
+<http://www.wikidata.org/entity/Q19569785> a sdo:Person;
+  sdo:name "Sadeler, Raphael, I" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910441> a sdo:CreativeWork;
+  sdo:identifier "9";
+  sdo:name "Honor";
+  sdo:description "Plate three from his series of four allegorical prints on the virtues after de Vos, representing also the four ages of man. A pious man turns away from a woman offering riches."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q19569785>, <http://www.wikidata.org/entity/Q555022>;
+  sdo:creditText "Engraving by Raphael Sadeler I (1560–1628), after Marten de Vos (ca. 1531–1603). [n.p., 1591]."@en;
+  sdo:size "22 x 25 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910441"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910441/full/full/0/default.jpg"^^xsd:anyURI .
