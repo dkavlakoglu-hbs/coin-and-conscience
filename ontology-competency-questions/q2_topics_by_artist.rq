@@ -1,0 +1,10 @@
+# What topics has Artist X covered in their works?
+PREFIX sdo: <https://schema.org/>
+SELECT DISTINCT ?topic ?topicName WHERE {
+    BIND(<http://www.wikidata.org/entity/Q12058270> AS ?artistX) .
+    ?work a sdo:CreativeWork ;
+    	sdo:contributor ?artistX ;
+    	sdo:about ?topic .
+    ?topic a sdo:DefinedTerm ;
+    	sdo:name ?topicName .
+}

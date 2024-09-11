@@ -1,0 +1,8 @@
+# What is the topic of Work Y?
+PREFIX sdo: <https://schema.org/>
+SELECT ?topic ?topicName WHERE {
+    BIND(<https://iiif.lib.harvard.edu/manifests/view/ids:3910429> AS ?workY)
+    ?workY sdo:about ?topic .
+    ?topic a sdo:DefinedTerm ;
+    	sdo:name ?topicName .
+}

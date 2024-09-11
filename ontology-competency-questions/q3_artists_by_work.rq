@@ -1,0 +1,8 @@
+# Who are the artists credited with Work Y?
+PREFIX sdo: <https://schema.org/>
+SELECT ?person ?personName WHERE {
+    BIND(<https://iiif.lib.harvard.edu/manifests/view/ids:3910429> AS ?workY)
+    ?workY sdo:contributor ?person.
+    ?person a sdo:Person ;
+    	sdo:name ?personName .
+}

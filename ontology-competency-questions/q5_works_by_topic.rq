@@ -1,0 +1,9 @@
+# What are all of the works about Topic Z?
+PREFIX sdo: <https://schema.org/>
+SELECT ?work ?workId ?workName WHERE {
+    BIND(<https://librarydata.hbs.edu/coins-and-conscience/stock_exchanges> AS ?topicZ)
+    ?work a sdo:CreativeWork ;
+    	sdo:identifier ?workId ;
+    	sdo:name ?workName ;
+    	sdo:about ?topicZ .
+}

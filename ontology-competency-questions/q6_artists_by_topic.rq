@@ -1,0 +1,10 @@
+# Who are the artists creating works about Topic Z?
+PREFIX sdo: <https://schema.org/>
+SELECT DISTINCT ?person ?personName WHERE {
+    BIND(<https://librarydata.hbs.edu/coins-and-conscience/stock_exchanges> AS ?topicZ)
+    ?work a sdo:CreativeWork ;
+    	sdo:contributor ?person ;
+    	sdo:about ?topicZ .
+    ?person a sdo:Person ;
+    	sdo:name ?personName .
+}
