@@ -1,0 +1,1261 @@
+Prefix(:=<https://librarydata.hbs.edu/coins-and-conscience/>)
+Prefix(cc:=<https://librarydata.hbs.edu/coins-and-conscience/>)
+Prefix(fn:=<http://www.w3.org/2005/xpath-functions>)
+Prefix(gn:=<http://www.geonames.org/ontology#>)
+Prefix(sr:=<http://www.openrdf.org/config/repository/sail#>)
+Prefix(afn:=<http://jena.apache.org/ARQ/function#>)
+Prefix(agg:=<http://jena.apache.org/ARQ/function/aggregate#>)
+Prefix(apf:=<http://jena.apache.org/ARQ/property#>)
+Prefix(map:=<http://www.w3.org/2005/xpath-functions/map>)
+Prefix(ofn:=<http://www.ontotext.com/sparql/functions/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(rep:=<http://www.openrdf.org/config/repository#>)
+Prefix(sdo:=<https://schema.org/>)
+Prefix(wgs:=<http://www.w3.org/2003/01/geo/wgs84_pos#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(geof:=<http://www.opengis.net/def/function/geosparql/>)
+Prefix(list:=<http://jena.apache.org/ARQ/list#>)
+Prefix(math:=<http://www.w3.org/2005/xpath-functions/math>)
+Prefix(path:=<http://www.ontotext.com/path#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(sail:=<http://www.openrdf.org/config/sail#>)
+Prefix(spif:=<http://spinrdf.org/spif#>)
+Prefix(array:=<http://www.w3.org/2005/xpath-functions/array>)
+Prefix(omgeo:=<http://www.ontotext.com/owlim/geo#>)
+Prefix(geoext:=<http://rdf.useekm.com/ext#>)
+Prefix(graphdb:=<http://www.ontotext.com/config/graphdb#>)
+
+
+Ontology(<https://librarydata.hbs.edu/coins-and-conscience/>
+
+Declaration(Class(sdo:Boolean))
+Declaration(Class(sdo:Certification))
+Declaration(Class(sdo:CommunicateAction))
+Declaration(Class(sdo:CreativeWork))
+Declaration(Class(sdo:DefinedTerm))
+Declaration(Class(sdo:Event))
+Declaration(Class(sdo:ImageObject))
+Declaration(Class(sdo:Intangible))
+Declaration(Class(sdo:MonetaryAmount))
+Declaration(Class(sdo:Number))
+Declaration(Class(sdo:Organization))
+Declaration(Class(sdo:Person))
+Declaration(Class(sdo:Product))
+Declaration(Class(sdo:PropertyValue))
+Declaration(Class(sdo:QuantitativeValue))
+Declaration(Class(sdo:Role))
+Declaration(Class(sdo:SizeSpecification))
+Declaration(Class(sdo:StructuredValue))
+Declaration(Class(sdo:Text))
+Declaration(Class(sdo:TextObject))
+Declaration(Class(sdo:Thing))
+Declaration(Class(sdo:URL))
+Declaration(ObjectProperty(sdo:about))
+Declaration(ObjectProperty(sdo:contributor))
+Declaration(ObjectProperty(sdo:creditText))
+Declaration(ObjectProperty(sdo:description))
+Declaration(ObjectProperty(sdo:identifier))
+Declaration(ObjectProperty(sdo:image))
+Declaration(ObjectProperty(sdo:sameAs))
+Declaration(ObjectProperty(sdo:size))
+Declaration(ObjectProperty(sdo:subjectOf))
+Declaration(ObjectProperty(sdo:url))
+Declaration(ObjectProperty(sdo:value))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q102841270>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q109061>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q1094674>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q12058270>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q1378723>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q1379395>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q140096>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q143595>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q165367>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q167220>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q18511523>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q18516699>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q18577046>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q18577866>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q19279961>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q19569543>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q19569785>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q1961244>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q19829357>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q20011635>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q2094287>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q2107767>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q21464861>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q21531043>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q22009289>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q23939409>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q2744998>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q2778104>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q2824901>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q2871156>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q29545626>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q30303204>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3047890>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3085083>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3108083>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3161745>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3164685>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q329811>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3299661>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q33134321>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q335022>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3383022>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q3420968>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q345605>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q352438>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q39351810>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q43270>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q4491034>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q47551>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q520806>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q53498257>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q53504581>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q538350>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q538998>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q55467951>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q555022>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q5580>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q5598>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q559929>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q56334603>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q602742>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q62101888>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q6283227>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q6369402>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q640361>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q711775>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q728375>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q729057>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q76135>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q765465>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q78163>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q7824>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q869133>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q959236>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q97477673>))
+Declaration(NamedIndividual(<http://www.wikidata.org/entity/Q998339>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910425>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910427>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910429>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910431>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910433>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910435>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910437>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910439>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910441>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910443>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910445>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910447>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910449>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910451>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910453>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910455>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910457>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910459>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910461>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910463>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910465>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910467>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910469>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910471>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910473>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910475>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910477>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910479>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910481>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910483>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910485>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910487>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910489>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910491>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910493>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910495>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910497>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910499>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910501>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910503>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910507>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910509>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910511>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910513>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910515>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910517>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910519>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910521>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910523>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910525>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910527>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910529>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910533>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910535>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910537>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910539>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910541>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910543>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910545>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910547>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910549>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910551>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910553>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910555>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910557>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910559>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910561>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3910563>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3983668>))
+Declaration(NamedIndividual(<https://iiif.lib.harvard.edu/manifests/view/ids:3983670>))
+Declaration(NamedIndividual(cc:bankers_financiers_and_statesmen))
+Declaration(NamedIndividual(cc:bettanier))
+Declaration(NamedIndividual(cc:biblical_and_mythological_scenes))
+Declaration(NamedIndividual(cc:louis-philippe))
+Declaration(NamedIndividual(cc:love_and_money))
+Declaration(NamedIndividual(cc:misers_moneylenders_and_thieves))
+Declaration(NamedIndividual(cc:money_devil))
+Declaration(NamedIndividual(cc:politics_and_war))
+Declaration(NamedIndividual(cc:speculation_and_credit))
+Declaration(NamedIndividual(cc:stock_exchanges))
+Declaration(NamedIndividual(cc:vanity_and_virtue))
+Declaration(AnnotationProperty(sdo:name))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: sdo:name (name)
+
+AnnotationAssertion(rdfs:label sdo:name "name"@en)
+SubAnnotationPropertyOf(sdo:name rdfs:label)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: sdo:about (sdo:about)
+
+InverseObjectProperties(sdo:about sdo:subjectOf)
+ObjectPropertyDomain(sdo:about ObjectUnionOf(sdo:Certification sdo:CommunicateAction sdo:CreativeWork sdo:Event))
+ObjectPropertyRange(sdo:about ObjectUnionOf(sdo:Role sdo:Text sdo:Thing sdo:URL))
+
+# Object Property: sdo:contributor (sdo:contributor)
+
+ObjectPropertyDomain(sdo:contributor ObjectUnionOf(sdo:CreativeWork sdo:Event))
+ObjectPropertyRange(sdo:contributor ObjectUnionOf(sdo:Organization sdo:Person sdo:Role sdo:Text sdo:URL))
+
+# Object Property: sdo:creditText (sdo:creditText)
+
+ObjectPropertyDomain(sdo:creditText sdo:CreativeWork)
+ObjectPropertyRange(sdo:creditText ObjectUnionOf(sdo:Role sdo:Text sdo:URL))
+
+# Object Property: sdo:description (sdo:description)
+
+ObjectPropertyDomain(sdo:description sdo:Thing)
+ObjectPropertyRange(sdo:description ObjectUnionOf(sdo:Role sdo:Text sdo:TextObject sdo:URL))
+
+# Object Property: sdo:identifier (sdo:identifier)
+
+ObjectPropertyDomain(sdo:identifier sdo:Thing)
+ObjectPropertyRange(sdo:identifier ObjectUnionOf(sdo:PropertyValue sdo:Role sdo:Text sdo:URL))
+
+# Object Property: sdo:image (sdo:image)
+
+ObjectPropertyDomain(sdo:image sdo:Thing)
+ObjectPropertyRange(sdo:image ObjectUnionOf(sdo:ImageObject sdo:Role sdo:Text sdo:URL))
+
+# Object Property: sdo:sameAs (sdo:sameAs)
+
+ObjectPropertyDomain(sdo:sameAs sdo:Thing)
+ObjectPropertyRange(sdo:sameAs ObjectUnionOf(sdo:Role sdo:Text sdo:URL))
+
+# Object Property: sdo:size (sdo:size)
+
+ObjectPropertyDomain(sdo:size ObjectUnionOf(sdo:CreativeWork sdo:Product))
+ObjectPropertyRange(sdo:size ObjectUnionOf(sdo:DefinedTerm sdo:QuantitativeValue sdo:Role sdo:SizeSpecification sdo:Text sdo:URL))
+
+# Object Property: sdo:url (sdo:url)
+
+ObjectPropertyDomain(sdo:url sdo:Thing)
+ObjectPropertyRange(sdo:url ObjectUnionOf(sdo:Role sdo:Text sdo:URL))
+
+# Object Property: sdo:value (sdo:value)
+
+ObjectPropertyDomain(sdo:value ObjectUnionOf(sdo:MonetaryAmount sdo:PropertyValue sdo:QuantitativeValue))
+ObjectPropertyRange(sdo:value ObjectUnionOf(sdo:Boolean sdo:Number sdo:Role sdo:StructuredValue sdo:Text sdo:URL))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: sdo:CreativeWork (CreativeWork)
+
+AnnotationAssertion(rdfs:label sdo:CreativeWork "CreativeWork"@en)
+SubClassOf(sdo:CreativeWork sdo:Thing)
+
+# Class: sdo:DefinedTerm (DefinedTerm)
+
+AnnotationAssertion(rdfs:label sdo:DefinedTerm "DefinedTerm"@en)
+SubClassOf(sdo:DefinedTerm sdo:Intangible)
+
+# Class: sdo:Person (Person)
+
+AnnotationAssertion(rdfs:label sdo:Person "Person"@en)
+SubClassOf(sdo:Person sdo:Thing)
+
+# Class: sdo:PropertyValue (PropertyValue)
+
+AnnotationAssertion(rdfs:label sdo:PropertyValue "PropertyValue"@en)
+SubClassOf(sdo:PropertyValue sdo:StructuredValue)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.wikidata.org/entity/Q102841270> (<http://www.wikidata.org/entity/Q102841270>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q102841270> "Julien, Joseph Laurent")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q102841270>)
+
+# Individual: <http://www.wikidata.org/entity/Q109061> (<http://www.wikidata.org/entity/Q109061>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q109061> "Reni, Guido")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q109061>)
+
+# Individual: <http://www.wikidata.org/entity/Q1094674> (<http://www.wikidata.org/entity/Q1094674>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q1094674> "Visscher, Jan Claesz")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q1094674>)
+
+# Individual: <http://www.wikidata.org/entity/Q12058270> (<http://www.wikidata.org/entity/Q12058270>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q12058270> "Galle, Joannes")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q12058270>)
+
+# Individual: <http://www.wikidata.org/entity/Q1378723> (<http://www.wikidata.org/entity/Q1378723>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q1378723> "Le Sueur, Eustache")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q1378723>)
+
+# Individual: <http://www.wikidata.org/entity/Q1379395> (<http://www.wikidata.org/entity/Q1379395>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q1379395> "Galle, Philip")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q1379395>)
+
+# Individual: <http://www.wikidata.org/entity/Q140096> (<http://www.wikidata.org/entity/Q140096>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q140096> "Passe, Crispijn de, the Elder")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q140096>)
+
+# Individual: <http://www.wikidata.org/entity/Q143595> (<http://www.wikidata.org/entity/Q143595>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q143595> "Stradanus, Johannes")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q143595>)
+
+# Individual: <http://www.wikidata.org/entity/Q165367> (<http://www.wikidata.org/entity/Q165367>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q165367> "Goltzius, Hendrick")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q165367>)
+
+# Individual: <http://www.wikidata.org/entity/Q167220> (<http://www.wikidata.org/entity/Q167220>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q167220> "Cort, Cornelis")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q167220>)
+
+# Individual: <http://www.wikidata.org/entity/Q18511523> (<http://www.wikidata.org/entity/Q18511523>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q18511523> "Kohl, Andrews")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q18511523>)
+
+# Individual: <http://www.wikidata.org/entity/Q18516699> (<http://www.wikidata.org/entity/Q18516699>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q18516699> "Doetechum, Lucas van")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q18516699>)
+
+# Individual: <http://www.wikidata.org/entity/Q18577046> (<http://www.wikidata.org/entity/Q18577046>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q18577046> "Bowles, Thomas")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q18577046>)
+
+# Individual: <http://www.wikidata.org/entity/Q18577866> (<http://www.wikidata.org/entity/Q18577866>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q18577866> "Gaillard, René")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q18577866>)
+
+# Individual: <http://www.wikidata.org/entity/Q19279961> (<http://www.wikidata.org/entity/Q19279961>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q19279961> "Geissler, Friedrich")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q19279961>)
+
+# Individual: <http://www.wikidata.org/entity/Q19569543> (<http://www.wikidata.org/entity/Q19569543>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q19569543> "Desplaces, Louis")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q19569543>)
+
+# Individual: <http://www.wikidata.org/entity/Q19569785> (<http://www.wikidata.org/entity/Q19569785>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q19569785> "Sadeler, Raphael, I")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q19569785>)
+
+# Individual: <http://www.wikidata.org/entity/Q1961244> (<http://www.wikidata.org/entity/Q1961244>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q1961244> "Swanenburgh, Willem Isaakz, I")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q1961244>)
+
+# Individual: <http://www.wikidata.org/entity/Q19829357> (<http://www.wikidata.org/entity/Q19829357>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q19829357> "Ertinger, Franz")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q19829357>)
+
+# Individual: <http://www.wikidata.org/entity/Q20011635> (<http://www.wikidata.org/entity/Q20011635>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q20011635> "Paludanus, Gerhard (von Groeningen)")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q20011635>)
+
+# Individual: <http://www.wikidata.org/entity/Q2094287> (<http://www.wikidata.org/entity/Q2094287>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q2094287> "Heyden, Pieter van der")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q2094287>)
+
+# Individual: <http://www.wikidata.org/entity/Q2107767> (<http://www.wikidata.org/entity/Q2107767>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q2107767> "Valck, Gerard")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q2107767>)
+
+# Individual: <http://www.wikidata.org/entity/Q21464861> (<http://www.wikidata.org/entity/Q21464861>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q21464861> "Linder, Philippe Jacques")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q21464861>)
+
+# Individual: <http://www.wikidata.org/entity/Q21531043> (<http://www.wikidata.org/entity/Q21531043>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q21531043> "Razet, J.")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q21531043>)
+
+# Individual: <http://www.wikidata.org/entity/Q22009289> (<http://www.wikidata.org/entity/Q22009289>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q22009289> "Lespinasse, Louis Nicolas de")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q22009289>)
+
+# Individual: <http://www.wikidata.org/entity/Q23939409> (<http://www.wikidata.org/entity/Q23939409>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q23939409> "Chollet, Antoin Joseph")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q23939409>)
+
+# Individual: <http://www.wikidata.org/entity/Q2744998> (<http://www.wikidata.org/entity/Q2744998>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q2744998> "Eisen, Charles")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q2744998>)
+
+# Individual: <http://www.wikidata.org/entity/Q2778104> (<http://www.wikidata.org/entity/Q2778104>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q2778104> "Wierx, Hieronymus")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q2778104>)
+
+# Individual: <http://www.wikidata.org/entity/Q2824901> (<http://www.wikidata.org/entity/Q2824901>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q2824901> "Roehn, Adolphe")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q2824901>)
+
+# Individual: <http://www.wikidata.org/entity/Q2871156> (<http://www.wikidata.org/entity/Q2871156>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q2871156> "Desperet, A.")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q2871156>)
+
+# Individual: <http://www.wikidata.org/entity/Q29545626> (<http://www.wikidata.org/entity/Q29545626>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q29545626> "Schenk, Leonard")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q29545626>)
+
+# Individual: <http://www.wikidata.org/entity/Q30303204> (<http://www.wikidata.org/entity/Q30303204>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q30303204> "Strauch, Georg")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q30303204>)
+
+# Individual: <http://www.wikidata.org/entity/Q3047890> (<http://www.wikidata.org/entity/Q3047890>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3047890> "Lavrate")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3047890>)
+
+# Individual: <http://www.wikidata.org/entity/Q3085083> (<http://www.wikidata.org/entity/Q3085083>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3085083> "Ciartres, F.L.D.")
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3085083> "Langlois, François (F.L.D. Ciartres)")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3085083>)
+
+# Individual: <http://www.wikidata.org/entity/Q3108083> (<http://www.wikidata.org/entity/Q3108083>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3108083> "Mitelli, Giuseppe Maria")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3108083>)
+
+# Individual: <http://www.wikidata.org/entity/Q3161745> (<http://www.wikidata.org/entity/Q3161745>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3161745> "Sadeler, Jan (Johannes), I")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3161745>)
+
+# Individual: <http://www.wikidata.org/entity/Q3164685> (<http://www.wikidata.org/entity/Q3164685>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3164685> "Pellerin")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3164685>)
+
+# Individual: <http://www.wikidata.org/entity/Q329811> (<http://www.wikidata.org/entity/Q329811>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q329811> "Bloemaert, Abraham")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q329811>)
+
+# Individual: <http://www.wikidata.org/entity/Q3299661> (<http://www.wikidata.org/entity/Q3299661>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3299661> "Greuter, Mathias")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3299661>)
+
+# Individual: <http://www.wikidata.org/entity/Q33134321> (<http://www.wikidata.org/entity/Q33134321>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q33134321> "Hainzelman, Johann")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q33134321>)
+
+# Individual: <http://www.wikidata.org/entity/Q335022> (<http://www.wikidata.org/entity/Q335022>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q335022> "Teniers, David, the Younger")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q335022>)
+
+# Individual: <http://www.wikidata.org/entity/Q3383022> (<http://www.wikidata.org/entity/Q3383022>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3383022> "Basan, Pierre François")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3383022>)
+
+# Individual: <http://www.wikidata.org/entity/Q3420968> (<http://www.wikidata.org/entity/Q3420968>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q3420968> "Lafage, Raymond")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q3420968>)
+
+# Individual: <http://www.wikidata.org/entity/Q345605> (<http://www.wikidata.org/entity/Q345605>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q345605> "Zuccaro, Federigo")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q345605>)
+
+# Individual: <http://www.wikidata.org/entity/Q352438> (<http://www.wikidata.org/entity/Q352438>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q352438> "Ostade, Adrian van")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q352438>)
+
+# Individual: <http://www.wikidata.org/entity/Q39351810> (<http://www.wikidata.org/entity/Q39351810>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q39351810> "Mordant, Daniel Charles")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q39351810>)
+
+# Individual: <http://www.wikidata.org/entity/Q43270> (<http://www.wikidata.org/entity/Q43270>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q43270> "Breughel, Pieter, the Elder")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q43270>)
+
+# Individual: <http://www.wikidata.org/entity/Q4491034> (<http://www.wikidata.org/entity/Q4491034>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q4491034> "Fleischmann, Friedrich")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q4491034>)
+
+# Individual: <http://www.wikidata.org/entity/Q47551> (<http://www.wikidata.org/entity/Q47551>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q47551> "Titian, (Tiziano Vecellio)")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q47551>)
+
+# Individual: <http://www.wikidata.org/entity/Q520806> (<http://www.wikidata.org/entity/Q520806>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q520806> "Gillray, James")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q520806>)
+
+# Individual: <http://www.wikidata.org/entity/Q53498257> (<http://www.wikidata.org/entity/Q53498257>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q53498257> "Auvray, Pierre Laurent")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q53498257>)
+
+# Individual: <http://www.wikidata.org/entity/Q53504581> (<http://www.wikidata.org/entity/Q53504581>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q53504581> "Mesnil (Ménil), Élie")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q53504581>)
+
+# Individual: <http://www.wikidata.org/entity/Q538350> (<http://www.wikidata.org/entity/Q538350>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q538350> "Heemskerck, Maarten van")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q538350>)
+
+# Individual: <http://www.wikidata.org/entity/Q538998> (<http://www.wikidata.org/entity/Q538998>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q538998> "Maratti, Carlo")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q538998>)
+
+# Individual: <http://www.wikidata.org/entity/Q55467951> (<http://www.wikidata.org/entity/Q55467951>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q55467951> "Brichet, Robert")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q55467951>)
+
+# Individual: <http://www.wikidata.org/entity/Q555022> (<http://www.wikidata.org/entity/Q555022>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q555022> "Vos, Marten de")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q555022>)
+
+# Individual: <http://www.wikidata.org/entity/Q5580> (<http://www.wikidata.org/entity/Q5580>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q5580> "Dürer, Albrecht")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q5580>)
+
+# Individual: <http://www.wikidata.org/entity/Q5598> (<http://www.wikidata.org/entity/Q5598>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q5598> "Rembrandt van Rhyn")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q5598>)
+
+# Individual: <http://www.wikidata.org/entity/Q559929> (<http://www.wikidata.org/entity/Q559929>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q559929> "Picart, Bernard")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q559929>)
+
+# Individual: <http://www.wikidata.org/entity/Q56334603> (<http://www.wikidata.org/entity/Q56334603>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q56334603> "Stefanoni, Pietro")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q56334603>)
+
+# Individual: <http://www.wikidata.org/entity/Q602742> (<http://www.wikidata.org/entity/Q602742>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q602742> "Lafreri, Anton")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q602742>)
+
+# Individual: <http://www.wikidata.org/entity/Q62101888> (<http://www.wikidata.org/entity/Q62101888>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q62101888> "Régnier")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q62101888>)
+
+# Individual: <http://www.wikidata.org/entity/Q6283227> (<http://www.wikidata.org/entity/Q6283227>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q6283227> "Goez, Joseph Franz von")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q6283227>)
+
+# Individual: <http://www.wikidata.org/entity/Q6369402> (<http://www.wikidata.org/entity/Q6369402>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q6369402> "Mallery, Karel van")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q6369402>)
+
+# Individual: <http://www.wikidata.org/entity/Q640361> (<http://www.wikidata.org/entity/Q640361>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q640361> "Cock, Hieronymu")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q640361>)
+
+# Individual: <http://www.wikidata.org/entity/Q711775> (<http://www.wikidata.org/entity/Q711775>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q711775> "Saenredam, Jan")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q711775>)
+
+# Individual: <http://www.wikidata.org/entity/Q728375> (<http://www.wikidata.org/entity/Q728375>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q728375> "Raimondi, Marcantonio")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q728375>)
+
+# Individual: <http://www.wikidata.org/entity/Q729057> (<http://www.wikidata.org/entity/Q729057>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q729057> "Badalocchio, Sisto")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q729057>)
+
+# Individual: <http://www.wikidata.org/entity/Q76135> (<http://www.wikidata.org/entity/Q76135>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q76135> "Hess, Carl Ernst Christoph")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q76135>)
+
+# Individual: <http://www.wikidata.org/entity/Q765465> (<http://www.wikidata.org/entity/Q765465>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q765465> "Coornhert, Dirck Volkertsz.")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q765465>)
+
+# Individual: <http://www.wikidata.org/entity/Q78163> (<http://www.wikidata.org/entity/Q78163>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q78163> "Schenk, Pieter")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q78163>)
+
+# Individual: <http://www.wikidata.org/entity/Q7824> (<http://www.wikidata.org/entity/Q7824>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q7824> "Carracci, Annibale")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q7824>)
+
+# Individual: <http://www.wikidata.org/entity/Q869133> (<http://www.wikidata.org/entity/Q869133>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q869133> "Galle, Cornelis, the Elder")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q869133>)
+
+# Individual: <http://www.wikidata.org/entity/Q959236> (<http://www.wikidata.org/entity/Q959236>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q959236> "Mieris, Frans van")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q959236>)
+
+# Individual: <http://www.wikidata.org/entity/Q97477673> (<http://www.wikidata.org/entity/Q97477673>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q97477673> "Berger, Jenny")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q97477673>)
+
+# Individual: <http://www.wikidata.org/entity/Q998339> (<http://www.wikidata.org/entity/Q998339>)
+
+AnnotationAssertion(sdo:name <http://www.wikidata.org/entity/Q998339> "Kilian, Wolfgang")
+ClassAssertion(sdo:Person <http://www.wikidata.org/entity/Q998339>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910425> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910425>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910425> "The Unhappy Lot of the Rich")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910425>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910427> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910427>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910427> "The Unhappy Lot of the Rich")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910427>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910429> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910429>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910429> "The Triumph of Riches")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910429>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910431> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910431>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910431> "An Allegorical Hunt")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910431>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910433> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910433>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910433> "The Fight of the Money-Bags and the Coffers")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910433>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910435> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910435>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910435> "Der Bruder Esel mit dem Gelt")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910435>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910437> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910437>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910437> "Gellt Zeucht die Weltt. Mundum Trahit Pecunia")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910437>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910439> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910439>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910439> "The Two Deaths")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910439>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910441> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910441>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910441> "Honor")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910441>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910443> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910443>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910443> "Justice Rewards Toil")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910443>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910445> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910445>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910445> "Avarice")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910445>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910447> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910447>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910447> "Divitiæ")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910447>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910449> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910449>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910449> "Allegory of the Vanity and Transitory Nature of Worldly Possessions")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910449>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910451> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910451>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910451> "Allegory of Wealth and Luxury")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910451>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910453> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910453>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910453> "Jan Uytenbogaert, 'The Goldweigher'")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910453>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910455> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910455>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910455> "Le Plaisir des Vieillards")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910455>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910457> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910457>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910457> "Peasant with Coins")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910457>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910459> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910459>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910459> "Banquet with Musicians")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910459>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910461> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910461>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910461> "Dove L'Oro Parla, Ogni Lingua Tace")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910461>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910463> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910463>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910463> "La Commodità Fà l'Huomo Ladro")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910463>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910465> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910465>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910465> "Le Riche du Jour ou le Préteur sur Gages")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910465>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910467> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910467>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910467> "Le Cornard Contant")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910467>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910469> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910469>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910469> "Le Diable d'Argent")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910469>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910471> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910471>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910471> "Le Grand Diable d'Argent Patron de la Finance")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910471>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910473> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910473>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910473> "Les Vérités du Jour, ou le Grand Diable d'Argent")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910473>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910475> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910475>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910475> "Le Grand Diable d'Argent, Patron de la Finance")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910475>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910477> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910477>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910477> "The Queen of Sheba Bringing Gifts to King Solomon. 1 Kings 10")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910477>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910479> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910479>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910479> "The Parable of the Talents. Mt. 25: 14")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910479>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910481> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910481>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910481> "The Parable of Ananias and Sapphira. Acts 5: 1")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910481>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910483> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910483>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910483> "The Apostles Distribute the Money to those in Need. Acts 4: 32-35")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910483>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910485> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910485>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910485> "Christ and the Pharisees with the Tribute Money. Mt. 22")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910485>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910487> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910487>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910487> "St. Roch Giving Alms to the Poor")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910487>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910489> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910489>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910489> "Le Veau d'Or. Exod. 32")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910489>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910491> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910491>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910491> "Darius, out of Greed, Orders the Tomb of Queen Nitocris to be Opened")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910491>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910493> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910493>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910493> "Danaë")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910493>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910495> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910495>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910495> "Marriage for Wealth Officiated by the Devil")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910495>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910497> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910497>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910497> "Der Liebesantrag—the Ill-Assorted Couple")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910497>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910499> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910499>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910499> "Ni l'Un ni l'Autre")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910499>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910501> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910501>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910501> "L'Accord de Mariage")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910501>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910503> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910503>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910503> "La Double Tentation")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910503>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910507> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910507>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910507> "Midas, Transmuting all into Gold Paper")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910507>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910509> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910509>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910509> "La Bonnet-Rouge: –or– John Bull Evading the Hat Tax")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910509>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910511> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910511>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910511> "The Political Balloon; or, The Fall of East India Stock")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910511>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910513> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910513>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910513> "Pauvres Aveugles")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910513>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910515> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910515>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910515> "Caricature of Louis-Philippe and Guizot")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910515>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910517> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910517>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910517> "La Poire Tapée")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910517>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910519> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910519>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910519> "Caricature of Louis-Philippe")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910519>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910521> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910521>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910521> "Le Grand Saut . . . Sot")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910521>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910523> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910523>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910523> "Le Speculateur")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910523>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910525> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910525>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910525> "Le Financier")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910525>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910527> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910527>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910527> "A Lucky and Unlucky Speculator")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910527>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910529> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910529>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910529> "La Hausse. In Luck. En Alza")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910529>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910533> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910533>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910533> "Allegory on the Death of Credit")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910533>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910535> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910535>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910535> "Crédit est Mort")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910535>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910537> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910537>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910537> "Die Wind Kauffer, werden mit Wind bezahlt, und finden sich auf die letzst betrogen")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910537>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910539> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910539>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910539> "Une Assemblée d'Actionnaires")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910539>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910541> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910541>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910541> "J'ai Perdu!")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910541>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910543> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910543>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910543> "Karl Fugger")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910543>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910545> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910545>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910545> "Georg Fussel (b. 1601)")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910545>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910547> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910547>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910547> "Sir Thomas Gresham (1519?–79)")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910547>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910549> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910549>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910549> "Philippe Du Four")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910549>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910551> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910551>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910551> "John Law (1671–1729)")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910551>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910553> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910553>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910553> "James Edouard de Rothschild (1844–81)")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910553>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910555> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910555>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910555> "De Beurs. [Amsterdam]")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910555>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910557> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910557>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910557> "Borse. [Antwerp]")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910557>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910559> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910559>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910559> "A View of the Royal Exchange London. [second exchange]")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910559>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910561> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910561>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910561> "Vue de la Bourse et du Magazin des Marchandises en remontant la petite Neva. [St. Petersburg]")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910561>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3910563> (<https://iiif.lib.harvard.edu/manifests/view/ids:3910563>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3910563> "Die Hamburger Börse. [the old exchange]")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3910563>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3983668> (<https://iiif.lib.harvard.edu/manifests/view/ids:3983668>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3983668> "Political Ravishment, or the Old Lady of Threadneedle-Street in Danger!")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3983668>)
+
+# Individual: <https://iiif.lib.harvard.edu/manifests/view/ids:3983670> (<https://iiif.lib.harvard.edu/manifests/view/ids:3983670>)
+
+AnnotationAssertion(sdo:name <https://iiif.lib.harvard.edu/manifests/view/ids:3983670> "La Baisse. Out of Luck. En Baja")
+ClassAssertion(sdo:CreativeWork <https://iiif.lib.harvard.edu/manifests/view/ids:3983670>)
+
+# Individual: cc:bankers_financiers_and_statesmen (cc:bankers_financiers_and_statesmen)
+
+AnnotationAssertion(sdo:name cc:bankers_financiers_and_statesmen "Bankers, Financiers, and Statesmen"@en)
+ClassAssertion(sdo:DefinedTerm cc:bankers_financiers_and_statesmen)
+
+# Individual: cc:bettanier (cc:bettanier)
+
+AnnotationAssertion(sdo:name cc:bettanier "Bettanier")
+ClassAssertion(sdo:Person cc:bettanier)
+
+# Individual: cc:biblical_and_mythological_scenes (cc:biblical_and_mythological_scenes)
+
+AnnotationAssertion(sdo:name cc:biblical_and_mythological_scenes "Biblical and Mythological Scenes"@en)
+ClassAssertion(sdo:DefinedTerm cc:biblical_and_mythological_scenes)
+
+# Individual: cc:louis-philippe (cc:louis-philippe)
+
+AnnotationAssertion(sdo:name cc:louis-philippe "Louis-Philippe"@en)
+ClassAssertion(sdo:DefinedTerm cc:louis-philippe)
+
+# Individual: cc:love_and_money (cc:love_and_money)
+
+AnnotationAssertion(sdo:name cc:love_and_money "Love and Money"@en)
+ClassAssertion(sdo:DefinedTerm cc:love_and_money)
+
+# Individual: cc:misers_moneylenders_and_thieves (cc:misers_moneylenders_and_thieves)
+
+AnnotationAssertion(sdo:name cc:misers_moneylenders_and_thieves "Misers, Moneylenders, and Thieves"@en)
+ClassAssertion(sdo:DefinedTerm cc:misers_moneylenders_and_thieves)
+
+# Individual: cc:money_devil (cc:money_devil)
+
+AnnotationAssertion(sdo:name cc:money_devil "Money Devil"@en)
+ClassAssertion(sdo:DefinedTerm cc:money_devil)
+
+# Individual: cc:politics_and_war (cc:politics_and_war)
+
+AnnotationAssertion(sdo:name cc:politics_and_war "Politics and War"@en)
+ClassAssertion(sdo:DefinedTerm cc:politics_and_war)
+
+# Individual: cc:speculation_and_credit (cc:speculation_and_credit)
+
+AnnotationAssertion(sdo:name cc:speculation_and_credit "Speculation and Credit"@en)
+ClassAssertion(sdo:DefinedTerm cc:speculation_and_credit)
+
+# Individual: cc:stock_exchanges (cc:stock_exchanges)
+
+AnnotationAssertion(sdo:name cc:stock_exchanges "Stock Exchanges"@en)
+ClassAssertion(sdo:DefinedTerm cc:stock_exchanges)
+
+# Individual: cc:vanity_and_virtue (cc:vanity_and_virtue)
+
+AnnotationAssertion(sdo:name cc:vanity_and_virtue "Vanity and Virtue"@en)
+ClassAssertion(sdo:DefinedTerm cc:vanity_and_virtue)
+
+
+ClassAssertion(sdo:PropertyValue _:genid2147483648)
+ClassAssertion(sdo:PropertyValue _:genid2147483649)
+ClassAssertion(sdo:PropertyValue _:genid2147483650)
+ClassAssertion(sdo:PropertyValue _:genid2147483651)
+ClassAssertion(sdo:PropertyValue _:genid2147483652)
+ClassAssertion(sdo:PropertyValue _:genid2147483653)
+ClassAssertion(sdo:PropertyValue _:genid2147483654)
+ClassAssertion(sdo:PropertyValue _:genid2147483655)
+ClassAssertion(sdo:PropertyValue _:genid2147483656)
+ClassAssertion(sdo:PropertyValue _:genid2147483657)
+ClassAssertion(sdo:PropertyValue _:genid2147483658)
+ClassAssertion(sdo:PropertyValue _:genid2147483659)
+ClassAssertion(sdo:PropertyValue _:genid2147483660)
+ClassAssertion(sdo:PropertyValue _:genid2147483661)
+ClassAssertion(sdo:PropertyValue _:genid2147483662)
+ClassAssertion(sdo:PropertyValue _:genid2147483663)
+ClassAssertion(sdo:PropertyValue _:genid2147483664)
+ClassAssertion(sdo:PropertyValue _:genid2147483665)
+ClassAssertion(sdo:PropertyValue _:genid2147483666)
+ClassAssertion(sdo:PropertyValue _:genid2147483667)
+ClassAssertion(sdo:PropertyValue _:genid2147483668)
+ClassAssertion(sdo:PropertyValue _:genid2147483669)
+ClassAssertion(sdo:PropertyValue _:genid2147483670)
+ClassAssertion(sdo:PropertyValue _:genid2147483671)
+ClassAssertion(sdo:PropertyValue _:genid2147483672)
+ClassAssertion(sdo:PropertyValue _:genid2147483673)
+ClassAssertion(sdo:PropertyValue _:genid2147483674)
+ClassAssertion(sdo:PropertyValue _:genid2147483675)
+ClassAssertion(sdo:PropertyValue _:genid2147483676)
+ClassAssertion(sdo:PropertyValue _:genid2147483677)
+ClassAssertion(sdo:PropertyValue _:genid2147483678)
+ClassAssertion(sdo:PropertyValue _:genid2147483679)
+ClassAssertion(sdo:PropertyValue _:genid2147483680)
+ClassAssertion(sdo:PropertyValue _:genid2147483681)
+ClassAssertion(sdo:PropertyValue _:genid2147483682)
+ClassAssertion(sdo:PropertyValue _:genid2147483683)
+ClassAssertion(sdo:PropertyValue _:genid2147483684)
+ClassAssertion(sdo:PropertyValue _:genid2147483685)
+ClassAssertion(sdo:PropertyValue _:genid2147483686)
+ClassAssertion(sdo:PropertyValue _:genid2147483687)
+ClassAssertion(sdo:PropertyValue _:genid2147483688)
+ClassAssertion(sdo:PropertyValue _:genid2147483689)
+ClassAssertion(sdo:PropertyValue _:genid2147483690)
+ClassAssertion(sdo:PropertyValue _:genid2147483691)
+ClassAssertion(sdo:PropertyValue _:genid2147483692)
+ClassAssertion(sdo:PropertyValue _:genid2147483693)
+ClassAssertion(sdo:PropertyValue _:genid2147483694)
+ClassAssertion(sdo:PropertyValue _:genid2147483695)
+ClassAssertion(sdo:PropertyValue _:genid2147483696)
+ClassAssertion(sdo:PropertyValue _:genid2147483697)
+ClassAssertion(sdo:PropertyValue _:genid2147483698)
+ClassAssertion(sdo:PropertyValue _:genid2147483699)
+ClassAssertion(sdo:PropertyValue _:genid2147483700)
+ClassAssertion(sdo:PropertyValue _:genid2147483701)
+ClassAssertion(sdo:PropertyValue _:genid2147483702)
+ClassAssertion(sdo:PropertyValue _:genid2147483703)
+ClassAssertion(sdo:PropertyValue _:genid2147483704)
+ClassAssertion(sdo:PropertyValue _:genid2147483705)
+ClassAssertion(sdo:PropertyValue _:genid2147483706)
+ClassAssertion(sdo:PropertyValue _:genid2147483707)
+ClassAssertion(sdo:PropertyValue _:genid2147483708)
+ClassAssertion(sdo:PropertyValue _:genid2147483709)
+ClassAssertion(sdo:PropertyValue _:genid2147483710)
+ClassAssertion(sdo:PropertyValue _:genid2147483711)
+ClassAssertion(sdo:PropertyValue _:genid2147483712)
+ClassAssertion(sdo:PropertyValue _:genid2147483713)
+ClassAssertion(sdo:PropertyValue _:genid2147483714)
+ClassAssertion(sdo:PropertyValue _:genid2147483715)
+ClassAssertion(sdo:PropertyValue _:genid2147483716)
+ClassAssertion(sdo:PropertyValue _:genid2147483717)
+ClassAssertion(sdo:PropertyValue _:genid2147483718)
+ClassAssertion(sdo:PropertyValue _:genid2147483719)
+ClassAssertion(sdo:PropertyValue _:genid2147483720)
+ClassAssertion(sdo:PropertyValue _:genid2147483721)
+ClassAssertion(sdo:PropertyValue _:genid2147483722)
+ClassAssertion(sdo:PropertyValue _:genid2147483723)
+ClassAssertion(sdo:PropertyValue _:genid2147483724)
+AnnotationAssertion(sdo:name _:genid2147483648 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483649 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483650 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483651 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483652 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483653 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483654 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483655 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483656 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483657 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483658 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483659 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483660 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483661 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483662 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483663 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483664 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483665 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483666 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483667 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483668 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483669 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483670 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483671 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483672 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483673 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483674 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483675 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483676 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483677 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483678 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483679 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483680 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483681 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483682 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483683 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483684 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483685 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483686 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483687 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483688 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483689 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483690 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483691 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483692 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483693 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483694 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483695 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483696 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483697 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483698 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483699 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483700 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483701 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483702 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483703 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483704 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483705 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483706 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483707 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483708 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483709 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483710 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483711 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483712 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483713 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483714 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483715 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483716 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483717 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483718 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483719 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483720 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483721 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483722 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483723 "Wikidata ID"@en)
+AnnotationAssertion(sdo:name _:genid2147483724 "Wikidata ID"@en)
+)

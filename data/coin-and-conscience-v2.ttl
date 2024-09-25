@@ -1,0 +1,1667 @@
+@prefix agg: <http://jena.apache.org/ARQ/function/aggregate#> .
+@prefix sail: <http://www.openrdf.org/config/sail#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix array: <http://www.w3.org/2005/xpath-functions/array> .
+@prefix apf: <http://jena.apache.org/ARQ/property#> .
+@prefix rep: <http://www.openrdf.org/config/repository#> .
+@prefix map: <http://www.w3.org/2005/xpath-functions/map> .
+@prefix sr: <http://www.openrdf.org/config/repository/sail#> .
+@prefix cc: <https://librarydata.hbs.edu/coins-and-conscience/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix afn: <http://jena.apache.org/ARQ/function#> .
+@prefix list: <http://jena.apache.org/ARQ/list#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ofn: <http://www.ontotext.com/sparql/functions/> .
+@prefix geoext: <http://rdf.useekm.com/ext#> .
+@prefix graphdb: <http://www.ontotext.com/config/graphdb#> .
+@prefix math: <http://www.w3.org/2005/xpath-functions/math> .
+@prefix omgeo: <http://www.ontotext.com/owlim/geo#> .
+@prefix sdo: <https://schema.org/> .
+
+<http://www.wikidata.org/entity/Q12058270> a sdo:Person;
+  sdo:name "Galle, Joannes";
+  sdo:sameAs <http://www.wikidata.org/entity/Q12058270>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D1DB4FFE7936A206B45ECE27F47FDCDF .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D1DB4FFE7936A206B45ECE27F47FDCDF a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q12058270" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910425> a sdo:CreativeWork;
+  sdo:name "The Unhappy Lot of the Rich";
+  sdo:identifier "1";
+  sdo:description "Plate one of his series of six engravings after Heemskerck with this title, published in 1563. A later state, shown here, called Divitum Misera Sors, was issued by Joannes Galle. Illustration of Matthew 19:23-24. A rich man tries to enter the gate to Heaven, but his money bags hold him back. Behind him, three men try to lead a camel through the eye of a needle."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q12058270>, <http://www.wikidata.org/entity/Q1379395>,
+    <http://www.wikidata.org/entity/Q538350>;
+  sdo:creditText "Engraving by Phillip Galle (1537–1612), after Maarten van Heemskerck (1498–1574). Joannes Galle (1600–76). \"exc.\" [Antwerp, 1563]."@en .
+
+<http://www.wikidata.org/entity/Q1379395> a sdo:Person;
+  sdo:name "Galle, Philip";
+  sdo:sameAs <http://www.wikidata.org/entity/Q1379395>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CCCB4C9E092799F6AFDFADD8D143D468 .
+
+<http://www.wikidata.org/entity/Q538350> a sdo:Person;
+  sdo:name "Heemskerck, Maarten van";
+  sdo:sameAs <http://www.wikidata.org/entity/Q538350>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C55D61791786B7E7A32623BBDEE17992 .
+
+cc:vanity_and_virtue a sdo:DefinedTerm;
+  sdo:name "Vanity and Virtue"@en .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CCCB4C9E092799F6AFDFADD8D143D468 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q1379395" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C55D61791786B7E7A32623BBDEE17992 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q538350" .
+
+<http://www.wikidata.org/entity/Q167220> a sdo:Person;
+  sdo:name "Cort, Cornelis";
+  sdo:sameAs <http://www.wikidata.org/entity/Q167220>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0D360C7C61C55179E769702C675F113D .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0D360C7C61C55179E769702C675F113D a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q167220" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910443> a sdo:CreativeWork;
+  sdo:name "Justice Rewards Toil";
+  sdo:identifier "10";
+  sdo:description "Justice, holding scales in one hand, offers riches to a kneeling peasant."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q167220>, <http://www.wikidata.org/entity/Q602742>,
+    <http://www.wikidata.org/entity/Q345605>;
+  sdo:creditText "Engraving by Cornelis Cort (1533–78), after Federigo Zuccaro (or Zucchero, 1540–1609). Anton Lafreri, \"formis.\" Romæ, 1566."@en .
+
+<http://www.wikidata.org/entity/Q602742> a sdo:Person;
+  sdo:name "Lafreri, Anton";
+  sdo:sameAs <http://www.wikidata.org/entity/Q602742>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-44F697C0169297EF6CD03C35B9667C36 .
+
+<http://www.wikidata.org/entity/Q345605> a sdo:Person;
+  sdo:name "Zuccaro, Federigo";
+  sdo:sameAs <http://www.wikidata.org/entity/Q345605>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-FE5CA26398D66CDC939F0B083A8690E5 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-44F697C0169297EF6CD03C35B9667C36 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q602742" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-FE5CA26398D66CDC939F0B083A8690E5 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q345605" .
+
+<http://www.wikidata.org/entity/Q711775> a sdo:Person;
+  sdo:name "Saenredam, Jan";
+  sdo:sameAs <http://www.wikidata.org/entity/Q711775>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9254DFB03681764CF86283EF37187361 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9254DFB03681764CF86283EF37187361 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q711775" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910445> a sdo:CreativeWork;
+  sdo:name "Avarice";
+  sdo:identifier "11";
+  sdo:description "Depiction of a man clutching money bags. \"The miser, hoarding his treasure, lives amid riches, yet is always destitute.\" (Latin caption). The frog in the foreground is a symbol associated with sin, particularly that of hoarding worldly things."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q711775>;
+  sdo:creditText "Engraving, in the style of Jan Saenredam (1565–1607). [Netherlands? ca. 1600]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910447> a sdo:CreativeWork;
+  sdo:name "Divitiæ";
+  sdo:identifier "12";
+  sdo:description "Riches, portrayed as a woman holding money, jewels, and silver, sits near a little girl who holds a mirror. She is Pride, the daughter of Riches."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1379395>, <http://www.wikidata.org/entity/Q6369402>,
+    <http://www.wikidata.org/entity/Q555022>;
+  sdo:creditText "Engraving by Karel van Mallery (ca. 1571–ca. 1635), after Marten de Vos (ca. 1531–1603). Philip Galle (1537–1612), \"excud.\" [Antwerp, ca. 1600]."@en .
+
+<http://www.wikidata.org/entity/Q6369402> a sdo:Person;
+  sdo:name "Mallery, Karel van";
+  sdo:sameAs <http://www.wikidata.org/entity/Q6369402>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4410EC956CBB94C6AE6F7CD16343C9F9 .
+
+<http://www.wikidata.org/entity/Q555022> a sdo:Person;
+  sdo:name "Vos, Marten de";
+  sdo:sameAs <http://www.wikidata.org/entity/Q555022>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C1824566D8B34C7230A8DB7BD9397E8B .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4410EC956CBB94C6AE6F7CD16343C9F9 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q6369402" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C1824566D8B34C7230A8DB7BD9397E8B a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q555022" .
+
+<http://www.wikidata.org/entity/Q329811> a sdo:Person;
+  sdo:name "Bloemaert, Abraham";
+  sdo:sameAs <http://www.wikidata.org/entity/Q329811>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-7590577E58CBB7281621945A3E987358 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-7590577E58CBB7281621945A3E987358 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q329811" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910449> a sdo:CreativeWork;
+  sdo:name "Allegory of the Vanity and Transitory Nature of Worldly Possessions";
+  sdo:identifier "13";
+  sdo:description "This is a later state, with J. Razet's address. A woman sits beside a table laden with gold coins and other riches. She holds an urn with smoke rising out of it, a symbol of transience, and a peacock stands behind her, signifying vanity."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q329811>, <http://www.wikidata.org/entity/Q21531043>,
+    <http://www.wikidata.org/entity/Q1961244>;
+  sdo:creditText "Engraving by Willem Isaakz Swanenburgh I (1581–1612), after Abraham Bloemaert (1564–1651). J. Razet, \"divulg.\" [Netherlands] 1608."@en .
+
+<http://www.wikidata.org/entity/Q21531043> a sdo:Person;
+  sdo:name "Razet, J.";
+  sdo:sameAs <http://www.wikidata.org/entity/Q21531043>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-B8364E2AAA7B0B8192ACEC9F106625BE .
+
+<http://www.wikidata.org/entity/Q1961244> a sdo:Person;
+  sdo:name "Swanenburgh, Willem Isaakz, I";
+  sdo:sameAs <http://www.wikidata.org/entity/Q1961244>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-91CE9D16D37DE57ABB6485B114A3F2FE .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-B8364E2AAA7B0B8192ACEC9F106625BE a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q21531043" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-91CE9D16D37DE57ABB6485B114A3F2FE a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q1961244" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910451> a sdo:CreativeWork;
+  sdo:name "Allegory of Wealth and Luxury";
+  sdo:identifier "14";
+  sdo:description "An earlier state was published in 1609. A similar engraving to 13; the woman sits at a table of money, silver chalices, and jewels. In the foreground are a crown and scepter, behind which smoke and bubbles rise from a cup—symbolizing the transience of power and glory."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q329811>, <http://www.wikidata.org/entity/Q1961244>;
+  sdo:creditText "Engraved and published by Willem Isaakz Swanenburgh I (1581–1612), after Abraham Bloemaert (1564–1651). [Netherlands] 1611."@en .
+
+<http://www.wikidata.org/entity/Q5598> a sdo:Person;
+  sdo:name "Rembrandt van Rhyn";
+  sdo:sameAs <http://www.wikidata.org/entity/Q5598>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-2EA7334D8ECA79387BA0A4458C8B34E0 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-2EA7334D8ECA79387BA0A4458C8B34E0 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q5598" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910453> a sdo:CreativeWork;
+  sdo:name "Jan Uytenbogaert, 'The Goldweigher'";
+  sdo:identifier "15";
+  sdo:description "Second state. Uytenbogaert was the Receiver General in Amsterdam for the state of Holland. He made the first payment on Rembrandt's new house in 1639, since one of his clients owed the artist money for two paintings. Rembrandt probably did this portrait in thanks for Uytenbogaert's generosity."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q5598>;
+  sdo:creditText "Etching and drypoint by Rembrandt van Rhyn (1606–69). [Netherlands] 1639."@en .
+
+cc:misers_moneylenders_and_thieves a sdo:DefinedTerm;
+  sdo:name "Misers, Moneylenders, and Thieves"@en .
+
+<http://www.wikidata.org/entity/Q3383022> a sdo:Person;
+  sdo:name "Basan, Pierre François";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3383022>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-DA875CD2BDEBC9A0BC14494BB1B827F0 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-DA875CD2BDEBC9A0BC14494BB1B827F0 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3383022" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910455> a sdo:CreativeWork;
+  sdo:name "Le Plaisir des Vieillards";
+  sdo:identifier "16";
+  sdo:description "Below image: \"Tiré du Cabinet de Mr. le Comte de Vence.\" An old couple weighing coins."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3383022>, <http://www.wikidata.org/entity/Q335022>;
+  sdo:creditText "Engraved and published by Pierre François Basan (1735–97), after the painting by David Teniers the Younger (1610–90). Paris [18th century]."@en .
+
+<http://www.wikidata.org/entity/Q335022> a sdo:Person;
+  sdo:name "Teniers, David, the Younger";
+  sdo:sameAs <http://www.wikidata.org/entity/Q335022>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-E9BB29ED56388B123A8811173A7AB1D4 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-E9BB29ED56388B123A8811173A7AB1D4 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q335022" .
+
+<http://www.wikidata.org/entity/Q76135> a sdo:Person;
+  sdo:name "Hess, Carl Ernst Christoph";
+  sdo:sameAs <http://www.wikidata.org/entity/Q76135>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4642E6B2A21D593C6B72A6B2D8D28648 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4642E6B2A21D593C6B72A6B2D8D28648 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q76135" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910457> a sdo:CreativeWork;
+  sdo:name "Peasant with Coins";
+  sdo:identifier "17";
+  sdo:description "Below image: \"Aus der Sammlung des Canonicus Speth.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q76135>, <http://www.wikidata.org/entity/Q352438>;
+  sdo:creditText "Engraving and drypoint by Carl Ernst Christoph Hess (1755–1828), after the painting by Adrian van Ostade (1610–85). [Germany, 18th century]."@en .
+
+<http://www.wikidata.org/entity/Q352438> a sdo:Person;
+  sdo:name "Ostade, Adrian van";
+  sdo:sameAs <http://www.wikidata.org/entity/Q352438>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0399D40399B484FD9B0F2CA05D287EF5 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0399D40399B484FD9B0F2CA05D287EF5 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q352438" .
+
+<http://www.wikidata.org/entity/Q140096> a sdo:Person;
+  sdo:name "Passe, Crispijn de, the Elder";
+  sdo:sameAs <http://www.wikidata.org/entity/Q140096>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-529523043EF909DB3A12561E79AABEB7 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-529523043EF909DB3A12561E79AABEB7 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q140096" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910459> a sdo:CreativeWork;
+  sdo:name "Banquet with Musicians";
+  sdo:identifier "18";
+  sdo:description "A woman steals the purse of a peasant while they sit at a meal. Below image: \"Die burss, vnd frische frewlein den bawren bringen vmb das sein.\" From his Stirpium Insignium Nobilitatis, \"in Verlegung Ludwig Kunings vo Basel,\" first edition published before 1612, another edition dated 1617. The prints were also published in other sets."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q140096>;
+  sdo:creditText "Engraving by Crispijn de Passe the Elder (ca. 1565–1637). [n.p., ca. 1600]."@en .
+
+<http://www.wikidata.org/entity/Q3108083> a sdo:Person;
+  sdo:name "Mitelli, Giuseppe Maria";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3108083>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-479724F59F68E15BA9B7F7A975B39E4D .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-479724F59F68E15BA9B7F7A975B39E4D a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3108083" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910461> a sdo:CreativeWork;
+  sdo:name "Dove L'Oro Parla, Ogni Lingua Tace";
+  sdo:identifier "19";
+  sdo:description "Number thirteen from his series of fifty engravings illustrating Italian proverbs. A man murders, then steals the victim's purse, offering a witness money to keep quiet."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3108083>;
+  sdo:creditText "Etching and engraving by Giuseppe Maria Mitelli (1634–1718). [Bologna, 1678]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910427> a sdo:CreativeWork;
+  sdo:name "The Unhappy Lot of the Rich";
+  sdo:identifier "2";
+  sdo:description "First state. Plate four of his series of six engravings after Heemskerck with this title. Depiction of the qualities that accompany money: Queen Money's car is drawn by Danger and Fear, while Robbery hides under her cloak. She is followed by Folly, Envy, Theft, and the Entire Populace."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1379395>, <http://www.wikidata.org/entity/Q538350>;
+  sdo:creditText "Engraving by Philip Galle (1537–1612), after Maarten van Heemskerck (1498–1574). [Antwerp, 1563]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910463> a sdo:CreativeWork;
+  sdo:name "La Commodità Fà l'Huomo Ladro";
+  sdo:identifier "20";
+  sdo:description "Number twenty-two from his series of fifty engravings illustrating Italian proverbs. A thief steals the purse of a sleeping old man."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3108083>;
+  sdo:creditText "Etching and engraving by Giuseppe Maria Mitelli (1634–1718). [Bologna, 1678]."@en .
+
+<http://www.wikidata.org/entity/Q102841270> a sdo:Person;
+  sdo:name "Julien, Joseph Laurent";
+  sdo:sameAs <http://www.wikidata.org/entity/Q102841270>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-39C82CE1BAC91A64FD73D5124E331821 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-39C82CE1BAC91A64FD73D5124E331821 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q102841270" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910465> a sdo:CreativeWork;
+  sdo:name "Le Riche du Jour ou le Préteur sur Gages";
+  sdo:identifier "21";
+  sdo:description "An old woman pawns her jewels to a sinister-looking pawnbroker, whose sign reads: \"Je prête Madame, à mes concitoyens à deux cent pour cent d'intérèts.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q102841270>;
+  sdo:creditText "Hand-colored engraving by Joseph Laurent Julien (d.1805). Paris, chez l'auteur; et chez Depeuille, [late 18th century]."@en .
+
+<http://www.wikidata.org/entity/Q3085083> a sdo:Person;
+  sdo:name "Ciartres, F.L.D.", "Langlois, François (F.L.D. Ciartres)";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3085083>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-45B7585DE8BCFCDEF98D10B44AB64DBD .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-45B7585DE8BCFCDEF98D10B44AB64DBD a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3085083" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910467> a sdo:CreativeWork;
+  sdo:name "Le Cornard Contant";
+  sdo:identifier "22";
+  sdo:description "Possibly a plate from his Oiseaux et Grotesques. The \"happy cuckold\" does not mind his lost honor, because his \"horns of plenty\" bring him immeasurable happiness. (French caption)."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3085083>;
+  sdo:creditText "Engraving; F.L.D. Ciartres \"excud.\" (François Langlois, 1589–1647). [France, early 17th century]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910469> a sdo:CreativeWork;
+  sdo:name "Le Diable d'Argent";
+  sdo:identifier "23";
+  sdo:description "One of the earliest prints of the flying \"money devil,\" who is pursued by people of all trades. Many thematically similar prints were published in Paris and Épinal over the next 150 years. (See 24-26)."@en;
+  sdo:creditText "Etching and engraving by unknown artist. Paris, Chez Daumont, [early 18th century]."@en .
+
+cc:money_devil a sdo:DefinedTerm;
+  sdo:name "Money Devil"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910471> a sdo:CreativeWork;
+  sdo:name "Le Grand Diable d'Argent Patron de la Finance";
+  sdo:identifier "24";
+  sdo:description """Pour courir au diable d'argent
+On se donne un mal impayable
+On se dit partout indigent
+Tant de monde est insatiable. (Below image)"""@en;
+  sdo:creditText "Hand-colored etching by unknown artist. [France, early 19th century]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910473> a sdo:CreativeWork;
+  sdo:name "Les Vérités du Jour, ou le Grand Diable d'Argent";
+  sdo:identifier "25";
+  sdo:description "An example of one of the hundreds of prints published by the Pellerin firm during the height of its renown as creator of \"images populaires.\""@en;
+  sdo:creditText "Hand-colored wood engraving. Épinal, Fabrique de Pellerin, [ca. 1840]."@en .
+
+<http://www.wikidata.org/entity/Q3164685> a sdo:Person;
+  sdo:name "Pellerin";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3164685>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-533D373BCCD621958515EDE70A13F487 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-533D373BCCD621958515EDE70A13F487 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3164685" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910475> a sdo:CreativeWork;
+  sdo:name "Le Grand Diable d'Argent, Patron de la Finance";
+  sdo:identifier "26";
+  sdo:description "Below image is a nine-stanza poem, to be sung to the tune of: \"J'ai vu partout dans mes voyages; ou La pipe de tabac.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3164685>;
+  sdo:creditText "Colored lithograph, signed \"J.P. del, C.M. lith.\" Épinal, Fabrique de Pellerin, [188–?]."@en .
+
+<http://www.wikidata.org/entity/Q729057> a sdo:Person;
+  sdo:name "Badalocchio, Sisto";
+  sdo:sameAs <http://www.wikidata.org/entity/Q729057>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CF48F9E156D7F48059FCA22A5969E493 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CF48F9E156D7F48059FCA22A5969E493 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q729057" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910477> a sdo:CreativeWork;
+  sdo:name "The Queen of Sheba Bringing Gifts to King Solomon. 1 Kings 10";
+  sdo:identifier "27";
+  sdo:description "Plate fifty from Historia del Testamento Vecchio dipinta in Roma nel Vaticano da Raffaelle di Urbino, published by Giovanni Orlandini in Rome, 1607. It was comprised of fifty-one etchings (twenty-three by Badalocchio, the others by Giovanni Lanfranco, 1582–1647) after Raphael's frescos in the loggias of the Vatican."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q729057>;
+  sdo:creditText "Etching by Sisto Badalocchio (1581 or 85–1647). [Rome, 1607]."@en .
+
+cc:biblical_and_mythological_scenes a sdo:DefinedTerm;
+  sdo:name "Biblical and Mythological Scenes"@en .
+
+<http://www.wikidata.org/entity/Q18516699> a sdo:Person;
+  sdo:name "Doetechum, Lucas van";
+  sdo:sameAs <http://www.wikidata.org/entity/Q18516699>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-5495BE0BA43AC59117FD9807A586B606 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-5495BE0BA43AC59117FD9807A586B606 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q18516699" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910479> a sdo:CreativeWork;
+  sdo:name "The Parable of the Talents. Mt. 25: 14";
+  sdo:identifier "28";
+  sdo:description "A later state of a print first issued as part of a series of fourteen engravings from the New Testament: Memorabilium, Novi Testamenti . . . Antwerp, exc. Gerard de Jode."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q18516699>, <http://www.wikidata.org/entity/Q20011635>,
+    <http://www.wikidata.org/entity/Q1094674>;
+  sdo:creditText "Engraving by Lucas van Doetechum (fl. 1559), after Gerhard Paludanus (von Groeningen, fl. 1560–90). Jan Claesz Visscher \"excudit.\" [Netherlands, early 17th century]."@en .
+
+<http://www.wikidata.org/entity/Q20011635> a sdo:Person;
+  sdo:name "Paludanus, Gerhard (von Groeningen)";
+  sdo:sameAs <http://www.wikidata.org/entity/Q20011635>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-6B26E9B60FE5C5775F1A026E980402B4 .
+
+<http://www.wikidata.org/entity/Q1094674> a sdo:Person;
+  sdo:name "Visscher, Jan Claesz";
+  sdo:sameAs <http://www.wikidata.org/entity/Q1094674>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9C29DFFF4C5E1E401D7A64301502CB63 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-6B26E9B60FE5C5775F1A026E980402B4 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q20011635" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9C29DFFF4C5E1E401D7A64301502CB63 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q1094674" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910481> a sdo:CreativeWork;
+  sdo:name "The Parable of Ananias and Sapphira. Acts 5: 1";
+  sdo:identifier "29";
+  sdo:description "Ananias and his wife Sapphira were struck dead for holding back some of their property that was to be communally owned."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q538350>, <http://www.wikidata.org/entity/Q1094674>;
+  sdo:creditText "Engraving after Maarten van Heemskerck (1498–1574). Jan Claesz Visscher \"excudebat.\" [Amsterdam, early 17th century]."@en .
+
+<http://www.wikidata.org/entity/Q640361> a sdo:Person;
+  sdo:name "Cock, Hieronymu";
+  sdo:sameAs <http://www.wikidata.org/entity/Q640361>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-44856C3E39C91CA1A4E91F362F9DD505 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-44856C3E39C91CA1A4E91F362F9DD505 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q640361" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910429> a sdo:CreativeWork;
+  sdo:name "The Triumph of Riches";
+  sdo:identifier "3";
+  sdo:description "First state. Plate two of the series of eight engravings after Heemskerck entitled Circulus vicissitudinis rerum humanarum (Cycle of the vicissitudes of human affairs.) Riches, the mother of Pride, rides on the car named Fame, which is pulled by Fraud and Rapine. Following Betrayal, Usury, and Lust are False Joy and other Idle Pleasures."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q538350>, <http://www.wikidata.org/entity/Q167220>,
+    <http://www.wikidata.org/entity/Q640361>, <http://www.wikidata.org/entity/Q765465>;
+  sdo:creditText "Engraving by Dirck Volkertsz. Coornhert (1519–90), or Cornelis Cort (1533–78), after Maarten van Heemskerck (1498–1574). Published by Hieronymus Cock (1510–70). [Antwerp, 1564]."@en .
+
+<http://www.wikidata.org/entity/Q765465> a sdo:Person;
+  sdo:name "Coornhert, Dirck Volkertsz.";
+  sdo:sameAs <http://www.wikidata.org/entity/Q765465>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-A54EC54636FC4A34EE14335DC4BC8A42 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-A54EC54636FC4A34EE14335DC4BC8A42 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q765465" .
+
+<http://www.wikidata.org/entity/Q3161745> a sdo:Person;
+  sdo:name "Sadeler, Jan (Johannes), I";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3161745>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-B219EABC7FB14CFEBB57D61D8C78959E .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-B219EABC7FB14CFEBB57D61D8C78959E a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3161745" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910483> a sdo:CreativeWork;
+  sdo:name "The Apostles Distribute the Money to those in Need. Acts 4: 32-35";
+  sdo:identifier "30";
+  sdo:contributor <http://www.wikidata.org/entity/Q555022>, <http://www.wikidata.org/entity/Q3161745>;
+  sdo:creditText "Engraving by Jan (Johannes) Sadeler I (1550–1600), after Marten de Vos (1532–1603). [n.p., ca. 1600]."@en .
+
+<http://www.wikidata.org/entity/Q869133> a sdo:Person;
+  sdo:name "Galle, Cornelis, the Elder";
+  sdo:sameAs <http://www.wikidata.org/entity/Q869133>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-04D6881A103A76ADE60B2616E8282CCF .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-04D6881A103A76ADE60B2616E8282CCF a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q869133" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910485> a sdo:CreativeWork;
+  sdo:name "Christ and the Pharisees with the Tribute Money. Mt. 22";
+  sdo:identifier "31";
+  sdo:contributor <http://www.wikidata.org/entity/Q869133>, <http://www.wikidata.org/entity/Q47551>;
+  sdo:creditText "Engraved and published by Cornelis Galle the Elder (ca. 1576–1650), after Tiziano Vecellio (Titian, 1477–1575). [n.p., early 17th century]."@en .
+
+<http://www.wikidata.org/entity/Q47551> a sdo:Person;
+  sdo:name "Titian, (Tiziano Vecellio)";
+  sdo:sameAs <http://www.wikidata.org/entity/Q47551>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0670D7FBD4DE1884200570791941CFF8 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0670D7FBD4DE1884200570791941CFF8 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q47551" .
+
+<http://www.wikidata.org/entity/Q7824> a sdo:Person;
+  sdo:name "Carracci, Annibale";
+  sdo:sameAs <http://www.wikidata.org/entity/Q7824>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C32146E5A4F583D8F0D3C63B31F1A41E .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C32146E5A4F583D8F0D3C63B31F1A41E a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q7824" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910487> a sdo:CreativeWork;
+  sdo:name "St. Roch Giving Alms to the Poor";
+  sdo:identifier "32";
+  sdo:description "St. Roch, born in France, was venerated in Italy for his charity toward the sick and his gift of healing."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q7824>, <http://www.wikidata.org/entity/Q109061>,
+    <http://www.wikidata.org/entity/Q56334603>;
+  sdo:creditText "Etching by Guido Reni (1572–1642), after the painting by Annibale Carracci (1560–1609). Published by Pietro Stefanoni (b. 1589). [Italy], 1610."@en .
+
+<http://www.wikidata.org/entity/Q109061> a sdo:Person;
+  sdo:name "Reni, Guido";
+  sdo:sameAs <http://www.wikidata.org/entity/Q109061>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CD49D0FE29FA6D41AAF8B4D827403650 .
+
+<http://www.wikidata.org/entity/Q56334603> a sdo:Person;
+  sdo:name "Stefanoni, Pietro";
+  sdo:sameAs <http://www.wikidata.org/entity/Q56334603>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-FB3150A77541AD4004D9F32285DC6F09 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CD49D0FE29FA6D41AAF8B4D827403650 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q109061" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-FB3150A77541AD4004D9F32285DC6F09 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q56334603" .
+
+<http://www.wikidata.org/entity/Q19829357> a sdo:Person;
+  sdo:name "Ertinger, Franz";
+  sdo:sameAs <http://www.wikidata.org/entity/Q19829357>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D63F2CC5E2E2C4BA1CF83FA1E9E58685 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D63F2CC5E2E2C4BA1CF83FA1E9E58685 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q19829357" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910489> a sdo:CreativeWork;
+  sdo:name "Le Veau d'Or. Exod. 32";
+  sdo:identifier "33";
+  sdo:description "Adoration of the golden calf."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q19829357>, <http://www.wikidata.org/entity/Q3420968>,
+    <http://www.wikidata.org/entity/Q2107767>;
+  sdo:creditText "Etching by Franz Ertinger (1640–1710), after Raymond Lafage (1656–90). \"Sculp. Parisium 1683.\" Published by Gerard Valck, Amsterdam."@en .
+
+<http://www.wikidata.org/entity/Q3420968> a sdo:Person;
+  sdo:name "Lafage, Raymond";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3420968>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-15E76BFEAFD8714356BF0702BB3E83D1 .
+
+<http://www.wikidata.org/entity/Q2107767> a sdo:Person;
+  sdo:name "Valck, Gerard";
+  sdo:sameAs <http://www.wikidata.org/entity/Q2107767>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-10DF5A961B692824BFD7366E60CBF748 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-15E76BFEAFD8714356BF0702BB3E83D1 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3420968" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-10DF5A961B692824BFD7366E60CBF748 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q2107767" .
+
+<http://www.wikidata.org/entity/Q1378723> a sdo:Person;
+  sdo:name "Le Sueur, Eustache";
+  sdo:sameAs <http://www.wikidata.org/entity/Q1378723>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D58FC948018DCEF86856F2B7E188AE37 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D58FC948018DCEF86856F2B7E188AE37 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q1378723" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910491> a sdo:CreativeWork;
+  sdo:name "Darius, out of Greed, Orders the Tomb of Queen Nitocris to be Opened";
+  sdo:identifier "34";
+  sdo:description "The French caption below image tells the legend of King Darius, who plundered the tomb of Queen Nitocris for the riches promised within, only to find a corpse and a curse upon his avarice."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1378723>, <http://www.wikidata.org/entity/Q559929>;
+  sdo:creditText "Engraving by Bernard Picart (1673–1733), after Eustache Le Sueur (1617–55). [Amsterdam?] 1725."@en .
+
+<http://www.wikidata.org/entity/Q559929> a sdo:Person;
+  sdo:name "Picart, Bernard";
+  sdo:sameAs <http://www.wikidata.org/entity/Q559929>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0307EFB1EC070E4F2FD72F6748B9EDE6 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-0307EFB1EC070E4F2FD72F6748B9EDE6 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q559929" .
+
+<http://www.wikidata.org/entity/Q19569543> a sdo:Person;
+  sdo:name "Desplaces, Louis";
+  sdo:sameAs <http://www.wikidata.org/entity/Q19569543>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-85B705D8A3688496649CFE4A45B9BB76 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-85B705D8A3688496649CFE4A45B9BB76 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q19569543" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910493> a sdo:CreativeWork;
+  sdo:name "Danaë";
+  sdo:identifier "35";
+  sdo:description "Below image: \"Tableau du Cabinet de Monsieur de la Faye, Secretaire du Cabinet du Roy.\" Depiction of the myth of Danaë, who was seduced by Zeus, disguised as a shower of gold."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q19569543>, <http://www.wikidata.org/entity/Q538998>;
+  sdo:creditText "Engraving by Louis Desplaces (1682–1739), after the painting by Carlo Maratti (1625–1713). [France, 18th century]."@en .
+
+<http://www.wikidata.org/entity/Q538998> a sdo:Person;
+  sdo:name "Maratti, Carlo";
+  sdo:sameAs <http://www.wikidata.org/entity/Q538998>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1CDD1F03E4339F26492F30DCDD51F111 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1CDD1F03E4339F26492F30DCDD51F111 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q538998" .
+
+<http://www.wikidata.org/entity/Q165367> a sdo:Person;
+  sdo:name "Goltzius, Hendrick";
+  sdo:sameAs <http://www.wikidata.org/entity/Q165367>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-56809A3743AD9BA3CD9A2D4D6F3897F7 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-56809A3743AD9BA3CD9A2D4D6F3897F7 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q165367" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910495> a sdo:CreativeWork;
+  sdo:name "Marriage for Wealth Officiated by the Devil";
+  sdo:identifier "36";
+  sdo:description "The second of three numbered engravings after Goltzius called the Marriage Trilogy. A devil joins the hands of a couple as she blows a stream of coins and smoke, symbolizing the transience of honor and material possessions."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q711775>, <http://www.wikidata.org/entity/Q165367>;
+  sdo:creditText "Engraving by Jan Saenredam (1565–1607), after Hendrick Goltzius (1558–1617). [Netherlands, ca. 1600]."@en .
+
+cc:love_and_money a sdo:DefinedTerm;
+  sdo:name "Love and Money"@en .
+
+<http://www.wikidata.org/entity/Q5580> a sdo:Person;
+  sdo:name "Dürer, Albrecht";
+  sdo:sameAs <http://www.wikidata.org/entity/Q5580>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-6FF025CC0B0F99E6799B428FC71B8E68 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-6FF025CC0B0F99E6799B428FC71B8E68 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q5580" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910497> a sdo:CreativeWork;
+  sdo:name "Der Liebesantrag—the Ill-Assorted Couple";
+  sdo:identifier "37";
+  sdo:description "There is much controversy surrounding both the Dürer original and this copy. The original engraving is one of Dürer's earliest; possibly a depiction of Judah and Tamar (Gen. 38: 14-18), or of Berthold Tucher and Anna Pfinzing of Nürnberg. The copy has been attributed to Marcantonio Raimondi (1480–1534)."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q5580>, <http://www.wikidata.org/entity/Q728375>;
+  sdo:creditText "Engraved contemporary copy, in mirror image, of Albrecht Dürer's engraving by this title. [n.p., original ca. 1495]."@en .
+
+<http://www.wikidata.org/entity/Q728375> a sdo:Person;
+  sdo:name "Raimondi, Marcantonio";
+  sdo:sameAs <http://www.wikidata.org/entity/Q728375>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-94B2261700657349F4A4B458A72F0B23 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-94B2261700657349F4A4B458A72F0B23 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q728375" .
+
+<http://www.wikidata.org/entity/Q97477673> a sdo:Person;
+  sdo:name "Berger, Jenny";
+  sdo:sameAs <http://www.wikidata.org/entity/Q97477673>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9B4140131B119A10622B35BF0D57CC84 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9B4140131B119A10622B35BF0D57CC84 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q97477673" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910499> a sdo:CreativeWork;
+  sdo:name "Ni l'Un ni l'Autre";
+  sdo:identifier "38";
+  sdo:description "A woman is pictured standing between two men, one of whom offers her jewels, the other, money."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q97477673>, <http://www.wikidata.org/entity/Q4491034>;
+  sdo:creditText "Etching (part stipple) by Friedrich Fleischmann (1791–1834), after Jenny Berger (née Desoras). Nürnberg, Published by Fr. Campe, [early 19th century]."@en .
+
+<http://www.wikidata.org/entity/Q4491034> a sdo:Person;
+  sdo:name "Fleischmann, Friedrich";
+  sdo:sameAs <http://www.wikidata.org/entity/Q4491034>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-F785BC9184AD10350063FE64009C7DE4 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-F785BC9184AD10350063FE64009C7DE4 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q4491034" .
+
+<http://www.wikidata.org/entity/Q2744998> a sdo:Person;
+  sdo:name "Eisen, Charles";
+  sdo:sameAs <http://www.wikidata.org/entity/Q2744998>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1D9E0AD1B23754B2BF6D10C189F0EDB8 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1D9E0AD1B23754B2BF6D10C189F0EDB8 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q2744998" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910501> a sdo:CreativeWork;
+  sdo:name "L'Accord de Mariage";
+  sdo:identifier "39";
+  sdo:description "A man gives a young woman money to seal a marriage agreement."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q2744998>, <http://www.wikidata.org/entity/Q18577866>;
+  sdo:creditText "Engraved and published by René Gaillard (ca. 1719–90), after Charles Eisen (1722–78). Paris, [18th century]."@en .
+
+<http://www.wikidata.org/entity/Q18577866> a sdo:Person;
+  sdo:name "Gaillard, René";
+  sdo:sameAs <http://www.wikidata.org/entity/Q18577866>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-8A5CA3D8201BC816805A0943D79AB3C9 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-8A5CA3D8201BC816805A0943D79AB3C9 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q18577866" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910431> a sdo:CreativeWork;
+  sdo:name "An Allegorical Hunt";
+  sdo:identifier "4";
+  sdo:description "Money is chased by a peasant whose hounds are Frugality, Industry, and Labor; Prodigality, whose hounds are Rapine and Chance; and Avarice, whose hounds are Usury and Fraud. Justice is trampled under foot."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q1379395>, <http://www.wikidata.org/entity/Q143595>;
+  sdo:creditText "Engraved and published by Philip Galle (1537–1612), after Johannes Stradanus (1536–1605). [Antwerp, 1578]."@en .
+
+<http://www.wikidata.org/entity/Q143595> a sdo:Person;
+  sdo:name "Stradanus, Johannes";
+  sdo:sameAs <http://www.wikidata.org/entity/Q143595>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-5EBD263D66BA251C69304690A9744570 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-5EBD263D66BA251C69304690A9744570 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q143595" .
+
+<http://www.wikidata.org/entity/Q53504581> a sdo:Person;
+  sdo:name "Mesnil (Ménil), Élie";
+  sdo:sameAs <http://www.wikidata.org/entity/Q53504581>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D8551A8A007272D1416F94D751AE1FBD .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-D8551A8A007272D1416F94D751AE1FBD a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q53504581" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910503> a sdo:CreativeWork;
+  sdo:name "La Double Tentation";
+  sdo:identifier "40";
+  sdo:description "\"Gravé d'apres le tableau original de même grandeur qui se trouve dans la galerie de S.E.M. le Comte de Brühl, Premier ministre de sa Majesté le Roi de Pologne, Electeur de Saxe.\" A woman is tempted by an old man who tries to seduce her with money."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q53504581>, <http://www.wikidata.org/entity/Q959236>;
+  sdo:creditText "Engraving by Élie Mesnil (or Ménil, b. 1726), after the painting by Frans van Mieris (1635–81). [France? 18th century]."@en .
+
+<http://www.wikidata.org/entity/Q959236> a sdo:Person;
+  sdo:name "Mieris, Frans van";
+  sdo:sameAs <http://www.wikidata.org/entity/Q959236>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-6ECB06C6946645E7C78464707E87A6B5 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-6ECB06C6946645E7C78464707E87A6B5 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q959236" .
+
+<http://www.wikidata.org/entity/Q520806> a sdo:Person;
+  sdo:name "Gillray, James";
+  sdo:sameAs <http://www.wikidata.org/entity/Q520806>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1B30E447499F23ACD46870FC158AAB32 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1B30E447499F23ACD46870FC158AAB32 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q520806" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983668> a sdo:CreativeWork;
+  sdo:name "Political Ravishment, or the Old Lady of Threadneedle-Street in Danger!";
+  sdo:identifier "41";
+  sdo:description "A man attacks an old woman who wears a dress of one-pound notes. She sits on a locked chest labeled \"Bank of England.\" Satire on the suspension of gold payments by the Bank of England. Prime minister William Pitt was forced to implement the issue of paper money when the Bank announced a gold shortage, due to loans it had made to finance the war with France. Rumors circulated that the Bank's coin was merely being held in reserve to send to the Continent in support of the war. Hence the significance of the locked chest, and the coins in the pockets of the lady's paper money dress."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q520806>;
+  sdo:creditText "Hand-colored etching by James Gillray (1757–1815). [London], Published by H. Humphrey, May 22, 1797."@en .
+
+cc:politics_and_war a sdo:DefinedTerm;
+  sdo:name "Politics and War"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910507> a sdo:CreativeWork;
+  sdo:name "Midas, Transmuting all into Gold Paper";
+  sdo:identifier "42";
+  sdo:description "Another satire on the creation of legal tender bank notes by the Bank of England. (See 41). William Pitt is pictured spewing paper money out of his mouth, while gold coins are locked up in his stomach."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q520806>;
+  sdo:creditText "Etching by James Gillray (1757–1815). [London], Published by H. Humphrey, March 9, 1797."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910509> a sdo:CreativeWork;
+  sdo:name "La Bonnet-Rouge: –or– John Bull Evading the Hat Tax";
+  sdo:identifier "43";
+  sdo:description "Satire on the Pitt administration's doubling of the duty on fur hats and other items, to raise revenue for the war with France. John Bull (the English citizen) is pictured avoiding the hat tax by wearing the French revolutionary cap, or \"bonnet-rouge,\" a symbol not in favor with the English government."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q520806>;
+  sdo:creditText "Etching by James Gillray (1757–1815). [London], Published by H. Humphrey, April 5, 1797."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910511> a sdo:CreativeWork;
+  sdo:name "The Political Balloon; or, The Fall of East India Stock";
+  sdo:identifier "44";
+  sdo:description "Refers to British Foreign Secretary Charles James Fox's bill to replace the directors of the East India Company with seven commissioners. Supporters of the bill hoped it would rid the Company of the directors' treachery and corruption in India. It was rejected by the House of Lords."@en;
+  sdo:creditText "Etching by unknown artist. [London], Published by W. Wells, December 4, 1783."@en .
+
+<http://www.wikidata.org/entity/Q2871156> a sdo:Person;
+  sdo:name "Desperet, A.";
+  sdo:sameAs <http://www.wikidata.org/entity/Q2871156>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4FB29C3153058E52EA4D929113280FB6 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4FB29C3153058E52EA4D929113280FB6 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q2871156" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910513> a sdo:CreativeWork;
+  sdo:name "Pauvres Aveugles";
+  sdo:identifier "45";
+  sdo:description "Plate 282 from La Caricature, no. 136 (June 13, 1833). Louis-Philippe is followed by his ministers, carrying bags of money as they descend into the \"Gouffre de l'illigalité.\""@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q2871156>;
+  sdo:creditText "Lithograph by A. Desperet (d. 1865). [Paris], Chez Aubert, [1833]."@en .
+
+cc:louis-philippe a sdo:DefinedTerm;
+  sdo:name "Louis-Philippe"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910515> a sdo:CreativeWork;
+  sdo:name "Caricature of Louis-Philippe and Guizot";
+  sdo:identifier "46";
+  sdo:description "Louis-Philippe and Guizot stealing money from the \"trésor public.\""@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Lith. Gosselin, [184–?]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910517> a sdo:CreativeWork;
+  sdo:name "La Poire Tapée";
+  sdo:identifier "47";
+  sdo:description "A pear-headed Louis-Philippe runs from an angry crowd while money falls out of a bag he carries. The title is a play on words—it can mean a pear that has been dried in the oven, or it can refer to the slang meaning of \"taper,\" to borrow money from someone."@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Chez Aubert, [ca. 1848]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910519> a sdo:CreativeWork;
+  sdo:name "Caricature of Louis-Philippe";
+  sdo:identifier "48";
+  sdo:description "\"Crowned by the Academy of Overripe Pears.\" The head of Louis-Philippe appears as the fruit of a potted plant, beneath which is printed \"empoté en 1830, dépoté en 1848.\" Guizot is a poisonous parasite on the plant."@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Chez Lordereau, [1848?]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910521> a sdo:CreativeWork;
+  sdo:name "Le Grand Saut . . . Sot";
+  sdo:identifier "49";
+  sdo:description "Louis-Philippe is pictured jumping over the Channel from France to England. The title is a play on words, which can be read \"the big leap\" or \"the big fool.\""@en;
+  sdo:creditText "Lithograph by unknown artist. [Paris], Lith. de Lordereau, [1848?]."@en .
+
+<http://www.wikidata.org/entity/Q43270> a sdo:Person;
+  sdo:name "Breughel, Pieter, the Elder";
+  sdo:sameAs <http://www.wikidata.org/entity/Q43270>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-5CF2CE641EA68879582EF22182273943 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-5CF2CE641EA68879582EF22182273943 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q43270" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910433> a sdo:CreativeWork;
+  sdo:name "The Fight of the Money-Bags and the Coffers";
+  sdo:identifier "5";
+  sdo:description "Second state. Caption below image is in Latin, French and Dutch: Riches make thieves, or, gold and silver have destroyed many."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q12058270>, <http://www.wikidata.org/entity/Q43270>,
+    <http://www.wikidata.org/entity/Q2094287>;
+  sdo:creditText "Engraving by Pieter van der Heyden (fl. 1557), after Pieter Breughel the Elder (1525–69.) Joannes Galle (1600–76), \"excudit.\" [Belgium, 1558?]."@en .
+
+<http://www.wikidata.org/entity/Q2094287> a sdo:Person;
+  sdo:name "Heyden, Pieter van der";
+  sdo:sameAs <http://www.wikidata.org/entity/Q2094287>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-610AA7A3B3C4CE3302F3381075A6B4B2 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-610AA7A3B3C4CE3302F3381075A6B4B2 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q2094287" .
+
+<http://www.wikidata.org/entity/Q55467951> a sdo:Person;
+  sdo:name "Brichet, Robert";
+  sdo:sameAs <http://www.wikidata.org/entity/Q55467951>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-AEF31C6718A19087865A883E4A30B320 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-AEF31C6718A19087865A883E4A30B320 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q55467951" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910523> a sdo:CreativeWork;
+  sdo:name "Le Speculateur";
+  sdo:identifier "50";
+  sdo:description "Plate twenty-eight from Exercises d'Imagination de Différents Caractères et Formes Humaines . . . Augsburg, 1784–85, of which plates one to eighty-four were engraved by Brichet, and plates eighty-five to one hundred by Goez. A once well-dressed man is reduced to rags by bad speculation."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q55467951>, <http://www.wikidata.org/entity/Q6283227>;
+  sdo:creditText "Etching and engraving by Robert Brichet, after Joseph Franz von Goez (1754–1815). [Augsburg] 1784."@en .
+
+<http://www.wikidata.org/entity/Q6283227> a sdo:Person;
+  sdo:name "Goez, Joseph Franz von";
+  sdo:sameAs <http://www.wikidata.org/entity/Q6283227>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1BB502DA3C1FAB344013BCAB017863CB .
+
+cc:speculation_and_credit a sdo:DefinedTerm;
+  sdo:name "Speculation and Credit"@en .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1BB502DA3C1FAB344013BCAB017863CB a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q6283227" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910525> a sdo:CreativeWork;
+  sdo:name "Le Financier";
+  sdo:identifier "51";
+  sdo:description "Plate five from Exercises d'Imagination . . . (see 50). Depiction of a corpulent man demanding payment for a bill."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q55467951>, <http://www.wikidata.org/entity/Q6283227>;
+  sdo:creditText "Etching and engraving by Robert Brichet, after Joseph Franz von Goez (1754–1815). Augsburg, [1784]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910527> a sdo:CreativeWork;
+  sdo:name "A Lucky and Unlucky Speculator";
+  sdo:identifier "52";
+  sdo:description "Below image: \"Hélas! de vous à moi tel est la différence!!! C'est incroyable. . .\""@en;
+  sdo:creditText "Etching and engraving (part stipple) by unidentified artist; \"Rentier fecit.\" Paris, Chez les Marchands des nouveautés, [late 18th century]."@en .
+
+cc:bettanier a sdo:Person;
+  sdo:name "Bettanier";
+  sdo:sameAs <http://example.com/base/>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9809B7A7C6EB111C4409A58426116A13 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-9809B7A7C6EB111C4409A58426116A13 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910529> a sdo:CreativeWork;
+  sdo:name "La Hausse. In Luck. En Alza";
+  sdo:identifier "53";
+  sdo:description "Pictured is an elegantly dressed woman riding in a coach with her footman."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q21464861>, <http://www.wikidata.org/entity/Q62101888>,
+    <http://example.com/base/>;
+  sdo:creditText "Hand-colored lithograph by Régnier and Bettanier, after Philippe Jacques Linder. Paris, Dusacq & Cie., [last half of 19th century]."@en .
+
+<http://www.wikidata.org/entity/Q21464861> a sdo:Person;
+  sdo:name "Linder, Philippe Jacques";
+  sdo:sameAs <http://www.wikidata.org/entity/Q21464861>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-188D01A490D683E9D87B5380EDD19ED7 .
+
+<http://www.wikidata.org/entity/Q62101888> a sdo:Person;
+  sdo:name "Régnier";
+  sdo:sameAs <http://www.wikidata.org/entity/Q62101888>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-EBDB38C549D9C5F27CEAA732A033D260 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-188D01A490D683E9D87B5380EDD19ED7 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q21464861" .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-EBDB38C549D9C5F27CEAA732A033D260 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q62101888" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983670> a sdo:CreativeWork;
+  sdo:name "La Baisse. Out of Luck. En Baja";
+  sdo:identifier "54";
+  sdo:description "The same woman as in 53, wearing a black dress, crouching under an umbrella and running through the rain."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q21464861>, <http://www.wikidata.org/entity/Q62101888>,
+    <http://example.com/base/>;
+  sdo:creditText "Hand-colored lithograph by Régnier and Bettanier, after Philippe Jacques Linder. Paris, Dusacq & Cie. [last half of 19th century]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910533> a sdo:CreativeWork;
+  sdo:name "Allegory on the Death of Credit";
+  sdo:identifier "55";
+  sdo:description """A funeral procession carries a coffin toward a grave, in front of which are a man and woman weeping. Translation of the German caption below image:
+Great mourning and sorrow, grief and lamentation,
+The best helper is now laid to rest.
+Who do you think it is? Monsieur Credit is dead,
+He who so often rescued you and me from distress."""@en;
+  sdo:creditText "Engraving by unknown artist. [Germany? Early 18th century]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910535> a sdo:CreativeWork;
+  sdo:name "Crédit est Mort";
+  sdo:identifier "56";
+  sdo:description "A similar allegory to 55, with the caption: \"Les mauvais payeurs l'ont tué.\" Pictured are an artist, a musician, and a soldier, who have killed another man, lying at their feet. This image inspired many provincial copies, notably at Épinal."@en;
+  sdo:creditText "Hand-colored etching by unknown artist. Paris, Chez Genty, [early 19th century]."@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910537> a sdo:CreativeWork;
+  sdo:name "Die Wind Kauffer, werden mit Wind bezahlt, und finden sich auf die letzst betrogen";
+  sdo:identifier "57";
+  sdo:description "A rare German version of one of the seventy-four plates usually found in the popular Dutch satirical volume, Het Groote Tafereel der Dwaasheid (The Great Mirror of Folly). It commemorates the period of speculative mania which swept France, England, and Holland in the year 1720. Pictured here is the inner court of the old Amsterdam exchange (see 66), where distraught shareholders are calling out, \"I am ruined; Who will loan me money? I am still living on hope; I cannot sleep,\" etc. The term \"Wind-Handel\" was often used satirically to connote the flimsiness of the stocks being traded."@en;
+  sdo:creditText "Etching and engraving by unknown artist. [n.p., ca. 1720]."@en .
+
+<http://www.wikidata.org/entity/Q3047890> a sdo:Person;
+  sdo:name "Lavrate";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3047890>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-3D061B26B68B13329CA05ED3AAC7B9F3 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-3D061B26B68B13329CA05ED3AAC7B9F3 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3047890" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910539> a sdo:CreativeWork;
+  sdo:name "Une Assemblée d'Actionnaires";
+  sdo:identifier "58";
+  sdo:description "A meeting of shareholders, all of whom have animal bodies and human heads. The officers in charge have animal heads and human bodies."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3047890>;
+  sdo:creditText "Hand-colored lithograph, signed \"Lavrate.\" [France, 19th century]."@en .
+
+<http://www.wikidata.org/entity/Q23939409> a sdo:Person;
+  sdo:name "Chollet, Antoin Joseph";
+  sdo:sameAs <http://www.wikidata.org/entity/Q23939409>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-52FD3C440B953F85A8ED19E4F69D1520 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-52FD3C440B953F85A8ED19E4F69D1520 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q23939409" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910541> a sdo:CreativeWork;
+  sdo:name "J'ai Perdu!";
+  sdo:identifier "59";
+  sdo:description "A poor, pregnant woman with three small children holds a losing lottery ticket in her hand."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q23939409>, <http://www.wikidata.org/entity/Q2824901>;
+  sdo:creditText "Engraving by Antoin Joseph Chollet (b. 1793), after Adolphe Roehn (1780–1867). Paris, Chez Chaillou-Potrelle; Chez Roehn, 1824."@en .
+
+<http://www.wikidata.org/entity/Q2824901> a sdo:Person;
+  sdo:name "Roehn, Adolphe";
+  sdo:sameAs <http://www.wikidata.org/entity/Q2824901>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-E84298A1582911AC1FDC0F41E6C17D87 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-E84298A1582911AC1FDC0F41E6C17D87 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q2824901" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910435> a sdo:CreativeWork;
+  sdo:name "Der Bruder Esel mit dem Gelt";
+  sdo:identifier "6";
+  sdo:description "An ass is pictured defecating coins while peasants, merchants, and noblemen run to catch them."@en;
+  sdo:creditText "Etching and engraving. [Germany? Early 17th century]."@en .
+
+<http://www.wikidata.org/entity/Q998339> a sdo:Person;
+  sdo:name "Kilian, Wolfgang";
+  sdo:sameAs <http://www.wikidata.org/entity/Q998339>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-829BF6585164566DA6E22CF8F3B9616F .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-829BF6585164566DA6E22CF8F3B9616F a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q998339" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910543> a sdo:CreativeWork;
+  sdo:name "Karl Fugger";
+  sdo:identifier "60";
+  sdo:description "A member of the powerful German family of merchant princes descended from Hans Fugger, a fourteenth century weaver. The Fugger dynasty acquired its fortune through trade and banking, becoming the wealthiest family in Europe in the sixteenth century. Its decline paralleled that of the Hapsburg monarchy, whose wars they financed. (Plate 128 from Custos, Domenik. Contrafehe der Herrn Fugger . . . 2nd ed., 1620.)"@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q998339>;
+  sdo:creditText "Engraving by Wolfgang Kilian (1581–1662). [Augsburg, ca. 1620]."@en .
+
+cc:bankers_financiers_and_statesmen a sdo:DefinedTerm;
+  sdo:name "Bankers, Financiers, and Statesmen"@en .
+
+<http://www.wikidata.org/entity/Q18511523> a sdo:Person;
+  sdo:name "Kohl, Andrews";
+  sdo:sameAs <http://www.wikidata.org/entity/Q18511523>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-185F657A0A1EF55793C9BF658B037F97 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-185F657A0A1EF55793C9BF658B037F97 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q18511523" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910545> a sdo:CreativeWork;
+  sdo:name "Georg Fussel (b. 1601)";
+  sdo:identifier "61";
+  sdo:description "The Bancho Publico in Nürnberg was one of the oldest banks in Germany, founded in 1621, and in operation until 1827. Fussel was its banker from 1654 to 1674."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q18511523>, <http://www.wikidata.org/entity/Q30303204>;
+  sdo:creditText "Engraving by Andreas Kohl (1624–57), after Georg Strauch (1613–75). [Nürnberg, ca. 1654]."@en .
+
+<http://www.wikidata.org/entity/Q30303204> a sdo:Person;
+  sdo:name "Strauch, Georg";
+  sdo:sameAs <http://www.wikidata.org/entity/Q30303204>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-499806C8667A36CBF24760ED09BF7808 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-499806C8667A36CBF24760ED09BF7808 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q30303204" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910547> a sdo:CreativeWork;
+  sdo:name "Sir Thomas Gresham (1519?–79)";
+  sdo:identifier "62";
+  sdo:description "Gresham is known as the founder of the Royal Exchange and of Gresham College, London. As the royal financial agent in Antwerp, he was shrewd in discharging the debts of the crown, and negotiating new loans from the wealthy families of Europe. He also amassed a great personal fortune as a banker, merchant, and mercer."@en;
+  sdo:creditText "Engraving and aquatint by unknown artist. London, Published by N. Smith, June 10, 1793."@en .
+
+<http://www.wikidata.org/entity/Q33134321> a sdo:Person;
+  sdo:name "Hainzelman, Johann";
+  sdo:sameAs <http://www.wikidata.org/entity/Q33134321>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C002E94D31BB2DF15C8EDFC56AEC2887 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C002E94D31BB2DF15C8EDFC56AEC2887 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q33134321" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910549> a sdo:CreativeWork;
+  sdo:name "Philippe Du Four";
+  sdo:identifier "63";
+  sdo:description "Du Four was Counselor and Secretary to the king, Treasurer General of France, and President of the Bureau des Finances in Paris."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q33134321>;
+  sdo:creditText "Designed and engraved by Johann Hainzelman (1641–93). [Paris], 1682."@en .
+
+<http://www.wikidata.org/entity/Q29545626> a sdo:Person;
+  sdo:name "Schenk, Leonard";
+  sdo:sameAs <http://www.wikidata.org/entity/Q29545626>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CE1F495CB6B808B0DDFC1E162EC9615B .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-CE1F495CB6B808B0DDFC1E162EC9615B a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q29545626" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910551> a sdo:CreativeWork;
+  sdo:name "John Law (1671–1729)";
+  sdo:identifier "64";
+  sdo:description "A Scottish financier who became Controller General of Finances of France, Law is mainly remembered as the founder of the ill-fated Mississippi Company. He merged this huge stock company with the royal bank and took over the public debt and administration of revenue. In 1720, a rash of speculation in land swept France, setting off frenzied selling at high profits. When the bubble burst, thousands of investors went bankrupt, and Law fled the country in disgrace."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q29545626>, <http://www.wikidata.org/entity/Q78163>;
+  sdo:creditText "Engraving by Leonard Schenk (fl. 1715–46). Pieter Schenk (b. 1660), \"exc.\" Amsterdam, [ca. 1719]."@en .
+
+<http://www.wikidata.org/entity/Q78163> a sdo:Person;
+  sdo:name "Schenk, Pieter";
+  sdo:sameAs <http://www.wikidata.org/entity/Q78163>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-01EE1E1AAD52FEBB340E9E2D1292C00C .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-01EE1E1AAD52FEBB340E9E2D1292C00C a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q78163" .
+
+<http://www.wikidata.org/entity/Q39351810> a sdo:Person;
+  sdo:name "Mordant, Daniel Charles";
+  sdo:sameAs <http://www.wikidata.org/entity/Q39351810>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-8A34BC37278283F6C67490EB333ECEA4 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-8A34BC37278283F6C67490EB333ECEA4 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q39351810" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910553> a sdo:CreativeWork;
+  sdo:name "James Edouard de Rothschild (1844–81)";
+  sdo:identifier "65";
+  sdo:description "He was the son of Nathaniel (Paris branch), and the grandson of Nathan Meyer Rothschild, who founded the famed London branch of the family."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q39351810> .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910555> a sdo:CreativeWork;
+  sdo:name "De Beurs. [Amsterdam]";
+  sdo:identifier "66";
+  sdo:description "The Amsterdam exchange, situated on the Amstel River, was designed by Hendrick de Keijser and opened in 1611. Trading was carried on in the open inner court."@en .
+
+cc:stock_exchanges a sdo:DefinedTerm;
+  sdo:name "Stock Exchanges"@en .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910557> a sdo:CreativeWork;
+  sdo:name "Borse. [Antwerp]";
+  sdo:identifier "67";
+  sdo:description "The Antwerp exchange was dedicated in 1532 \"for the use of tradesmen of all countries and languages, and as an ornament to its city.\" (Latin inscription.) It was the first financial exchange in Europe, standing until 1858, when it was destroyed by fire."@en .
+
+<http://www.wikidata.org/entity/Q18577046> a sdo:Person;
+  sdo:name "Bowles, Thomas";
+  sdo:sameAs <http://www.wikidata.org/entity/Q18577046>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-B0EEBEC3AD8EF044D44B2581BA372BD3 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-B0EEBEC3AD8EF044D44B2581BA372BD3 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q18577046" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910559> a sdo:CreativeWork;
+  sdo:name "A View of the Royal Exchange London. [second exchange]";
+  sdo:identifier "68";
+  sdo:description "The first Royal Exchange opened in 1567 and was destroyed in the London fire of 1666. The second Royal Exchange opened in 1669 and was again destroyed by fire in 1838. The foundation of the third Royal Exchange was laid in 1842, and the building was opened on Jan. 1, 1845."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q18577046> .
+
+<http://www.wikidata.org/entity/Q53498257> a sdo:Person;
+  sdo:name "Auvray, Pierre Laurent";
+  sdo:sameAs <http://www.wikidata.org/entity/Q53498257>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4631E3FD8328AE615E3E990383140F47 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-4631E3FD8328AE615E3E990383140F47 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q53498257" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910561> a sdo:CreativeWork;
+  sdo:name "Vue de la Bourse et du Magazin des Marchandises en remontant la petite Neva. [St. Petersburg]";
+  sdo:identifier "69";
+  sdo:description "Plate from Nicolas Gabriel Leclerc's Histoire physique, morale, civile et politique de la Russie moderne. Paris et Versailles, 1783–85, which Auvray illustrated."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q53498257>, <http://www.wikidata.org/entity/Q22009289> .
+
+<http://www.wikidata.org/entity/Q22009289> a sdo:Person;
+  sdo:name "Lespinasse, Louis Nicolas de";
+  sdo:sameAs <http://www.wikidata.org/entity/Q22009289>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-7FCACA8F180697C5D3CBB9BFAFCE5A60 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-7FCACA8F180697C5D3CBB9BFAFCE5A60 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q22009289" .
+
+<http://www.wikidata.org/entity/Q3299661> a sdo:Person;
+  sdo:name "Greuter, Mathias";
+  sdo:sameAs <http://www.wikidata.org/entity/Q3299661>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1282C64F456C2411570F4D5DD1876B8A .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-1282C64F456C2411570F4D5DD1876B8A a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q3299661" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910437> a sdo:CreativeWork;
+  sdo:name "Gellt Zeucht die Weltt. Mundum Trahit Pecunia";
+  sdo:identifier "7";
+  sdo:description "First state. Gold coins form the wheels of a chariot, upon which is the World, while two noblemen blinded by money walk alongside. A group of peasants is held back by Poverty, standing on the wheel of Fortune."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q3299661> .
+
+<http://www.wikidata.org/entity/Q19279961> a sdo:Person;
+  sdo:name "Geissler, Friedrich";
+  sdo:sameAs <http://www.wikidata.org/entity/Q19279961>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C4F3EE94B559325A324B8E35626B28E7 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-C4F3EE94B559325A324B8E35626B28E7 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q19279961" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910563> a sdo:CreativeWork;
+  sdo:name "Die Hamburger Börse. [the old exchange]";
+  sdo:identifier "70";
+  sdo:description "The earliest exchange in Hamburg opened in 1558, and was greatly enlarged during the years 1577–83, 1669, and the following century. It was destroyed in the great Hamburg fire of 1842. Fortunately, construction of a new exchange building on the Adolphsplatz had already begun in 1839, and was dedicated in 1841. It was enlarged several times during the remainder of the nineteenth century."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q19279961> .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910439> a sdo:CreativeWork;
+  sdo:name "The Two Deaths";
+  sdo:identifier "8";
+  sdo:description "A narrative in two parts. At left, a pious man receives riches from heaven; at right, Death prepares to strike a miser amidst his wealth."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q555022>, <http://www.wikidata.org/entity/Q640361>,
+    <http://www.wikidata.org/entity/Q2778104> .
+
+<http://www.wikidata.org/entity/Q2778104> a sdo:Person;
+  sdo:name "Wierx, Hieronymus";
+  sdo:sameAs <http://www.wikidata.org/entity/Q2778104>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-340FBC9FCFA64885FC2032EA5B2380EF .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-340FBC9FCFA64885FC2032EA5B2380EF a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q2778104" .
+
+<http://www.wikidata.org/entity/Q19569785> a sdo:Person;
+  sdo:name "Sadeler, Raphael, I";
+  sdo:sameAs <http://www.wikidata.org/entity/Q19569785>;
+  sdo:identifier _:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-59DEFC1F6F31AC7F953BCEDFEBAB8CC1 .
+
+_:genid-43cd278d2fdf4970baf07dbed7aac0c71057173-59DEFC1F6F31AC7F953BCEDFEBAB8CC1 a
+    sdo:PropertyValue;
+  sdo:name "Wikidata ID"@en;
+  sdo:value "Q19569785" .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910441> a sdo:CreativeWork;
+  sdo:name "Honor";
+  sdo:identifier "9";
+  sdo:description "Plate three from his series of four allegorical prints on the virtues after de Vos, representing also the four ages of man. A pious man turns away from a woman offering riches."@en;
+  sdo:contributor <http://www.wikidata.org/entity/Q555022>, <http://www.wikidata.org/entity/Q19569785> .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910553> sdo:creditText "Engraving and drypoint by Daniel Charles Mordant (1853–1914). [Paris], Impr. Ch. Chardon, [187–?]."@en;
+  sdo:size "31.5 x 25 cm, imageF f41 xxx";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910553"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910553/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910555> sdo:creditText "Etching and engraving by unknown artist. [Netherlands? early 17th century]."@en;
+  sdo:size "19.2 x 29.8 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910555"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910555/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910557> sdo:creditText "Engraving by unknown artist. [n.p., early 17th century]."@en;
+  sdo:size "14.2 x 19.7 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910557"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910557/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910559> sdo:creditText "Etching and engraving by Thomas Bowles (b. ca. 1712). [London], Printed for and sold by Robert Sayer, August 20, 1751."@en;
+  sdo:size "26 x 40 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910559"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910559/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910561> sdo:creditText "Engraving by Pierre Laurent Auvray (b. 1736), after Louis Nicolas de Lespinasse (1734–1808). [France, ca. 1785]."@en;
+  sdo:size "24.8 x 35.5 cm";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910561"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910561/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910437> sdo:creditText "Engraved, designed, and published by Mathias Greuter (1564–1638). [Strasbourg(?)] 1589."@en;
+  sdo:size "23 x 27.8 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910437"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910437/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910563> sdo:creditText "Engraving by Friedrich Geissler (1778–1853). [Germany?] 1822."@en;
+  sdo:size "10.8 x 18.8 cm, image";
+  sdo:about cc:stock_exchanges;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910563"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910563/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910439> sdo:creditText "Engraving by Hieronymus Wierx (1553–1619), after Marten de Vos (ca. 1531–1603). Published by Hieronymus Cock, \"Aux .4. Vents.\" [Antwerp, late 16th century]."@en;
+  sdo:size "29.8 x 32.5 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910439"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910439/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910441> sdo:creditText "Engraving by Raphael Sadeler I (1560–1628), after Marten de Vos (ca. 1531–1603). [n.p., 1591]."@en;
+  sdo:size "22 x 25 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910441"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910441/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910425> sdo:size "17.1 x 23.2 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910425"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910425/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910443> sdo:size "26.5 x 31.5 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910443"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910443/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910445> sdo:size "21 x 14 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910445"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910445/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910447> sdo:size "17.5 x 22.5 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910447"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910447/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910449> sdo:size "26 x 18.5 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910449"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910449/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910451> sdo:size "23.6 x 18.7 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910451"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910451/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910453> sdo:size "24.5 x 20.8 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910453"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910453/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910455> sdo:size "26.5 x 19.2 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910455"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910455/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910457> sdo:size "28.5 x 19.7 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910457"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910457/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910459> sdo:size "10 x 14 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910459"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910459/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910461> sdo:size "27 x 20 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910461"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910461/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910427> sdo:size "17 x 23 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910427"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910427/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910463> sdo:size "27 x 20 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910463"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910463/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910465> sdo:size "32.5 x 37 cm";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910465"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910465/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910467> sdo:size "31 x 22 cm, image";
+  sdo:about cc:misers_moneylenders_and_thieves;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910467"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910467/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910469> sdo:size "22.5 x 31.5 cm";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910469"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910469/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910471> sdo:size "25.5 x 34.9 cm, image";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910471"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910471/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910473> sdo:size "29.5 x 49.5 cm";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910473"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910473/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910475> sdo:size "20.5 x 32 cm";
+  sdo:about cc:money_devil;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910475"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910475/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910477> sdo:size "13.4 x 18 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910477"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910477/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910479> sdo:size "20.5 x 28.7 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910479"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910479/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910481> sdo:size "20.9 x 26.4 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910481"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910481/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910429> sdo:size "22.2 x 29.4 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910429"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910429/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910483> sdo:size "16.5 x 23.8 cm, image";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910483"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910483/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910485> sdo:size "24 x 18.8 cm, image";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910485"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910485/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910487> sdo:size "29.3 x 45.5 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910487"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910487/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910489> sdo:size "46.5 x 31.2 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910489"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910489/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910491> sdo:size "36.4 x 22.4 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910491"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910491/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910493> sdo:size "30.5 x 38.7 cm";
+  sdo:about cc:biblical_and_mythological_scenes;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910493"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910493/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910495> sdo:size "23.5 x 16.2 cm";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910495"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910495/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910497> sdo:size "14.3 x 13.5 cm, image";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910497"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910497/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910499> sdo:size "33 x 23 cm (oval image)";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910499"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910499/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910501> sdo:size "38 x 27 cm";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910501"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910501/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910431> sdo:size "21.7 x 24 cm; lower plate mark trimmed";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910431"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910431/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910503> sdo:size "35.5 x 27.5 cm";
+  sdo:about cc:love_and_money;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910503"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910503/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983668> sdo:size "24.8 x 34 cm, image";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3983668"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3983668/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910507> sdo:size "35.5 x 25.5 cm";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910507"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910507/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910509> sdo:size "36.5 x 26.5 cm";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910509"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910509/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910511> sdo:size "35 x 25 cm";
+  sdo:about cc:politics_and_war;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910511"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910511/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910513> sdo:size "19 x 27 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910513"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910513/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910515> sdo:size "25.5 x 19 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910515"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910515/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910517> sdo:size "20 x 16 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910517"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910517/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910519> sdo:size "24 x 18.5 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910519"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910519/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910521> sdo:size "25.5 x 23 cm";
+  sdo:about cc:louis-philippe;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910521"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910521/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910433> sdo:size "23.7 x 30.4 cm";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910433"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910433/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910523> sdo:size "23.5 x 16.2 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910523"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910523/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910525> sdo:size "22.3 x 15.7 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910525"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910525/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910527> sdo:size "26.5 x 32.5 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910527"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910527/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910529> sdo:size "29.8 x 22 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910529"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910529/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983670> sdo:size "30 x 22.4 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3983670"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3983670/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910533> sdo:size "27.5 x 18 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910533"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910533/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910535> sdo:size "26 x 34.5 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910535"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910535/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910537> sdo:size "29.7 x 19.3 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910537"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910537/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910539> sdo:size "28 x 37.5 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910539"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910539/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910541> sdo:size "56 x 42.8 cm";
+  sdo:about cc:speculation_and_credit;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910541"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910541/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910435> sdo:size "19.5 x 32 cm, image";
+  sdo:about cc:vanity_and_virtue;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910435"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910435/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910543> sdo:size "15 x 11 cmF g2";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910543"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910543/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910545> sdo:size "18.5 x 13.5 cmF g5";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910545"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910545/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910547> sdo:size "22.5 x 17.5 cmF gb4 x";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910547"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910547/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910549> sdo:size "23.5 x 18 cmF f1 x";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910549"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910549/full/full/0/default.jpg"^^xsd:anyURI .
+
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910551> sdo:size "27.5 x 18 cmF f30 x";
+  sdo:about cc:bankers_financiers_and_statesmen;
+  sdo:url "https://iiif.lib.harvard.edu/manifests/view/ids:3910551"^^xsd:anyURI;
+  sdo:image "https://ids.lib.harvard.edu/ids/iiif/3910551/full/full/0/default.jpg"^^xsd:anyURI .

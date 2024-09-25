@@ -1,0 +1,987 @@
+# HBSKO Schema Created from Scratch (see https://github.com/VladimirAlexiev/soml/blob/master/owl2soml/README.md#owl2soml for info on the OWL2SOML converter)
+# Preamble (https://platform.ontotext.com/semantic-objects/soml/preamble.html#)
+id:          /soml/hbsko-scratch-fpt-min
+label:       HBSKO recreated from scratch in SOML (not auto-generated)
+created:     2024-08-12
+updated:     2024-08-19
+creator:     Dennis Kavlakoglu (dkavlakoglu@hbs.edu)
+versionInfo: 0.1
+
+# Schema Configuration
+config:
+  enable_mutations: true
+  lang: {fetch: "en", validate: "UNIQ", implicit: "en", defaultNameFetch: "ANY", appendDefaultNameFetch: true} # or lang: "en"
+  queryPfx: ""
+  mutationPfx: ""
+  repository: ""
+  includeInferred: true
+  expandOwlSameAs: true
+  exposeSomlInGraphQL: false
+  defaultRole: "Default"
+  defaultIntegrationRole: "Federation_SystemRole"
+  disabledChecks: []
+  search: # (https://platform.ontotext.com/semantic-search/soml.html#)
+#    type:
+#      nestingLevel: 1
+    analysis:
+      analyzer: standard # other options: keyword, stop, simple, whitespace, pattern, <language>, fingerprint (https://www.elastic.co/guide/en/elasticsearch/reference/7.9/analysis-analyzers.html)
+      lang: # set language=
+        en:
+          analyzer: english
+
+# Special Prefixes
+specialPrefixes:
+  # base IRI for data (resources)
+  base_iri: https://librarydata.hbs.edu/HBSKOntology/
+  # default namespace for vocabulary (ontology) terms
+  vocab_iri: https://librarydata.hbs.edu/HBSKOntology/
+  # prefix corresponding to the vocab IRI
+  vocab_prefix: hbsko
+#  ontology_iri: https://librarydata.hbs.edu/HBSK/ontology
+#  shape_iri:    https://librarydata.hbs.edu/HBSK/shacl
+#  shape_prefix: hbsko-sh
+
+# Predefined Prefixes
+prefixes:
+  # common prefixes
+  onto:  http://www.ontotext.com/
+  so:    http://www.ontotext.com/semantic-object/
+  res:   http://www.ontotext.com/semantic-object/result/
+  dc:    http://purl.org/dc/elements/1.1/
+  dcterms:   http://purl.org/dc/terms/
+  afn: http://jena.apache.org/ARQ/function#
+  agg: http://jena.apache.org/ARQ/function/aggregate#
+  apf: http://jena.apache.org/ARQ/property#
+  array: http://www.w3.org/2005/xpath-functions/array
+  fn: http://www.w3.org/2005/xpath-functions
+  geoext: http://rdf.useekm.com/ext#
+  geof: http://www.opengis.net/def/function/geosparql/
+  gn: http://www.geonames.org/ontology#
+  graphdb: http://www.ontotext.com/config/graphdb#
+  list: http://jena.apache.org/ARQ/list#
+  map: http://www.w3.org/2005/xpath-functions/map
+  math: http://www.w3.org/2005/xpath-functions/math
+  ofn: http://www.ontotext.com/sparql/functions/
+  omgeo: http://www.ontotext.com/owlim/geo#
+  owl: http://www.w3.org/2002/07/owl#
+  path: http://www.ontotext.com/path#
+  rank: http://www.ontotext.com/owlim/RDFRank#
+  puml:  http://plantuml.com/ontology#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdf4j: http://rdf4j.org/schema/rdf4j#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rep: http://www.openrdf.org/config/repository#
+  sail: http://www.openrdf.org/config/sail#
+  sesame: http://www.openrdf.org/schema/sesame#
+  skos:  http://www.w3.org/2004/02/skos/core#
+  spif: http://spinrdf.org/spif#
+  sr: http://www.openrdf.org/config/repository/sail#
+  void:  http://rdfs.org/ns/void#
+  wgs84: http://www.w3.org/2003/01/geo/wgs84_pos#
+  xsd:   http://www.w3.org/2001/XMLSchema#
+  schema: http://schema.org/
+  # schema-specific prefixes
+  hbsko: https://librarydata.hbs.edu/HBSKOntology/
+  dbpedia: http://dbpedia.org/resource/
+  foaf: http://xmlns.com/foaf/0.1/
+# Define new enumerated datatypes or union datatypes
+types:
+# Commented out below are all of the SOML-sypported datatypes (and their RDF/GraphQL equivalents) for reference. (See https://platform.ontotext.com/semantic-objects/soml/datatypes.html#)
+#  # GraphQL builtin types
+#  int: { rdf: 'xsd:int',                graphql: Int,                descr: "Signed 32‐bit integer" }
+#  double: { rdf: 'xsd:double',             graphql: Float,              descr: "Signed double-precision 64-bit floating point (IEEE 754-1985)" }
+#  string: { rdf: 'xsd:string',             graphql: String,             descr: "Unicode string, default RDF and SOML datatype" }
+#  boolean: { rdf: 'xsd:boolean',            graphql: Boolean,            descr: "True/false" }
+#  iri: { rdf: 'rdfs:Resource',          graphql: ID,                 descr: "IRI of object or external resource (RFC 3987)" }
+#
+#  # GraphQL extension types
+#  long: { rdf: 'xsd:long',               graphql: Long,               descr: "Signed 64‐bit integer",                                      graphqlExtension: true }
+#  short: { rdf: 'xsd:short',              graphql: Short,              descr: "Signed 16‐bit integer",                                      graphqlExtension: true }
+#  byte: { rdf: 'xsd:byte',               graphql: Byte,               descr: "Signed 8‐bit integer",                                       graphqlExtension: true }
+#  unsignedLong: { rdf: 'xsd:unsignedLong',       graphql: UnsignedLong,       descr: "Unsigned 64‐bit integer",                                    graphqlExtension: true }
+#  unsignedInt: { rdf: 'xsd:unsignedInt',        graphql: UnsignedInteger,    descr: "Unsigned 32‐bit integer",                                    graphqlExtension: true }
+#  unsignedShort: { rdf: 'xsd:unsignedShort',      graphql: UnsignedShort,      descr: "Unsigned 16‐bit integer",                                    graphqlExtension: true }
+#  unsignedByte: { rdf: 'xsd:unsignedByte',       graphql: UnsignedByte,       descr: "Unsigned 8‐bit integer",                                     graphqlExtension: true }
+#  decimal: { rdf: 'xsd:decimal',            graphql: Decimal,            descr: "Decimal, unlimited-precision number",                        graphqlExtension: true }
+#  integer: { rdf: 'xsd:integer',            graphql: Integer,            descr: "Integer, unlimited digits",                                  graphqlExtension: true }
+#  positiveInteger: { rdf: 'xsd:positiveInteger',    graphql: PositiveInteger,    descr: "Positive integer (>0), unlimited digits",                    graphqlExtension: true }
+#  nonPositiveInteger: { rdf: 'xsd:nonPositiveInteger', graphql: NonPositiveInteger, descr: "Non-positive integer (<=0), unlimited digits",               graphqlExtension: true }
+#  negativeInteger: { rdf: 'xsd:negativeInteger',    graphql: NegativeInteger,    descr: "Negative integer (<0), unlimited digits",                    graphqlExtension: true }
+#  nonNegativeInteger: { rdf: 'xsd:nonNegativeInteger', graphql: NonNegativeInteger, descr: "Non-negative integer (>=0), unlimited digits",               graphqlExtension: true }
+#  negativeFloat: { rdf: 'xsd:float',              graphql: NegativeFloat,      descr: "An Float scalar that must be a negative value",              graphqlExtension: true }
+#  nonNegativeFloat: { rdf: 'xsd:float',              graphql: NonNegativeFloat,   descr: "An Float scalar that must be greater than or equal to zero", graphqlExtension: true }
+#  positiveFloat: { rdf: 'xsd:float',              graphql: PositiveFloat,      descr: "An Float scalar that must be a positive value",              graphqlExtension: true }
+#  nonPositiveFloat: { rdf: 'xsd:float',              graphql: NonPositiveFloat,   descr: "An Float scalar that must be less than or equal to zero",    graphqlExtension: true }
+#  dateTimeStamp: { rdf: 'xsd:dateTimeStamp',      graphql: DateTime,           descr: "Date and Time: CCYY-MM-DDThh:mm:ss.sss, with timezone",      graphqlExtension: true }
+#  dateTime: { rdf: 'xsd:dateTime',           graphql: DateTime,           descr: "Date and Time: yyyy-mm-ddThh:mm:ss.sss, no timezone",        graphqlExtension: true }
+#  time: { rdf: 'xsd:time',               graphql: Time,               descr: "Time: hh:mm:ss, optional timezone",                          graphqlExtension: true }
+#  date: { rdf: 'xsd:date',               graphql: Date,               descr: "Date: yyyy-mm-dd",                                           graphqlExtension: true }
+#  year: { rdf: 'xsd:gYear',              graphql: Year,               descr: "Year: yyyy",                                                 graphqlExtension: true }
+#  yearMonth: { rdf: 'xsd:gYearMonth',         graphql: YearMonth,          descr: "Year & Month: yyyy-mm",                                      graphqlExtension: true }
+#  duration: { rdf: 'xsd:duration',           graphql: Duration,           descr: "Duration: PnYnMnDTnHnMnS",                                   graphqlExtension: true }
+#  dayTimeDuration: { rdf: 'xsd:dayTimeDuration',    graphql: DayTimeDuration,    descr: "Duration: PnDTnHnMnS",                                       graphqlExtension: true }
+#  yearMonthDuration: { rdf: 'xsd:yearMonthDuration',  graphql: YearMonthDuration,  descr: "Duration: PnYnM",                                            graphqlExtension: true }
+#
+#  # Literal and union datatypes
+#  # literal:             {rdf: 'rdf:Literal',                     graphql: Literal, descr: "Any RDF literal"}
+#  langString: { rdf: 'rdf:langString',                  graphql: Literal, descr: "Language-tagged string" }
+#  stringOrLangString: { union: [ string, langString ],            graphql: Literal, descr: "string or langString" }
+#  dateOrYearOrMonth: { union: [ date, year, yearMonth ],         graphql: Literal, descr: "date or year or yearMonth" }
+#
+#  # Enumeration datatypes
+#  statusEnum: {values: [Current, Emeriti]}
+#  affiliationEnum: {values: [Primary, Secondary]}
+###
+###
+# Global Property Definitions (for common properties; https://platform.ontotext.com/semantic-objects/soml/properties.html; https://platform.ontotext.com/semantic-search/soml.html#)
+properties:
+# Property Definition Template
+#  <prop>:  {label: "...", descr: "...", range: <datatype|Obj>, rangeCheck: <boolean>, typeCast: <boolean>,
+#            kind: (object | literal | mixed), min: <default 0>, max: <default 1>,
+#            inverseAlias: <prop>, inverse: <prop>, rdfProp: "(pfx:prop | <absoluteIRI> | SPARQL template)", symmetric: <boolean>, regex: '<regex>', prefix: "<string>"}
+################################
+###
+##### SKOS Properties
+#  skos:inScheme:  { label: "In scheme", min: 1, range: ConceptScheme }
+#  skos:notation:  { label: "Notation", descr: "Code of a Concept" }
+#  skos:prefLabel: { label: "Preferred label", min: 1 }
+#  skos:altLabel:       { label: "Alternative label", descr: "An alternative lexical label for a resource. The range of skos:altLabel is the class of RDF plain literals. skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties", kind: literal, max: inf, range: stringOrLangString, rdfProp: skos:altLabel }
+#  skos:hiddenLabel: {label: "Hidden label", descr: "A lexical label for a resource that should be hidden when generating visual displays of the resource, but should still be accessible to free text search operations.", kind: literal, max: inf, range: stringOrLangString, rdfProp: skos:hiddenLabel }
+#  skos:broader:   { label: "Broader",        max: inf, range: Concept, descr: "Broader concept in same ConceptScheme" }
+#  skos:broaderMatch: { label: "Broader match",  max: inf, range: Concept, descr: "Broader concept in different ConceptScheme" }
+#  skos:narrower:     { label: "Narrower",       max: inf, range: Concept, descr: "Narrower concept in same ConceptScheme",      inverseOf: skos:broader }
+#  skos:narrowerMatch: { label: "Narrower match", max: inf, range: Concept, descr: "Narrower concept in different ConceptScheme", inverseOf: skos:broaderMatch }
+#  level: { label: "Level", range: integer, descr: "Concept level in its ConceptScheme hierarchy" }
+#  order: { label: "Order", range: integer, descr: "Tree order of the concept" }
+#  skos:scopeNote: {label: "Scope note", descr: "A note that helps to clarify the meaning and/or the use of a concept", kind: literal, max: inf, range: stringOrLangString, rdfProp: skos:scopeNote }
+#  skos:definition: { label: "Definition", descr: "A statement or formal explanation of the meaning of a concept", kind: literal, max: inf, range: stringOrLangString, rdfProp: skos:definition }
+#  skos:exactMatch: { label: "has exact match", descr: "skos:exactMatch is disjoint with each of the properties skos:broadMatch and skos:relatedMatch. skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch", kind: object, max: inf, range: Concept, rdfProp: skos:exactMatch, symmetric: true }
+#  skos:topConceptOf: { descr: "Relates a concept to the concept scheme that it is a top level concept of", inverseOf: hasTopConcept, kind: object, label: is top concept in scheme, max: inf, range: ConceptScheme, rdfProp: skos:topConceptOf }
+#  skos:hasTopConcept: { descr: "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies", inverseOf: topConceptOf, kind: object, label: "has top concept", max: inf, range: Concept, rdfProp: skos:hasTopConcept }
+#  skos:relatedMatch: { descr: "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes", kind: object, label: has related match, max: inf, range: Concept, rdfProp: skos:relatedMatch, symmetric: true }
+#####################################################################################################
+
+
+### "Involves" properties
+
+#
+#  occursIn:
+#    max: inf
+#    range: Semester
+#    rdfProp: hbsko:occursIn
+#  participatesIn:
+#    max: inf
+#    range: Program
+#    rdfProp: hbsko:participatesIn
+#  previousReleaseNotes:
+#    max: inf
+#    range: HBSKReleaseNotes
+#    rdfProp: hbsko:previousReleaseNotes
+##
+#  relatedMaterial:
+#    max: inf
+#    range: CourseMaterialsInterface
+#    rdfProp: hbsko:relatedMaterial
+#  relatedToCase:
+#    max: inf
+#    range: CourseMaterialsInterface
+#    inverseOf: hbsko:relatedMaterial
+#    rdfProp: hbsko:relatedToCase
+#
+
+########## Deprecated/Unused
+#  facultyUnitOf: { search: { index: true }, kind: object, max: inf, domain: Person, range: Organization, rdfProp: hbsko:facultyUnitOf }
+#  hasFacultyUnit: { search: { index: false }, kind: object, max: inf, range: OrganizationInterface, rdfProp: hbsko:hasFacultyUnit, inverseOf: hbsko:facultyUnitOf }
+#  authorOf: { search: { index: false }, kind: object, max: inf, range: CreativeWorkInterface, rdfProp: hbsko:authorOf }
+#  hasAuthor: { search: { index: false }, kind: object, max: inf, range: PersonInterface, rdfProp: hbsko:hasAuthor, inverseOf: hbsko:authorOf } }
+#  isContributorOf: { search: { index: false }, kind: object, max: inf, range: CreativeWorkInterface, rdfProp: hbsko:isContributorOf }
+#  hasContributor: { search: { index: false }, kind: object, max: inf, range: PersonInterface, rdfProp: hbsko:hasContributor, inverseOf: hbsko:isContributorOf } }
+#  interestOf: { kind: object, max: inf, range: PersonInterface, rdfProp: hbsko:interestOf }
+#  hasInterest: { search: { index: false }, kind: literal, max: inf, range: stringOrLangString, rdfProp: hbsko:hasInterest }
+#  sponsorOf: { kind: object, max: inf, range: EventInterface, rdfProp: hbsko:sponsorOf }
+#  hasSponsor: { kind: object, max: inf, range: OrganizationInterface, rdfProp: hbsko:hasSponsor, inverseOf: hbsko:sponsorOf }
+#  includesPublication: { kind: object, max: inf, range: PublicationInterface, rdfProp: hbsko:includesPublication }
+#  includedInPublication: { kind: object, max: inf, range: EventInterface, rdfProp: hbsko:includedInPublication, inverseOf: hbsko:includesPublication }
+#  isSessionOfCourse: { kind: object, max: inf, range: CourseInterface, rdfProp: hbsko:isSessionOfCourse }
+#  hasCourseSession: { kind: object, max: inf, range: EventInterface, rdfProp: hbsko:hasCourseSession, inverseOf: hbsko:isSessionOfCourse }
+#  locatedIn: { kind: object, max: inf, range: LocationInterface, rdfProp: hbsko:locatedIn }
+#  presentedAt: { kind: object, max: inf, range: EventInterface, rdfProp: hbsko:presentedAt }
+#  sameAs: { kind: object, max: inf, rdfProp: hbsko:sameAs }
+##### Datatype Properties
+#  academicYearDate:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:academicYearDate
+#    search:
+#      index: true
+  briefDescription:
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:briefDescription
+    search:
+      index: true
+#  byLine:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:byLine
+#  capIqId:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:capIqId
+#  caseNumber:
+#    search:
+#      index: true
+#    max: inf
+#    range: integer
+#    rdfProp: hbsko:caseNumber
+#  citation:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:citation
+#  contentType:
+##    search:
+##      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:contentType
+#  courseCatalogUrl:
+##    search:
+##      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:courseCatalogUrl
+#  courseID:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:courseID
+#  courseNumber: # this is defined below as a object property for the Course object to test "nesting"
+#    search:
+#      index: true
+#    max: inf
+#    range: integer
+#    rdfProp: hbsko:courseNumber
+#  dateCreated:
+#    max: inf
+#    range: date
+#    rdfProp: hbsko:dateCreated
+#  dateModified:
+#    max: inf
+#    range: date
+#    rdfProp: hbsko:dateModified
+#  degree:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:degree
+  description:
+    search:
+      index: true
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:description
+#  descriptionHtml:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:descriptionHtml
+#  displayDate:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:displayDate
+  displayName:
+    search:
+      index: true
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:displayName
+#  employedBy:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:employedBy
+
+#  erAuthor:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:erAuthor
+#  facultyAssignedProtagonistEthnicity:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:facultyAssignedProtagonistEthnicity
+#  facultyAssignedProtagonistGender:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:facultyAssignedProtagonistGender
+#  hciOrganizationId:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:hciOrganizationId
+  imageUrl:
+    search:
+      index: true
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:imageUrl
+  language:
+    search:
+      index: true
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:language
+  nakedId:
+    search:
+      index: true
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:nakedId
+#  nonHbsContributor:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:nonHbsContributor
+#  notes:
+##    search:
+##      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:notes
+  profileUrl:
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:profileUrl
+#  pubDate:
+##    search:
+##      index: true
+#    max: inf
+#    range: dateTime
+#    rdfProp: hbsko:pubDate
+#  risId:
+##    search:
+##      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:risId
+#  risPeriodicalType:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:risPeriodicalType
+#  secureImageUrl:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:secureImageUrl
+#  shortDescription:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:shortDescription
+  source:
+    max: inf
+    range: stringOrLangString
+    rdfProp: hbsko:source
+#  storyBody:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:storyBody
+#  storyLocation:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:storyLocation
+#  storyType:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:storyType
+#  subjectArea:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:subjectArea
+#  term:
+#    max: inf
+#    range: integer
+#    rdfProp: hbsko:term
+#  title:
+#    search:
+#      index: true
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:title
+#  url:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:url
+#  version:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:version
+#  visibility:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:visibility
+#  wkArticleType:
+#    max: inf
+#    range: stringOrLangString
+#    rdfProp: hbsko:wkArticleType
+#  year:
+#    max: inf
+#    range: year #
+#    rdfProp: hbsko:year
+
+########## Deprecated/Unused
+##### Annotation Properties
+
+########## Deprecated/Unused
+################################
+### Object Class Definitions (and potentially one-off properties of those objects that don't need global definitions; https://platform.ontotext.com/semantic-objects/soml/objects.html)
+objects:
+# Object Class Definition Template
+#  <Obj>:
+#    label: "...",
+#    descr: "...",
+#    regex: '<regex>',
+#    regexFlags: '<flags>',
+#    prefix: "<string>",
+#    typeProp: (<prop> | "none"),
+#    type: [<iri>...],
+#    name: <prop>,
+#    inherits: <Obj>,
+#    kind: (abstract|supertype),
+#    access: (read|read-only),
+#    sparqlFederatedService: "<string>",
+#    search: '<boolean> or <config>',
+#    pattern: "<string>",
+#    extend: <boolean>,
+#    meta: {key: "<string>", value: '<string>|<json>'}
+#    props:
+#      <prop>: ...
+####################################################
+###
+### SKOS Classes
+#  ConceptScheme:
+#    descr: A concept scheme may be defined to include concepts from different sources.
+#      A set of concepts, optionally including statements about semantic relationships
+#      between those concepts
+#    name: dcterms:title
+#    label: Concept Scheme
+#    props:
+#      hasTopConcept: {}
+#    type: skos:ConceptScheme
+#    search:
+#      index: true
+#  Concept:
+#    descr: An idea or notion; a unit of thought
+#    name: skos:prefLabel
+#    label: Concept
+#    props:
+#      altLabel: {}
+#      broadMatch: {}
+#      broader: {}
+#      broaderTransitive: {}
+#      changeNote: {}
+#      closeMatch: {}
+#      definition: {}
+#      editorialNote: {}
+#      exactMatch: {}
+#      example: {}
+#      hiddenLabel: {}
+#      historyNote: {}
+#      inScheme: {}
+#      mappingRelation: {}
+#      narrowMatch: {}
+#      narrower: {}
+#      narrowerTransitive: {}
+#      notation: {}
+#      note: {}
+#      prefLabel: {}
+#      related: {}
+#      relatedMatch: {}
+#      scopeNote: {}
+#      semanticRelation: {}
+#      topConceptOf: {}
+#    type: skos:Concept
+#    search:
+#      index: true
+  ### CreativeWork and Subclasses
+#  CreativeWorkInterface:
+##    search:
+##      index: true
+#    descr: Abstract superclass of CreativeWork
+#    kind: abstract
+#    props:
+#      aboutGeo: { }
+#      aboutIndustry: { }
+#      aboutOrganization: { }
+#      aboutPerson: { }
+#      aboutTopic: { }
+#      citation: { }
+#      contentType: { }
+#      displayDate: { }
+#      features: { }
+##      hasAuthor: { }
+#      hasHbsFacultyAuthor: { }
+##      hasPart: { }
+#      hasPublisher: { }
+#      hasRelatedInitiative: { }
+#      imageUrl: { }
+#      language: { }
+#      nonHbsContributor: { }
+##      partOf: { }
+#      pubDate: { }
+#      risId: { }
+#      storyBody: { }
+#      title: { }
+#      url: { }
+#      visibility: { }
+#      wkArticleType: { }
+#
+#  CreativeWork:
+#    type: hbsko:CreativeWork
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    descr: a manifestation of creative effort
+#    inherits: CreativeWorkInterface
+#    label: Creative Work
+#
+#  Course:
+#    inherits: CreativeWorkInterface
+#    name: skos:prefLabel
+#    type: hbsko:Course
+#    label: Course
+#    search:
+#      index: true
+#      nested: true # makes the object's searchable properties (props w/ {search: {index: true}}) be included in the parent object's index
+#    props:
+#      courseNumber: { range: integer, search: { index: true } }
+#      courseID: {search: { index: true } }
+#      hasCourseInstance: {search: { index: true }}
+###
+###### CourseMaterials and its subclasses
+#  CourseMaterialsInterface:
+##    search:
+##      index: true
+#    descr: Abstract superclass of Course-Materials
+#    inherits: CreativeWorkInterface
+#    kind: abstract
+#    props:
+#      facultyAssignedProtagonistEthnicity: { }
+#      facultyAssignedProtagonistGender: { }
+#      caseNumber: { }
+#      isAssignmentOf: { }
+#      relatedMaterial: { }
+#      relatedToCase: { }
+#
+#  CourseMaterials:
+#    name: skos:prefLabel
+#    type: hbsko:CourseMaterials
+#    label: Course Materials
+#    search:
+#      index: true
+#    inherits: CourseMaterialsInterface
+#
+#  Case:
+#    name: skos:prefLabel
+#    type: hbsko:Case
+#    label: Case
+#    search:
+#      index: true
+#    inherits: CourseMaterialsInterface
+#
+#  CaseMaterials:
+#    name: skos:prefLabel
+#    type: hbsko:CaseMaterials
+#    label: Case Materials
+#    search:
+#      index: true
+#    inherits: CourseMaterialsInterface
+#
+#  TeachingMaterial:
+#    name: skos:prefLabel
+#    type: hbsko:TeachingMaterial
+#    label: Teaching Material
+#    search:
+#      index: true
+#    inherits: CourseMaterialsInterface
+#
+####
+####### Publications and its subclasses
+#  PublicationsInterface:
+##    search:
+##      index: true
+#    descr: Abstract superclass of Publications
+#    inherits: CreativeWorkInterface
+#    kind: abstract
+#
+#  Publications:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    inherits: PublicationsInterface
+#    label: Publications
+#    type: hbsko:Publications
+####
+######### Article and its subclasses
+#  ArticleInterface:
+##    search:
+##      index: true
+#    descr: Abstract superclass of Article
+#    inherits: PublicationsInterface
+#    kind: abstract
+#
+#  Article:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    inherits: ArticleInterface
+#    label: Article
+#    type: hbsko:Article
+#
+#  AlumniStory:
+#    name: skos:prefLabel
+#    type: hbsko:AlumniStory
+#    search:
+#      index: true
+#      nested: true
+#    inherits: ArticleInterface
+#    label: AlumniStory
+#    props:
+#      erAuthor: {search: {index: true} }
+#      shortDescription: { search: {index: true}}
+#      storyLocation: { search: {index: true}}
+#      storyType: { search: {index: true}}
+#
+#  WkArticle:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#      nested: true
+#    inherits: ArticleInterface
+#    label: WkArticle
+#    props:
+#      byLine: {search: {index: true} }
+#      wkArticleType: {search: {index: true} }
+#    type: hbsko:WkArticle
+####
+#  Book:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    inherits: PublicationsInterface
+#    label: Book
+#    type: hbsko:Book
+#
+#  BookComponent:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    inherits: PublicationsInterface
+#    label: BookComponent
+#    type: hbsko:BookComponent
+#
+#  Periodical:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#      nested: true
+#    descr: periodicals - represented with IDs or strings based on source
+#    inherits: PublicationsInterface
+#    label: Periodical
+#    props:
+#      risPeriodicalType: { search: {index: true}}
+#    type: hbsko:Periodical
+#
+#  Presentation:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    inherits: PublicationsInterface
+#    label: Presentation
+#    type: hbsko:Presentation
+################################################
+###
+### Event and its Subclasses
+  Event:
+    search:
+      index: true
+    descr: Abstract superclass of Event
+    kind: abstract
+#    name: skos:prefLabel
+    typeProp: "rdf:type"
+    props:
+      involvesPerson: { max: inf, range: Person, rdfProp: hbsko:involvesPerson, search: { index: true } }
+      startDate: { search: { index: true }, range: date, rdfProp: hbsko:startDate }
+      endDate: { search: { index: true }, range: date, rdfProp: hbsko:endDate }
+      startYear: { search: { index: false }, range: year, rdfProp: hbsko:startYear }
+      endYear: { search: { index: false }, range: year, rdfProp: hbsko:endYear }
+      source: {}
+#
+#  CourseInstanceSession:
+#    name: skos:prefLabel
+#    label: CourseInstanceSession
+#    search:
+#      index: true
+#      nested: true
+#    inherits: Event
+#    props:
+#      descriptionHtml: {search: {index: true} }
+#      hasAssignedCase: {search: {index: true} }
+#      mbaClassSession: {search: {index: true} }
+
+  PersonFieldEvent:
+#    name: skos:prefLabel
+    type: hbsko:PersonFieldEvent
+    label: PersonFieldEvent
+    search:
+      nested: true
+    inherits: Event
+    props:
+      involvesFieldOfStudy: {search: {index: true}, max: inf, range: FieldOfStudy, rdfProp: hbsko:involvesFieldOfStudy }
+
+  PersonTitleEvent:
+#    name: skos:prefLabel
+    type: hbsko:PersonTitleEvent
+    label: PersonTitleEvent
+    search:
+      nested: true
+    inherits: Event
+    props:
+      involvesRank: {search: {index: true}, max: inf, range: FacultyRank, rdfProp: hbsko:involvesRank }
+      involvesTitle: { max: inf, range: FacultyTitle, rdfProp: hbsko:involvesTitle, search: { index: true } }
+
+  PersonUnitEvent:
+#    name: skos:prefLabel
+    type: hbsko:PersonUnitEvent
+    label: PersonUnitEvent
+    search:
+      nested: true
+    inherits: Event
+    props:
+      involvesUnit: { max: inf, range: AcademicUnit, rdfProp: hbsko:involvesUnit, search: { index: true } }
+      unitAffiliationType: { max: inf, range: stringOrLangString, rdfProp: hbsko:unitAffiliationType, search: { index: true } }
+
+
+#################################################################
+###
+### Organization and its subclasses
+  Organization:
+    search:
+      index: true
+    descr: Abstract superclass of Organization
+    kind: abstract
+    name: skos:prefLabel
+    typeProp: "rdf:type"
+    props:
+#      capIqId: { }
+#      facultyUnitOf: { }
+#      hasFacultyUnit: { }
+      hasMember: {max: inf, range: Person, inverseOf: hbsko:memberOf, rdfProp: hbsko:hasMember, search: { index: true } }
+#      hasPrecursor: { }
+#      hasSuccessor: { }
+#      isOrgSubjectOf: { }
+#      isPublisherOf: { }
+#      notes: { }
+#      precursorOf: { }
+#      sponsorOf: { }
+#      successorOf: { }
+      source: {}
+
+
+  AcademicUnit:
+    name: skos:prefLabel
+    type: hbsko:AcademicUnit
+    label: Academic Unit
+    search:
+#      index: true
+      nested: true
+    inherits: Organization
+    props:
+
+################################################
+###
+### Person and its subclasses
+  Person:
+    search:
+      index: true
+    name: skos:prefLabel
+    descr: Abstract superclass of Person
+    kind: abstract
+    typeProp: "rdf:type"
+    props:
+      memberOf: { search: { index: true }, range: Organization, rdfProp: hbsko:memberOf }
+      firstName: { search: { index: true }, max: inf, range: stringOrLangString, rdfProp: hbsko:firstName }
+      middleName: { search: { index: true }, max: inf, range: stringOrLangString, rdfProp: hbsko:middleName }
+      lastName: { search: { index: true }, max: inf, range: stringOrLangString, rdfProp: hbsko:lastName }
+      suffix: { search: { index: true }, max: inf, range: stringOrLangString, rdfProp: hbsko:suffix }
+      displayName: {search: {index: true}}
+      interestTopic: { search: { index: true }, max: inf, range: stringOrLangString, rdfProp: hbsko:interestTopic }
+      position: { max: inf, range: stringOrLangString, rdfProp: hbsko:position }
+      profileUrl: { search: {index: true} }
+      sortString: { max: inf, range: stringOrLangString, rdfProp: hbsko:sortString }
+      source: {}
+#  Person:
+#    name: skos:prefLabel
+#    type: hbsko:Person
+#    label: Person
+#    search:
+#      index: true
+#    inherits: PersonInterface
+
+#  HBSAlum:
+#    name: skos:prefLabel
+#    type: hbsko:HBSAlum
+#    label: HBSAlum
+#    search:
+#      index: true
+#      nested: true
+#    inherits: PersonInterface
+#    props:
+#      degree: {search: {index: true} }
+#      secureImageUrl: {search: {index: true} }
+
+  HBSFaculty:
+    name: skos:prefLabel
+    type: hbsko:HBSFaculty
+    label: HBSFaculty
+    search:
+      nested: true
+    inherits: Person
+    props:
+      facultyStatus: { search: { index: true }, max: inf, range: stringOrLangString, rdfProp: hbsko:facultyStatus }
+
+###############################################################################
+###
+### Classes with no subclasses
+
+#  Curriculum:
+#    name: skos:prefLabel
+#    type: hbsko:Curriculum
+#    label: Curriculum
+#    search:
+#      index: true
+
+  FacultyRank:
+    name: skos:prefLabel
+    type: hbsko:FacultyRank
+    label: FacultyRank
+    search:
+      index: true
+
+  FacultyTitle:
+    name: skos:prefLabel
+    type: hbsko:FacultyTitle
+    label: FacultyTitle
+    search:
+      index: true
+
+  FieldOfStudy:
+    name: skos:prefLabel
+    type: hbsko:FieldOfStudy
+    label: FieldOfStudy
+    search:
+      index: true
+#
+#  Geography:
+#    name: skos:prefLabel
+#    type: hbsko:Geography
+#    label: Geography
+#    search:
+#      index: true
+#
+#  HBSKReleaseNotes:
+#    name: skos:prefLabel
+#    type: hbsko:HBSKReleaseNotes
+#    label: HBSKReleaseNotes
+#    props:
+#      dateCreated: { }
+#      dateModified: { }
+#      previousReleaseNotes: { }
+#      version: { }
+#
+#  Industry:
+#    name: skos:prefLabel
+#    type: hbsko:Industry
+#    label: Industry
+#    search:
+#      index: true
+#
+#  Program:
+#    name: skos:prefLabel
+#    type: hbsko:Program
+#    label: Program
+#    search:
+#      index: true
+#
+#  Topic:
+#    name: skos:prefLabel
+#    type: hbsko:Topic
+#    label: Topic
+#    search:
+#      index: true
+#    props:
+#      isTopicSubjectOf: { }
+#
+#  TitleId:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    label: TitleId
+#    type: hbsko:TitleId
+#
+#  ScTitleId:
+#    name: skos:prefLabel
+#    search:
+#      index: true
+#    label: ScTitleId
+#    type: hbsko:ScTitleId
+#
+#
+
+# Role Based Access Control (https://platform.ontotext.com/semantic-objects/soml/rbac.html#)
+rbac:
+  # Role Definitions
+  roles:
+    # Role Definition Template
+#    <Role>:
+#      description: "..."
+#      actions: [
+#        "(<Obj>|*)/(<prop> | *)/(<read> | <write> | <delete> | *)/(where:{<graphqlFilter>})?"
+#      ]
+#      notActions: [
+#        "(<Obj>|*)/(<prop> | *)/(<read> | <write> | <delete> | *)/(where:{<graphqlFilter>})?"
+#      ]
+    # Default role which does not need to be configured or declared. Included for completeness.
+    Default:
+      description: "Default role, which does not need to be declared restricts all access read, write and delete"
+      notActions: [
+        "*/*/*"
+      ]
+    # Example role definitions which needs to be declared by the user:
+    Admin:
+      description: "Administrator role, can read, write and delete objects"
+      actions: [
+        "*/*/*"
+      ]
+    ReadOnly:
+      description: "User which can read all Objects and properties"
+      actions: [
+        "*/*/read"
+      ]
+#    NoAlumReader:
+#      description: "Role which can read everything except HBSAlum Objects and properties"
+#      actions: [
+#        "*/*/read"
+#      ]
+#      notActions: [
+#        "HBSAlum/*/read"
+#      ]

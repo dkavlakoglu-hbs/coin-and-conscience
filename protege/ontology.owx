@@ -1,0 +1,2934 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://librarydata.hbs.edu/coins-and-conscience/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://librarydata.hbs.edu/coins-and-conscience/">
+    <Prefix name="" IRI="https://librarydata.hbs.edu/coins-and-conscience/"/>
+    <Prefix name="cc" IRI="https://librarydata.hbs.edu/coins-and-conscience/"/>
+    <Prefix name="fn" IRI="http://www.w3.org/2005/xpath-functions"/>
+    <Prefix name="gn" IRI="http://www.geonames.org/ontology#"/>
+    <Prefix name="sr" IRI="http://www.openrdf.org/config/repository/sail#"/>
+    <Prefix name="afn" IRI="http://jena.apache.org/ARQ/function#"/>
+    <Prefix name="agg" IRI="http://jena.apache.org/ARQ/function/aggregate#"/>
+    <Prefix name="apf" IRI="http://jena.apache.org/ARQ/property#"/>
+    <Prefix name="map" IRI="http://www.w3.org/2005/xpath-functions/map"/>
+    <Prefix name="ofn" IRI="http://www.ontotext.com/sparql/functions/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rep" IRI="http://www.openrdf.org/config/repository#"/>
+    <Prefix name="sdo" IRI="https://schema.org/"/>
+    <Prefix name="wgs" IRI="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="geof" IRI="http://www.opengis.net/def/function/geosparql/"/>
+    <Prefix name="list" IRI="http://jena.apache.org/ARQ/list#"/>
+    <Prefix name="math" IRI="http://www.w3.org/2005/xpath-functions/math"/>
+    <Prefix name="path" IRI="http://www.ontotext.com/path#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="sail" IRI="http://www.openrdf.org/config/sail#"/>
+    <Prefix name="spif" IRI="http://spinrdf.org/spif#"/>
+    <Prefix name="array" IRI="http://www.w3.org/2005/xpath-functions/array"/>
+    <Prefix name="omgeo" IRI="http://www.ontotext.com/owlim/geo#"/>
+    <Prefix name="geoext" IRI="http://rdf.useekm.com/ext#"/>
+    <Prefix name="graphdb" IRI="http://www.ontotext.com/config/graphdb#"/>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Boolean"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Certification"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:CommunicateAction"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:ImageObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Intangible"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:MonetaryAmount"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Number"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Product"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:QuantitativeValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:SizeSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:StructuredValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Text"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:TextObject"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="sdo:URL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:contributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:creditText"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:description"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:identifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:image"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:size"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:subjectOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:url"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="sdo:value"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q12058270"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910449"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910443"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910563"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910441"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910447"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910445"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910451"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2107767"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q555022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q30303204"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q143595"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q56334603"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q167220"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910455"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2744998"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910453"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q29545626"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910459"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910457"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910461"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="love_and_money"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910429"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910549"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910427"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19279961"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1379395"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3085083"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910543"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910541"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910547"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910425"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910545"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q22009289"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q165367"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q520806"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910439"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910559"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q21531043"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910433"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910553"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910431"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910551"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910437"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910557"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q998339"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910435"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910555"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910561"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19569543"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19569785"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q33134321"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q140096"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q76135"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910529"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910527"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910521"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="politics_and_war"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910525"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q53498257"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910523"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="stock_exchanges"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1961244"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q20011635"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q728375"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2094287"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910539"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910537"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910535"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18577866"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910533"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q4491034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q23939409"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910507"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="vanity_and_virtue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910509"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q7824"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2871156"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2778104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910503"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910501"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910517"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910515"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910519"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q43270"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910513"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910511"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q55467951"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q538998"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q640361"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bettanier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3047890"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18511523"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2824901"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3983668"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q5598"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1094674"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="misers_moneylenders_and_thieves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q97477673"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q959236"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q602742"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q109061"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q5580"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q78163"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q62101888"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3108083"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q329811"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3299661"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q21464861"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18577046"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="money_devil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q335022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q345605"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3983670"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q47551"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q6283227"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="bankers_financiers_and_statesmen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910487"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910485"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18516699"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q711775"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910489"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910491"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910495"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3383022"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q53504581"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910493"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1378723"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3161745"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="louis-philippe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q559929"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q869133"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910499"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q39351810"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910497"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3164685"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q729057"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q352438"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910465"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q6369402"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910463"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910469"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910467"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910473"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910471"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19829357"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q765465"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910477"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910475"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910479"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q538350"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910483"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="speculation_and_credit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910481"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q102841270"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="biblical_and_mythological_scenes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3420968"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <Class abbreviatedIRI="sdo:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <Class abbreviatedIRI="sdo:Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <Class abbreviatedIRI="sdo:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <Class abbreviatedIRI="sdo:StructuredValue"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q102841270"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q109061"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1094674"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q12058270"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1378723"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1379395"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q140096"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q143595"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q165367"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q167220"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18511523"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18516699"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18577046"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q18577866"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19279961"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19569543"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19569785"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q1961244"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q19829357"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q20011635"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2094287"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2107767"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q21464861"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q21531043"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q22009289"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q23939409"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2744998"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2778104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2824901"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q2871156"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q29545626"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q30303204"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3047890"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3085083"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3108083"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3161745"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3164685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q329811"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3299661"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q33134321"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q335022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3383022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q3420968"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q345605"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q352438"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q39351810"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q43270"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q4491034"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q47551"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q520806"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q53498257"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q53504581"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q538350"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q538998"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q55467951"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q555022"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q5580"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q5598"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q559929"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q56334603"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q602742"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q62101888"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q6283227"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q6369402"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q640361"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q711775"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q728375"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q729057"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q76135"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q765465"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q78163"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q7824"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q869133"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q959236"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q97477673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="http://www.wikidata.org/entity/Q998339"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910425"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910427"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910429"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910431"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910433"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910435"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910437"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910439"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910441"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910443"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910445"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910447"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910449"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910451"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910453"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910455"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910457"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910459"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910461"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910463"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910465"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910467"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910469"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910471"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910473"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910475"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910477"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910479"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910481"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910483"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910485"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910487"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910489"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910491"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910493"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910495"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910497"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910499"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910501"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910503"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910507"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910509"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910511"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910513"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910515"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910517"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910519"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910521"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910523"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910525"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910527"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910529"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910533"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910535"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910537"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910539"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910541"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910543"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910545"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910547"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910549"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910551"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910553"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910555"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910557"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910559"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910561"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3910563"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3983668"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:CreativeWork"/>
+        <NamedIndividual IRI="https://iiif.lib.harvard.edu/manifests/view/ids:3983670"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="bankers_financiers_and_statesmen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:Person"/>
+        <NamedIndividual IRI="bettanier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="biblical_and_mythological_scenes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="louis-philippe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="love_and_money"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="misers_moneylenders_and_thieves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="money_devil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="politics_and_war"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="speculation_and_credit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="stock_exchanges"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:DefinedTerm"/>
+        <NamedIndividual IRI="vanity_and_virtue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483654"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483656"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483658"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483660"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483662"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483664"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483670"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483676"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483678"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483680"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483682"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483684"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483686"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483692"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483693"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483694"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483695"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483696"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483697"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483698"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483699"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483700"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483701"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483702"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483703"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483704"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483705"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483706"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483707"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483708"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483709"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483710"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483711"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483712"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483713"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483714"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483715"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483716"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483717"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483718"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483719"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483720"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483721"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483722"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483723"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="sdo:PropertyValue"/>
+        <AnonymousIndividual nodeID="_:genid2147483724"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="sdo:about"/>
+        <ObjectProperty abbreviatedIRI="sdo:subjectOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:about"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Certification"/>
+            <Class abbreviatedIRI="sdo:CommunicateAction"/>
+            <Class abbreviatedIRI="sdo:CreativeWork"/>
+            <Class abbreviatedIRI="sdo:Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:contributor"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:CreativeWork"/>
+            <Class abbreviatedIRI="sdo:Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:creditText"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:CreativeWork"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:description"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:identifier"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:image"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:sameAs"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:size"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:CreativeWork"/>
+            <Class abbreviatedIRI="sdo:Product"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:url"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Thing"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="sdo:value"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:MonetaryAmount"/>
+            <Class abbreviatedIRI="sdo:PropertyValue"/>
+            <Class abbreviatedIRI="sdo:QuantitativeValue"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:about"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:Thing"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:contributor"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Organization"/>
+            <Class abbreviatedIRI="sdo:Person"/>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:creditText"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:description"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:TextObject"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:identifier"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:PropertyValue"/>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:image"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:ImageObject"/>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:sameAs"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:size"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:DefinedTerm"/>
+            <Class abbreviatedIRI="sdo:QuantitativeValue"/>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:SizeSpecification"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:url"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="sdo:value"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="sdo:Boolean"/>
+            <Class abbreviatedIRI="sdo:Number"/>
+            <Class abbreviatedIRI="sdo:Role"/>
+            <Class abbreviatedIRI="sdo:StructuredValue"/>
+            <Class abbreviatedIRI="sdo:Text"/>
+            <Class abbreviatedIRI="sdo:URL"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q102841270</IRI>
+        <Literal>Julien, Joseph Laurent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q109061</IRI>
+        <Literal>Reni, Guido</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q1094674</IRI>
+        <Literal>Visscher, Jan Claesz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q12058270</IRI>
+        <Literal>Galle, Joannes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q1378723</IRI>
+        <Literal>Le Sueur, Eustache</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q1379395</IRI>
+        <Literal>Galle, Philip</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q140096</IRI>
+        <Literal>Passe, Crispijn de, the Elder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q143595</IRI>
+        <Literal>Stradanus, Johannes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q165367</IRI>
+        <Literal>Goltzius, Hendrick</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q167220</IRI>
+        <Literal>Cort, Cornelis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q18511523</IRI>
+        <Literal>Kohl, Andrews</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q18516699</IRI>
+        <Literal>Doetechum, Lucas van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q18577046</IRI>
+        <Literal>Bowles, Thomas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q18577866</IRI>
+        <Literal>Gaillard, René</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q19279961</IRI>
+        <Literal>Geissler, Friedrich</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q19569543</IRI>
+        <Literal>Desplaces, Louis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q19569785</IRI>
+        <Literal>Sadeler, Raphael, I</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q1961244</IRI>
+        <Literal>Swanenburgh, Willem Isaakz, I</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q19829357</IRI>
+        <Literal>Ertinger, Franz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q20011635</IRI>
+        <Literal>Paludanus, Gerhard (von Groeningen)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q2094287</IRI>
+        <Literal>Heyden, Pieter van der</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q2107767</IRI>
+        <Literal>Valck, Gerard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q21464861</IRI>
+        <Literal>Linder, Philippe Jacques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q21531043</IRI>
+        <Literal>Razet, J.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q22009289</IRI>
+        <Literal>Lespinasse, Louis Nicolas de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q23939409</IRI>
+        <Literal>Chollet, Antoin Joseph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q2744998</IRI>
+        <Literal>Eisen, Charles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q2778104</IRI>
+        <Literal>Wierx, Hieronymus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q2824901</IRI>
+        <Literal>Roehn, Adolphe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q2871156</IRI>
+        <Literal>Desperet, A.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q29545626</IRI>
+        <Literal>Schenk, Leonard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q30303204</IRI>
+        <Literal>Strauch, Georg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3047890</IRI>
+        <Literal>Lavrate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3085083</IRI>
+        <Literal>Ciartres, F.L.D.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3085083</IRI>
+        <Literal>Langlois, François (F.L.D. Ciartres)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3108083</IRI>
+        <Literal>Mitelli, Giuseppe Maria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3161745</IRI>
+        <Literal>Sadeler, Jan (Johannes), I</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3164685</IRI>
+        <Literal>Pellerin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q329811</IRI>
+        <Literal>Bloemaert, Abraham</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3299661</IRI>
+        <Literal>Greuter, Mathias</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q33134321</IRI>
+        <Literal>Hainzelman, Johann</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q335022</IRI>
+        <Literal>Teniers, David, the Younger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3383022</IRI>
+        <Literal>Basan, Pierre François</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q3420968</IRI>
+        <Literal>Lafage, Raymond</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q345605</IRI>
+        <Literal>Zuccaro, Federigo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q352438</IRI>
+        <Literal>Ostade, Adrian van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q39351810</IRI>
+        <Literal>Mordant, Daniel Charles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q43270</IRI>
+        <Literal>Breughel, Pieter, the Elder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q4491034</IRI>
+        <Literal>Fleischmann, Friedrich</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q47551</IRI>
+        <Literal>Titian, (Tiziano Vecellio)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q520806</IRI>
+        <Literal>Gillray, James</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q53498257</IRI>
+        <Literal>Auvray, Pierre Laurent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q53504581</IRI>
+        <Literal>Mesnil (Ménil), Élie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q538350</IRI>
+        <Literal>Heemskerck, Maarten van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q538998</IRI>
+        <Literal>Maratti, Carlo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q55467951</IRI>
+        <Literal>Brichet, Robert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q555022</IRI>
+        <Literal>Vos, Marten de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q5580</IRI>
+        <Literal>Dürer, Albrecht</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q5598</IRI>
+        <Literal>Rembrandt van Rhyn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q559929</IRI>
+        <Literal>Picart, Bernard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q56334603</IRI>
+        <Literal>Stefanoni, Pietro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q602742</IRI>
+        <Literal>Lafreri, Anton</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q62101888</IRI>
+        <Literal>Régnier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q6283227</IRI>
+        <Literal>Goez, Joseph Franz von</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q6369402</IRI>
+        <Literal>Mallery, Karel van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q640361</IRI>
+        <Literal>Cock, Hieronymu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q711775</IRI>
+        <Literal>Saenredam, Jan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q728375</IRI>
+        <Literal>Raimondi, Marcantonio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q729057</IRI>
+        <Literal>Badalocchio, Sisto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q76135</IRI>
+        <Literal>Hess, Carl Ernst Christoph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q765465</IRI>
+        <Literal>Coornhert, Dirck Volkertsz.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q78163</IRI>
+        <Literal>Schenk, Pieter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q7824</IRI>
+        <Literal>Carracci, Annibale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q869133</IRI>
+        <Literal>Galle, Cornelis, the Elder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q959236</IRI>
+        <Literal>Mieris, Frans van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q97477673</IRI>
+        <Literal>Berger, Jenny</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>http://www.wikidata.org/entity/Q998339</IRI>
+        <Literal>Kilian, Wolfgang</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910425</IRI>
+        <Literal>The Unhappy Lot of the Rich</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910427</IRI>
+        <Literal>The Unhappy Lot of the Rich</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910429</IRI>
+        <Literal>The Triumph of Riches</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910431</IRI>
+        <Literal>An Allegorical Hunt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910433</IRI>
+        <Literal>The Fight of the Money-Bags and the Coffers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910435</IRI>
+        <Literal>Der Bruder Esel mit dem Gelt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910437</IRI>
+        <Literal>Gellt Zeucht die Weltt. Mundum Trahit Pecunia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910439</IRI>
+        <Literal>The Two Deaths</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910441</IRI>
+        <Literal>Honor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910443</IRI>
+        <Literal>Justice Rewards Toil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910445</IRI>
+        <Literal>Avarice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910447</IRI>
+        <Literal>Divitiæ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910449</IRI>
+        <Literal>Allegory of the Vanity and Transitory Nature of Worldly Possessions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910451</IRI>
+        <Literal>Allegory of Wealth and Luxury</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910453</IRI>
+        <Literal>Jan Uytenbogaert, &apos;The Goldweigher&apos;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910455</IRI>
+        <Literal>Le Plaisir des Vieillards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910457</IRI>
+        <Literal>Peasant with Coins</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910459</IRI>
+        <Literal>Banquet with Musicians</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910461</IRI>
+        <Literal>Dove L&apos;Oro Parla, Ogni Lingua Tace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910463</IRI>
+        <Literal>La Commodità Fà l&apos;Huomo Ladro</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910465</IRI>
+        <Literal>Le Riche du Jour ou le Préteur sur Gages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910467</IRI>
+        <Literal>Le Cornard Contant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910469</IRI>
+        <Literal>Le Diable d&apos;Argent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910471</IRI>
+        <Literal>Le Grand Diable d&apos;Argent Patron de la Finance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910473</IRI>
+        <Literal>Les Vérités du Jour, ou le Grand Diable d&apos;Argent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910475</IRI>
+        <Literal>Le Grand Diable d&apos;Argent, Patron de la Finance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910477</IRI>
+        <Literal>The Queen of Sheba Bringing Gifts to King Solomon. 1 Kings 10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910479</IRI>
+        <Literal>The Parable of the Talents. Mt. 25: 14</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910481</IRI>
+        <Literal>The Parable of Ananias and Sapphira. Acts 5: 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910483</IRI>
+        <Literal>The Apostles Distribute the Money to those in Need. Acts 4: 32-35</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910485</IRI>
+        <Literal>Christ and the Pharisees with the Tribute Money. Mt. 22</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910487</IRI>
+        <Literal>St. Roch Giving Alms to the Poor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910489</IRI>
+        <Literal>Le Veau d&apos;Or. Exod. 32</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910491</IRI>
+        <Literal>Darius, out of Greed, Orders the Tomb of Queen Nitocris to be Opened</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910493</IRI>
+        <Literal>Danaë</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910495</IRI>
+        <Literal>Marriage for Wealth Officiated by the Devil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910497</IRI>
+        <Literal>Der Liebesantrag—the Ill-Assorted Couple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910499</IRI>
+        <Literal>Ni l&apos;Un ni l&apos;Autre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910501</IRI>
+        <Literal>L&apos;Accord de Mariage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910503</IRI>
+        <Literal>La Double Tentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910507</IRI>
+        <Literal>Midas, Transmuting all into Gold Paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910509</IRI>
+        <Literal>La Bonnet-Rouge: –or– John Bull Evading the Hat Tax</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910511</IRI>
+        <Literal>The Political Balloon; or, The Fall of East India Stock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910513</IRI>
+        <Literal>Pauvres Aveugles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910515</IRI>
+        <Literal>Caricature of Louis-Philippe and Guizot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910517</IRI>
+        <Literal>La Poire Tapée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910519</IRI>
+        <Literal>Caricature of Louis-Philippe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910521</IRI>
+        <Literal>Le Grand Saut . . . Sot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910523</IRI>
+        <Literal>Le Speculateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910525</IRI>
+        <Literal>Le Financier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910527</IRI>
+        <Literal>A Lucky and Unlucky Speculator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910529</IRI>
+        <Literal>La Hausse. In Luck. En Alza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910533</IRI>
+        <Literal>Allegory on the Death of Credit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910535</IRI>
+        <Literal>Crédit est Mort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910537</IRI>
+        <Literal>Die Wind Kauffer, werden mit Wind bezahlt, und finden sich auf die letzst betrogen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910539</IRI>
+        <Literal>Une Assemblée d&apos;Actionnaires</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910541</IRI>
+        <Literal>J&apos;ai Perdu!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910543</IRI>
+        <Literal>Karl Fugger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910545</IRI>
+        <Literal>Georg Fussel (b. 1601)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910547</IRI>
+        <Literal>Sir Thomas Gresham (1519?–79)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910549</IRI>
+        <Literal>Philippe Du Four</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910551</IRI>
+        <Literal>John Law (1671–1729)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910553</IRI>
+        <Literal>James Edouard de Rothschild (1844–81)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910555</IRI>
+        <Literal>De Beurs. [Amsterdam]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910557</IRI>
+        <Literal>Borse. [Antwerp]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910559</IRI>
+        <Literal>A View of the Royal Exchange London. [second exchange]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910561</IRI>
+        <Literal>Vue de la Bourse et du Magazin des Marchandises en remontant la petite Neva. [St. Petersburg]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3910563</IRI>
+        <Literal>Die Hamburger Börse. [the old exchange]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3983668</IRI>
+        <Literal>Political Ravishment, or the Old Lady of Threadneedle-Street in Danger!</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>https://iiif.lib.harvard.edu/manifests/view/ids:3983670</IRI>
+        <Literal>La Baisse. Out of Luck. En Baja</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>bankers_financiers_and_statesmen</IRI>
+        <Literal xml:lang="en">Bankers, Financiers, and Statesmen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>bettanier</IRI>
+        <Literal>Bettanier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>biblical_and_mythological_scenes</IRI>
+        <Literal xml:lang="en">Biblical and Mythological Scenes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>louis-philippe</IRI>
+        <Literal xml:lang="en">Louis-Philippe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>love_and_money</IRI>
+        <Literal xml:lang="en">Love and Money</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>misers_moneylenders_and_thieves</IRI>
+        <Literal xml:lang="en">Misers, Moneylenders, and Thieves</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>money_devil</IRI>
+        <Literal xml:lang="en">Money Devil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>politics_and_war</IRI>
+        <Literal xml:lang="en">Politics and War</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>speculation_and_credit</IRI>
+        <Literal xml:lang="en">Speculation and Credit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>stock_exchanges</IRI>
+        <Literal xml:lang="en">Stock Exchanges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <IRI>vanity_and_virtue</IRI>
+        <Literal xml:lang="en">Vanity and Virtue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sdo:CreativeWork</AbbreviatedIRI>
+        <Literal xml:lang="en">CreativeWork</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sdo:DefinedTerm</AbbreviatedIRI>
+        <Literal xml:lang="en">DefinedTerm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sdo:Person</AbbreviatedIRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sdo:PropertyValue</AbbreviatedIRI>
+        <Literal xml:lang="en">PropertyValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>sdo:name</AbbreviatedIRI>
+        <Literal xml:lang="en">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483654"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483656"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483657"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483658"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483659"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483660"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483661"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483662"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483663"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483664"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483665"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483666"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483667"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483668"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483669"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483670"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483671"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483672"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483673"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483674"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483675"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483676"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483677"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483678"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483679"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483680"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483681"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483682"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483684"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483686"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483691"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483692"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483693"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483694"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483695"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483696"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483697"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483698"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483699"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483700"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483701"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483702"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483703"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483704"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483705"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483706"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483707"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483708"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483709"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483710"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483711"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483712"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483713"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483714"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483715"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483716"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483717"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483718"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483719"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483720"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483721"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483722"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483723"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnonymousIndividual nodeID="_:genid2147483724"/>
+        <Literal xml:lang="en">Wikidata ID</Literal>
+    </AnnotationAssertion>
+    <SubAnnotationPropertyOf>
+        <AnnotationProperty abbreviatedIRI="sdo:name"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </SubAnnotationPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

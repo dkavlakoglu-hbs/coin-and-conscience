@@ -1,0 +1,215 @@
+id: /soml/cc
+#label: The Coins and Conscience project by Amy and Dennis       # label for the schema
+creator: Dennis Kavlakoglu    # creator for the schema
+created: 2024-09-24    # date the schema is created
+updated: 2024-09-24    # date the schema is updated
+versionInfo: 0.1 # version of the schema
+config:
+  # optional section with configurations used by the Platform
+  #  enable_mutations: true
+  #  lang: {fetch: "en", validate: "UNIQ", implicit: "en", defaultNameFetch: "ANY", appendDefaultNameFetch: true} # or lang: "en"
+  #  queryPfx: ""
+  #  mutationPfx: ""
+  #  repository: ""
+  #  includeInferred: true
+  #  expandOwlSameAs: true
+  #  exposeSomlInGraphQL: false
+  #  defaultRole: "Default"
+  #  defaultIntegrationRole: "Federation_SystemRole"
+  #  disabledChecks: []
+  search:
+    analysis:
+      analyzer: standard # other options: keyword, stop, simple, whitespace, pattern, <language>, fingerprint (https://www.elastic.co/guide/en/elasticsearch/reference/8.13/analysis-analyzers.html)
+    lang: # set language
+      en:
+        analyzer: english
+
+prefixes:
+  afn: http://jena.apache.org/ARQ/function#
+  agg: http://jena.apache.org/ARQ/function/aggregate#
+  apf: http://jena.apache.org/ARQ/property#
+  array: http://www.w3.org/2005/xpath-functions/array
+  cc: https://librarydata.hbs.edu/coins-and-conscience/
+  fn: http://www.w3.org/2005/xpath-functions
+  geoext: http://rdf.useekm.com/ext#
+  geof: http://www.opengis.net/def/function/geosparql/
+  gn: http://www.geonames.org/ontology#
+  graphdb: http://www.ontotext.com/config/graphdb#
+  list: http://jena.apache.org/ARQ/list#
+  map: http://www.w3.org/2005/xpath-functions/map
+  math: http://www.w3.org/2005/xpath-functions/math
+  ofn: http://www.ontotext.com/sparql/functions/
+  omgeo: http://www.ontotext.com/owlim/geo#
+  owl: http://www.w3.org/2002/07/owl#
+  path: http://www.ontotext.com/path#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rep: http://www.openrdf.org/config/repository#
+  sail: http://www.openrdf.org/config/sail#
+  sdo: https://schema.org/
+  spif: http://spinrdf.org/spif#
+  sr: http://www.openrdf.org/config/repository/sail#
+  wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
+  xml: http://www.w3.org/XML/1998/namespace
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+specialPrefixes:
+  vocab_prefix: cc
+  ontology_iri: https://librarydata.hbs.edu/coins-and-conscience/
+  base_iri: https://librarydata.hbs.edu/coins-and-conscience/
+  vocab_iri: https://librarydata.hbs.edu/coins-and-conscience/
+
+
+properties:
+
+  sdo:about:
+    max: inf
+    range: sdo:DefinedTerm
+
+  sdo:contributor:
+    max: inf
+    range: sdo:Person
+    #name: sdo:contributor
+
+  sdo:creditText:
+    max: inf
+    range: stringOrLangString
+    #name: sdo:creditText
+
+  sdo:description:
+    max: inf
+    range: stringOrLangString
+    search:
+      index: true
+    #name: sdo:description
+
+  sdo:identifier:
+    max: inf
+    range: sdo:PropertyValue
+    #name: sdo:identifier
+
+  sdo:image:
+    max: inf
+    range: iri
+    #name: sdo:image
+
+  sdo:name:
+    min: 1
+    max: inf
+    range: stringOrLangString
+    search:
+      index: true
+    #name: sdo:name
+
+  sdo:sameAs:
+    max: inf
+    range: sdo:Thing
+    #name: sdo:sameAs
+
+  sdo:size:
+    max: inf
+    range: sdo:DefinedTerm
+    #name: sdo:size
+
+  sdo:subjectOf:
+    max: inf
+    range: sdo:CreativeWork
+
+  sdo:url:
+    max: inf
+    range: iri
+    #name: sdo:url
+
+  sdo:value:
+    max: inf
+    range: sdo:PropertyValue
+    #name: sdo:value
+
+
+objects:
+
+  sdo:CreativeWork:
+    inherits: sdo:ThingInterface
+    #label: CreativeWork
+    #type: sdo:CreativeWork
+    search:
+      index: true
+    props:
+      sdo:name: { }
+      sdo:identifier: { }
+      sdo:description: { search: {index: true} }
+      sdo:image: { }
+      sdo:url: { }
+      sdo:contributor: { }
+      sdo:creditText: { }
+      sdo:size: { }
+      sdo:about: { }
+
+  sdo:DefinedTerm:
+    inherits: sdo:IntangibleInterface
+    #label: DefinedTerm
+    #type: sdo:DefinedTerm
+    search:
+      index: true
+    props:
+      sdo:name: { }
+
+  sdo:Intangible:
+    inherits: sdo:IntangibleInterface
+    #type: sdo:Intangible
+    props:
+      sdo:name: { }
+
+  sdo:IntangibleInterface:
+    name: sdo:name
+    descr: Abstract superclass of sdo:Intangible
+    kind: abstract
+    props:
+      sdo:name: { }
+
+  sdo:Person:
+    inherits: sdo:ThingInterface
+    #label: Person
+    #type: sdo:Person
+    search:
+      index: true
+    props:
+      sdo:name: { }
+      sdo:sameAs: { }
+      sdo:identifier: { }
+
+  sdo:PropertyValue:
+    inherits: sdo:StructuredValueInterface
+    #label: PropertyValue
+    #type: sdo:PropertyValue
+    search:
+      index: true
+    props:
+      sdo:name: { }
+
+  sdo:StructuredValue:
+    inherits: sdo:StructuredValueInterface
+    #type: sdo:StructuredValue
+    props:
+      sdo:name: { }
+
+  sdo:StructuredValueInterface:
+    name: sdo:name
+    descr: Abstract superclass of sdo:StructuredValue
+    kind: abstract
+    props:
+      sdo:name: { }
+
+  sdo:Thing:
+    inherits: sdo:ThingInterface
+    #type: sdo:Thing
+    props:
+      sdo:name: { }
+
+  sdo:ThingInterface:
+    name: sdo:name
+    descr: Abstract superclass of sdo:Thing
+    kind: abstract
+    props:
+      sdo:name: { }
+

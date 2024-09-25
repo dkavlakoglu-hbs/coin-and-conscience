@@ -1,0 +1,130 @@
+PREFIX :<http://www.ontotext.com/connectors/elasticsearch#>
+PREFIX inst:<http://www.ontotext.com/connectors/elasticsearch/instance#>
+INSERT DATA {
+    inst:otp-sdo_propertyvalue :createConnector '''
+{
+  "fields": [
+    {
+      "fieldName": "id",
+      "propertyChain": [
+        "$self"
+      ],
+      "indexed": true,
+      "stored": true,
+      "analyzed": true,
+      "multivalued": false,
+      "ignoreInvalidValues": true,
+      "fielddata": false,
+      "array": false
+    },
+    {
+      "fieldName": "type",
+      "propertyChain": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      ],
+      "datatype": "native:keyword",
+      "indexed": true,
+      "stored": true,
+      "analyzed": true,
+      "multivalued": true,
+      "ignoreInvalidValues": true,
+      "fielddata": false,
+      "array": true
+    },
+    {
+      "fieldName": "name$1",
+      "propertyChain": [
+        "https://schema.org/name"
+      ],
+      "indexed": true,
+      "stored": true,
+      "analyzed": true,
+      "multivalued": false,
+      "ignoreInvalidValues": true,
+      "fielddata": false,
+      "array": false,
+      "analyzer": "standard"
+    },
+    {
+      "fieldName": "name$2",
+      "propertyChain": [
+        "https://schema.org/name"
+      ],
+      "indexed": true,
+      "stored": true,
+      "analyzed": true,
+      "multivalued": false,
+      "ignoreInvalidValues": true,
+      "fielddata": false,
+      "array": false,
+      "analyzer": "standard"
+    },
+    {
+      "fieldName": "sdo_name",
+      "propertyChain": [
+        "https://schema.org/name"
+      ],
+      "datatype": "native:nested",
+      "indexed": true,
+      "stored": true,
+      "analyzed": true,
+      "multivalued": true,
+      "ignoreInvalidValues": true,
+      "fielddata": false,
+      "array": true,
+      "objectFields": [
+        {
+          "fieldName": "value",
+          "propertyChain": [
+            "$self"
+          ],
+          "datatype": "native:text",
+          "multivalued": false,
+          "ignoreInvalidValues": true,
+          "analyzer": "standard"
+        },
+        {
+          "fieldName": "lang",
+          "propertyChain": [
+            "lang()"
+          ],
+          "datatype": "native:keyword",
+          "valueFilter": "$this != \\\"\\\"",
+          "multivalued": false,
+          "ignoreInvalidValues": true
+        }
+      ]
+    }
+  ],
+  "languages": [],
+  "types": [
+    "https://schema.org/PropertyValue"
+  ],
+  "readonly": false,
+  "detectFields": false,
+  "importGraph": false,
+  "skipInitialIndexing": false,
+  "elasticsearchNode": "http://elasticsearch:9200",
+  "elasticsearchClusterSniff": true,
+  "manageIndex": true,
+  "manageMapping": true,
+  "bulkUpdateBatchSize": 5000,
+  "indexCreateSettings": {
+    "index": {
+      "mapping": {
+        "nested_fields": {
+          "limit": "1000"
+        },
+        "total_fields": {
+          "limit": "2000"
+        },
+        "nested_objects": {
+          "limit": "100000"
+        }
+      },
+      "default_pipeline": "sooasPreProcessor"
+    }
+  }
+}
+''' .
+}

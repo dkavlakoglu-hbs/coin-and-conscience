@@ -1,0 +1,1566 @@
+@prefix : <https://librarydata.hbs.edu/coins-and-conscience/> .
+@prefix cc: <https://librarydata.hbs.edu/coins-and-conscience/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix sr: <http://www.openrdf.org/config/repository/sail#> .
+@prefix afn: <http://jena.apache.org/ARQ/function#> .
+@prefix agg: <http://jena.apache.org/ARQ/function/aggregate#> .
+@prefix apf: <http://jena.apache.org/ARQ/property#> .
+@prefix map: <http://www.w3.org/2005/xpath-functions/map> .
+@prefix ofn: <http://www.ontotext.com/sparql/functions/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rep: <http://www.openrdf.org/config/repository#> .
+@prefix sdo: <https://schema.org/> .
+@prefix wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geof: <http://www.opengis.net/def/function/geosparql/> .
+@prefix list: <http://jena.apache.org/ARQ/list#> .
+@prefix math: <http://www.w3.org/2005/xpath-functions/math> .
+@prefix path: <http://www.ontotext.com/path#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sail: <http://www.openrdf.org/config/sail#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix array: <http://www.w3.org/2005/xpath-functions/array> .
+@prefix omgeo: <http://www.ontotext.com/owlim/geo#> .
+@prefix geoext: <http://rdf.useekm.com/ext#> .
+@prefix graphdb: <http://www.ontotext.com/config/graphdb#> .
+@base <https://librarydata.hbs.edu/coins-and-conscience/> .
+
+<https://librarydata.hbs.edu/coins-and-conscience/> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://schema.org/name
+sdo:name rdf:type owl:AnnotationProperty ;
+         rdfs:label "name"@en ;
+         rdfs:subPropertyOf rdfs:label .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.org/about
+sdo:about rdf:type owl:ObjectProperty ;
+          owl:inverseOf sdo:subjectOf ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( sdo:Certification
+                                      sdo:CommunicateAction
+                                      sdo:CreativeWork
+                                      sdo:Event
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( sdo:Role
+                                     sdo:Text
+                                     sdo:Thing
+                                     sdo:URL
+                                   )
+                     ] .
+
+
+###  https://schema.org/contributor
+sdo:contributor rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( sdo:CreativeWork
+                                            sdo:Event
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( sdo:Organization
+                                           sdo:Person
+                                           sdo:Role
+                                           sdo:Text
+                                           sdo:URL
+                                         )
+                           ] .
+
+
+###  https://schema.org/creditText
+sdo:creditText rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( sdo:CreativeWork
+                                         )
+                           ] ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( sdo:Role
+                                          sdo:Text
+                                          sdo:URL
+                                        )
+                          ] .
+
+
+###  https://schema.org/description
+sdo:description rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( sdo:Thing
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( sdo:Role
+                                           sdo:Text
+                                           sdo:TextObject
+                                           sdo:URL
+                                         )
+                           ] .
+
+
+###  https://schema.org/identifier
+sdo:identifier rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( sdo:Thing
+                                         )
+                           ] ;
+               rdfs:range [ rdf:type owl:Class ;
+                            owl:unionOf ( sdo:PropertyValue
+                                          sdo:Role
+                                          sdo:Text
+                                          sdo:URL
+                                        )
+                          ] .
+
+
+###  https://schema.org/image
+sdo:image rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( sdo:Thing
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( sdo:ImageObject
+                                     sdo:Role
+                                     sdo:Text
+                                     sdo:URL
+                                   )
+                     ] .
+
+
+###  https://schema.org/sameAs
+sdo:sameAs rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( sdo:Thing
+                                     )
+                       ] ;
+           rdfs:range [ rdf:type owl:Class ;
+                        owl:unionOf ( sdo:Role
+                                      sdo:Text
+                                      sdo:URL
+                                    )
+                      ] .
+
+
+###  https://schema.org/size
+sdo:size rdf:type owl:ObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( sdo:CreativeWork
+                                     sdo:Product
+                                   )
+                     ] ;
+         rdfs:range [ rdf:type owl:Class ;
+                      owl:unionOf ( sdo:DefinedTerm
+                                    sdo:QuantitativeValue
+                                    sdo:Role
+                                    sdo:SizeSpecification
+                                    sdo:Text
+                                    sdo:URL
+                                  )
+                    ] .
+
+
+###  https://schema.org/subjectOf
+sdo:subjectOf rdf:type owl:ObjectProperty .
+
+
+###  https://schema.org/url
+sdo:url rdf:type owl:ObjectProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( sdo:Thing
+                                  )
+                    ] ;
+        rdfs:range [ rdf:type owl:Class ;
+                     owl:unionOf ( sdo:Role
+                                   sdo:Text
+                                   sdo:URL
+                                 )
+                   ] .
+
+
+###  https://schema.org/value
+sdo:value rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( sdo:MonetaryAmount
+                                      sdo:PropertyValue
+                                      sdo:QuantitativeValue
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( sdo:Boolean
+                                     sdo:Number
+                                     sdo:Role
+                                     sdo:StructuredValue
+                                     sdo:Text
+                                     sdo:URL
+                                   )
+                     ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://schema.org/Boolean
+sdo:Boolean rdf:type owl:Class .
+
+
+###  https://schema.org/Certification
+sdo:Certification rdf:type owl:Class .
+
+
+###  https://schema.org/CommunicateAction
+sdo:CommunicateAction rdf:type owl:Class .
+
+
+###  https://schema.org/CreativeWork
+sdo:CreativeWork rdf:type owl:Class ;
+                 rdfs:subClassOf sdo:Thing ;
+                 rdfs:label "CreativeWork"@en .
+
+
+###  https://schema.org/DefinedTerm
+sdo:DefinedTerm rdf:type owl:Class ;
+                rdfs:subClassOf sdo:Intangible ;
+                rdfs:label "DefinedTerm"@en .
+
+
+###  https://schema.org/Event
+sdo:Event rdf:type owl:Class .
+
+
+###  https://schema.org/ImageObject
+sdo:ImageObject rdf:type owl:Class .
+
+
+###  https://schema.org/Intangible
+sdo:Intangible rdf:type owl:Class .
+
+
+###  https://schema.org/MonetaryAmount
+sdo:MonetaryAmount rdf:type owl:Class .
+
+
+###  https://schema.org/Number
+sdo:Number rdf:type owl:Class .
+
+
+###  https://schema.org/Organization
+sdo:Organization rdf:type owl:Class .
+
+
+###  https://schema.org/Person
+sdo:Person rdf:type owl:Class ;
+           rdfs:subClassOf sdo:Thing ;
+           rdfs:label "Person"@en .
+
+
+###  https://schema.org/Product
+sdo:Product rdf:type owl:Class .
+
+
+###  https://schema.org/PropertyValue
+sdo:PropertyValue rdf:type owl:Class ;
+                  rdfs:subClassOf sdo:StructuredValue ;
+                  rdfs:label "PropertyValue"@en .
+
+
+###  https://schema.org/QuantitativeValue
+sdo:QuantitativeValue rdf:type owl:Class .
+
+
+###  https://schema.org/Role
+sdo:Role rdf:type owl:Class .
+
+
+###  https://schema.org/SizeSpecification
+sdo:SizeSpecification rdf:type owl:Class .
+
+
+###  https://schema.org/StructuredValue
+sdo:StructuredValue rdf:type owl:Class .
+
+
+###  https://schema.org/Text
+sdo:Text rdf:type owl:Class .
+
+
+###  https://schema.org/TextObject
+sdo:TextObject rdf:type owl:Class .
+
+
+###  https://schema.org/Thing
+sdo:Thing rdf:type owl:Class .
+
+
+###  https://schema.org/URL
+sdo:URL rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.wikidata.org/entity/Q102841270
+<http://www.wikidata.org/entity/Q102841270> rdf:type owl:NamedIndividual ,
+                                                     sdo:Person ;
+                                            sdo:name "Julien, Joseph Laurent" .
+
+
+###  http://www.wikidata.org/entity/Q109061
+<http://www.wikidata.org/entity/Q109061> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Reni, Guido" .
+
+
+###  http://www.wikidata.org/entity/Q1094674
+<http://www.wikidata.org/entity/Q1094674> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Visscher, Jan Claesz" .
+
+
+###  http://www.wikidata.org/entity/Q12058270
+<http://www.wikidata.org/entity/Q12058270> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Galle, Joannes" .
+
+
+###  http://www.wikidata.org/entity/Q1378723
+<http://www.wikidata.org/entity/Q1378723> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Le Sueur, Eustache" .
+
+
+###  http://www.wikidata.org/entity/Q1379395
+<http://www.wikidata.org/entity/Q1379395> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Galle, Philip" .
+
+
+###  http://www.wikidata.org/entity/Q140096
+<http://www.wikidata.org/entity/Q140096> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Passe, Crispijn de, the Elder" .
+
+
+###  http://www.wikidata.org/entity/Q143595
+<http://www.wikidata.org/entity/Q143595> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Stradanus, Johannes" .
+
+
+###  http://www.wikidata.org/entity/Q165367
+<http://www.wikidata.org/entity/Q165367> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Goltzius, Hendrick" .
+
+
+###  http://www.wikidata.org/entity/Q167220
+<http://www.wikidata.org/entity/Q167220> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Cort, Cornelis" .
+
+
+###  http://www.wikidata.org/entity/Q18511523
+<http://www.wikidata.org/entity/Q18511523> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Kohl, Andrews" .
+
+
+###  http://www.wikidata.org/entity/Q18516699
+<http://www.wikidata.org/entity/Q18516699> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Doetechum, Lucas van" .
+
+
+###  http://www.wikidata.org/entity/Q18577046
+<http://www.wikidata.org/entity/Q18577046> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Bowles, Thomas" .
+
+
+###  http://www.wikidata.org/entity/Q18577866
+<http://www.wikidata.org/entity/Q18577866> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Gaillard, René" .
+
+
+###  http://www.wikidata.org/entity/Q19279961
+<http://www.wikidata.org/entity/Q19279961> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Geissler, Friedrich" .
+
+
+###  http://www.wikidata.org/entity/Q19569543
+<http://www.wikidata.org/entity/Q19569543> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Desplaces, Louis" .
+
+
+###  http://www.wikidata.org/entity/Q19569785
+<http://www.wikidata.org/entity/Q19569785> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Sadeler, Raphael, I" .
+
+
+###  http://www.wikidata.org/entity/Q1961244
+<http://www.wikidata.org/entity/Q1961244> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Swanenburgh, Willem Isaakz, I" .
+
+
+###  http://www.wikidata.org/entity/Q19829357
+<http://www.wikidata.org/entity/Q19829357> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Ertinger, Franz" .
+
+
+###  http://www.wikidata.org/entity/Q20011635
+<http://www.wikidata.org/entity/Q20011635> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Paludanus, Gerhard (von Groeningen)" .
+
+
+###  http://www.wikidata.org/entity/Q2094287
+<http://www.wikidata.org/entity/Q2094287> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Heyden, Pieter van der" .
+
+
+###  http://www.wikidata.org/entity/Q2107767
+<http://www.wikidata.org/entity/Q2107767> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Valck, Gerard" .
+
+
+###  http://www.wikidata.org/entity/Q21464861
+<http://www.wikidata.org/entity/Q21464861> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Linder, Philippe Jacques" .
+
+
+###  http://www.wikidata.org/entity/Q21531043
+<http://www.wikidata.org/entity/Q21531043> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Razet, J." .
+
+
+###  http://www.wikidata.org/entity/Q22009289
+<http://www.wikidata.org/entity/Q22009289> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Lespinasse, Louis Nicolas de" .
+
+
+###  http://www.wikidata.org/entity/Q23939409
+<http://www.wikidata.org/entity/Q23939409> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Chollet, Antoin Joseph" .
+
+
+###  http://www.wikidata.org/entity/Q2744998
+<http://www.wikidata.org/entity/Q2744998> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Eisen, Charles" .
+
+
+###  http://www.wikidata.org/entity/Q2778104
+<http://www.wikidata.org/entity/Q2778104> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Wierx, Hieronymus" .
+
+
+###  http://www.wikidata.org/entity/Q2824901
+<http://www.wikidata.org/entity/Q2824901> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Roehn, Adolphe" .
+
+
+###  http://www.wikidata.org/entity/Q2871156
+<http://www.wikidata.org/entity/Q2871156> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Desperet, A." .
+
+
+###  http://www.wikidata.org/entity/Q29545626
+<http://www.wikidata.org/entity/Q29545626> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Schenk, Leonard" .
+
+
+###  http://www.wikidata.org/entity/Q30303204
+<http://www.wikidata.org/entity/Q30303204> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Strauch, Georg" .
+
+
+###  http://www.wikidata.org/entity/Q3047890
+<http://www.wikidata.org/entity/Q3047890> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Lavrate" .
+
+
+###  http://www.wikidata.org/entity/Q3085083
+<http://www.wikidata.org/entity/Q3085083> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Ciartres, F.L.D." ,
+                                                   "Langlois, François (F.L.D. Ciartres)" .
+
+
+###  http://www.wikidata.org/entity/Q3108083
+<http://www.wikidata.org/entity/Q3108083> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Mitelli, Giuseppe Maria" .
+
+
+###  http://www.wikidata.org/entity/Q3161745
+<http://www.wikidata.org/entity/Q3161745> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Sadeler, Jan (Johannes), I" .
+
+
+###  http://www.wikidata.org/entity/Q3164685
+<http://www.wikidata.org/entity/Q3164685> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Pellerin" .
+
+
+###  http://www.wikidata.org/entity/Q329811
+<http://www.wikidata.org/entity/Q329811> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Bloemaert, Abraham" .
+
+
+###  http://www.wikidata.org/entity/Q3299661
+<http://www.wikidata.org/entity/Q3299661> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Greuter, Mathias" .
+
+
+###  http://www.wikidata.org/entity/Q33134321
+<http://www.wikidata.org/entity/Q33134321> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Hainzelman, Johann" .
+
+
+###  http://www.wikidata.org/entity/Q335022
+<http://www.wikidata.org/entity/Q335022> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Teniers, David, the Younger" .
+
+
+###  http://www.wikidata.org/entity/Q3383022
+<http://www.wikidata.org/entity/Q3383022> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Basan, Pierre François" .
+
+
+###  http://www.wikidata.org/entity/Q3420968
+<http://www.wikidata.org/entity/Q3420968> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Lafage, Raymond" .
+
+
+###  http://www.wikidata.org/entity/Q345605
+<http://www.wikidata.org/entity/Q345605> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Zuccaro, Federigo" .
+
+
+###  http://www.wikidata.org/entity/Q352438
+<http://www.wikidata.org/entity/Q352438> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Ostade, Adrian van" .
+
+
+###  http://www.wikidata.org/entity/Q39351810
+<http://www.wikidata.org/entity/Q39351810> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Mordant, Daniel Charles" .
+
+
+###  http://www.wikidata.org/entity/Q43270
+<http://www.wikidata.org/entity/Q43270> rdf:type owl:NamedIndividual ,
+                                                 sdo:Person ;
+                                        sdo:name "Breughel, Pieter, the Elder" .
+
+
+###  http://www.wikidata.org/entity/Q4491034
+<http://www.wikidata.org/entity/Q4491034> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Fleischmann, Friedrich" .
+
+
+###  http://www.wikidata.org/entity/Q47551
+<http://www.wikidata.org/entity/Q47551> rdf:type owl:NamedIndividual ,
+                                                 sdo:Person ;
+                                        sdo:name "Titian, (Tiziano Vecellio)" .
+
+
+###  http://www.wikidata.org/entity/Q520806
+<http://www.wikidata.org/entity/Q520806> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Gillray, James" .
+
+
+###  http://www.wikidata.org/entity/Q53498257
+<http://www.wikidata.org/entity/Q53498257> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Auvray, Pierre Laurent" .
+
+
+###  http://www.wikidata.org/entity/Q53504581
+<http://www.wikidata.org/entity/Q53504581> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Mesnil (Ménil), Élie" .
+
+
+###  http://www.wikidata.org/entity/Q538350
+<http://www.wikidata.org/entity/Q538350> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Heemskerck, Maarten van" .
+
+
+###  http://www.wikidata.org/entity/Q538998
+<http://www.wikidata.org/entity/Q538998> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Maratti, Carlo" .
+
+
+###  http://www.wikidata.org/entity/Q55467951
+<http://www.wikidata.org/entity/Q55467951> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Brichet, Robert" .
+
+
+###  http://www.wikidata.org/entity/Q555022
+<http://www.wikidata.org/entity/Q555022> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Vos, Marten de" .
+
+
+###  http://www.wikidata.org/entity/Q5580
+<http://www.wikidata.org/entity/Q5580> rdf:type owl:NamedIndividual ,
+                                                sdo:Person ;
+                                       sdo:name "Dürer, Albrecht" .
+
+
+###  http://www.wikidata.org/entity/Q5598
+<http://www.wikidata.org/entity/Q5598> rdf:type owl:NamedIndividual ,
+                                                sdo:Person ;
+                                       sdo:name "Rembrandt van Rhyn" .
+
+
+###  http://www.wikidata.org/entity/Q559929
+<http://www.wikidata.org/entity/Q559929> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Picart, Bernard" .
+
+
+###  http://www.wikidata.org/entity/Q56334603
+<http://www.wikidata.org/entity/Q56334603> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Stefanoni, Pietro" .
+
+
+###  http://www.wikidata.org/entity/Q602742
+<http://www.wikidata.org/entity/Q602742> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Lafreri, Anton" .
+
+
+###  http://www.wikidata.org/entity/Q62101888
+<http://www.wikidata.org/entity/Q62101888> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Régnier" .
+
+
+###  http://www.wikidata.org/entity/Q6283227
+<http://www.wikidata.org/entity/Q6283227> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Goez, Joseph Franz von" .
+
+
+###  http://www.wikidata.org/entity/Q6369402
+<http://www.wikidata.org/entity/Q6369402> rdf:type owl:NamedIndividual ,
+                                                   sdo:Person ;
+                                          sdo:name "Mallery, Karel van" .
+
+
+###  http://www.wikidata.org/entity/Q640361
+<http://www.wikidata.org/entity/Q640361> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Cock, Hieronymu" .
+
+
+###  http://www.wikidata.org/entity/Q711775
+<http://www.wikidata.org/entity/Q711775> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Saenredam, Jan" .
+
+
+###  http://www.wikidata.org/entity/Q728375
+<http://www.wikidata.org/entity/Q728375> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Raimondi, Marcantonio" .
+
+
+###  http://www.wikidata.org/entity/Q729057
+<http://www.wikidata.org/entity/Q729057> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Badalocchio, Sisto" .
+
+
+###  http://www.wikidata.org/entity/Q76135
+<http://www.wikidata.org/entity/Q76135> rdf:type owl:NamedIndividual ,
+                                                 sdo:Person ;
+                                        sdo:name "Hess, Carl Ernst Christoph" .
+
+
+###  http://www.wikidata.org/entity/Q765465
+<http://www.wikidata.org/entity/Q765465> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Coornhert, Dirck Volkertsz." .
+
+
+###  http://www.wikidata.org/entity/Q78163
+<http://www.wikidata.org/entity/Q78163> rdf:type owl:NamedIndividual ,
+                                                 sdo:Person ;
+                                        sdo:name "Schenk, Pieter" .
+
+
+###  http://www.wikidata.org/entity/Q7824
+<http://www.wikidata.org/entity/Q7824> rdf:type owl:NamedIndividual ,
+                                                sdo:Person ;
+                                       sdo:name "Carracci, Annibale" .
+
+
+###  http://www.wikidata.org/entity/Q869133
+<http://www.wikidata.org/entity/Q869133> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Galle, Cornelis, the Elder" .
+
+
+###  http://www.wikidata.org/entity/Q959236
+<http://www.wikidata.org/entity/Q959236> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Mieris, Frans van" .
+
+
+###  http://www.wikidata.org/entity/Q97477673
+<http://www.wikidata.org/entity/Q97477673> rdf:type owl:NamedIndividual ,
+                                                    sdo:Person ;
+                                           sdo:name "Berger, Jenny" .
+
+
+###  http://www.wikidata.org/entity/Q998339
+<http://www.wikidata.org/entity/Q998339> rdf:type owl:NamedIndividual ,
+                                                  sdo:Person ;
+                                         sdo:name "Kilian, Wolfgang" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910425
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910425> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Unhappy Lot of the Rich" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910427
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910427> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Unhappy Lot of the Rich" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910429
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910429> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Triumph of Riches" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910431
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910431> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "An Allegorical Hunt" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910433
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910433> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Fight of the Money-Bags and the Coffers" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910435
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910435> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Der Bruder Esel mit dem Gelt" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910437
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910437> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Gellt Zeucht die Weltt. Mundum Trahit Pecunia" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910439
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910439> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Two Deaths" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910441
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910441> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Honor" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910443
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910443> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Justice Rewards Toil" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910445
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910445> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Avarice" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910447
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910447> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Divitiæ" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910449
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910449> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Allegory of the Vanity and Transitory Nature of Worldly Possessions" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910451
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910451> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Allegory of Wealth and Luxury" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910453
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910453> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Jan Uytenbogaert, 'The Goldweigher'" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910455
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910455> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Plaisir des Vieillards" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910457
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910457> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Peasant with Coins" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910459
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910459> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Banquet with Musicians" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910461
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910461> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Dove L'Oro Parla, Ogni Lingua Tace" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910463
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910463> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "La Commodità Fà l'Huomo Ladro" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910465
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910465> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Riche du Jour ou le Préteur sur Gages" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910467
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910467> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Cornard Contant" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910469
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910469> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Diable d'Argent" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910471
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910471> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Grand Diable d'Argent Patron de la Finance" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910473
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910473> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Les Vérités du Jour, ou le Grand Diable d'Argent" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910475
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910475> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Grand Diable d'Argent, Patron de la Finance" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910477
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910477> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Queen of Sheba Bringing Gifts to King Solomon. 1 Kings 10" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910479
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910479> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Parable of the Talents. Mt. 25: 14" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910481
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910481> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Parable of Ananias and Sapphira. Acts 5: 1" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910483
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910483> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Apostles Distribute the Money to those in Need. Acts 4: 32-35" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910485
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910485> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Christ and the Pharisees with the Tribute Money. Mt. 22" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910487
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910487> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "St. Roch Giving Alms to the Poor" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910489
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910489> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Veau d'Or. Exod. 32" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910491
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910491> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Darius, out of Greed, Orders the Tomb of Queen Nitocris to be Opened" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910493
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910493> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Danaë" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910495
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910495> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Marriage for Wealth Officiated by the Devil" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910497
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910497> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Der Liebesantrag—the Ill-Assorted Couple" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910499
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910499> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Ni l'Un ni l'Autre" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910501
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910501> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "L'Accord de Mariage" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910503
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910503> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "La Double Tentation" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910507
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910507> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Midas, Transmuting all into Gold Paper" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910509
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910509> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "La Bonnet-Rouge: –or– John Bull Evading the Hat Tax" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910511
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910511> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "The Political Balloon; or, The Fall of East India Stock" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910513
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910513> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Pauvres Aveugles" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910515
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910515> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Caricature of Louis-Philippe and Guizot" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910517
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910517> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "La Poire Tapée" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910519
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910519> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Caricature of Louis-Philippe" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910521
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910521> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Grand Saut . . . Sot" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910523
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910523> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Speculateur" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910525
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910525> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Le Financier" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910527
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910527> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "A Lucky and Unlucky Speculator" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910529
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910529> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "La Hausse. In Luck. En Alza" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910533
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910533> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Allegory on the Death of Credit" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910535
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910535> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Crédit est Mort" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910537
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910537> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Die Wind Kauffer, werden mit Wind bezahlt, und finden sich auf die letzst betrogen" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910539
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910539> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Une Assemblée d'Actionnaires" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910541
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910541> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "J'ai Perdu!" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910543
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910543> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Karl Fugger" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910545
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910545> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Georg Fussel (b. 1601)" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910547
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910547> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Sir Thomas Gresham (1519?–79)" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910549
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910549> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Philippe Du Four" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910551
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910551> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "John Law (1671–1729)" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910553
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910553> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "James Edouard de Rothschild (1844–81)" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910555
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910555> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "De Beurs. [Amsterdam]" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910557
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910557> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Borse. [Antwerp]" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910559
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910559> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "A View of the Royal Exchange London. [second exchange]" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910561
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910561> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Vue de la Bourse et du Magazin des Marchandises en remontant la petite Neva. [St. Petersburg]" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3910563
+<https://iiif.lib.harvard.edu/manifests/view/ids:3910563> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Die Hamburger Börse. [the old exchange]" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3983668
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983668> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "Political Ravishment, or the Old Lady of Threadneedle-Street in Danger!" .
+
+
+###  https://iiif.lib.harvard.edu/manifests/view/ids:3983670
+<https://iiif.lib.harvard.edu/manifests/view/ids:3983670> rdf:type owl:NamedIndividual ,
+                                                                   sdo:CreativeWork ;
+                                                          sdo:name "La Baisse. Out of Luck. En Baja" .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/bankers_financiers_and_statesmen
+cc:bankers_financiers_and_statesmen rdf:type owl:NamedIndividual ,
+                                             sdo:DefinedTerm ;
+                                    sdo:name "Bankers, Financiers, and Statesmen"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/bettanier
+cc:bettanier rdf:type owl:NamedIndividual ,
+                      sdo:Person ;
+             sdo:name "Bettanier" .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/biblical_and_mythological_scenes
+cc:biblical_and_mythological_scenes rdf:type owl:NamedIndividual ,
+                                             sdo:DefinedTerm ;
+                                    sdo:name "Biblical and Mythological Scenes"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/louis-philippe
+cc:louis-philippe rdf:type owl:NamedIndividual ,
+                           sdo:DefinedTerm ;
+                  sdo:name "Louis-Philippe"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/love_and_money
+cc:love_and_money rdf:type owl:NamedIndividual ,
+                           sdo:DefinedTerm ;
+                  sdo:name "Love and Money"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/misers_moneylenders_and_thieves
+cc:misers_moneylenders_and_thieves rdf:type owl:NamedIndividual ,
+                                            sdo:DefinedTerm ;
+                                   sdo:name "Misers, Moneylenders, and Thieves"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/money_devil
+cc:money_devil rdf:type owl:NamedIndividual ,
+                        sdo:DefinedTerm ;
+               sdo:name "Money Devil"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/politics_and_war
+cc:politics_and_war rdf:type owl:NamedIndividual ,
+                             sdo:DefinedTerm ;
+                    sdo:name "Politics and War"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/speculation_and_credit
+cc:speculation_and_credit rdf:type owl:NamedIndividual ,
+                                   sdo:DefinedTerm ;
+                          sdo:name "Speculation and Credit"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/stock_exchanges
+cc:stock_exchanges rdf:type owl:NamedIndividual ,
+                            sdo:DefinedTerm ;
+                   sdo:name "Stock Exchanges"@en .
+
+
+###  https://librarydata.hbs.edu/coins-and-conscience/vanity_and_virtue
+cc:vanity_and_virtue rdf:type owl:NamedIndividual ,
+                              sdo:DefinedTerm ;
+                     sdo:name "Vanity and Virtue"@en .
+
+
+[ rdf:type sdo:PropertyValue ;
+  sdo:name "Wikidata ID"@en
+] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+[ rdf:type sdo:PropertyValue ;
+   sdo:name "Wikidata ID"@en
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

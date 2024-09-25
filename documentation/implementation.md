@@ -16,7 +16,7 @@ Use graph to recreate current website functionality. Ignoring introduction and b
     - Download HTML of the relevant pages
     - Parse HTML elements
     - Request work URLs to get redirect targets - at some point since site was created,the images were migrated to a IIIF server (e.g., original URL http://nrs.harvard.edu/urn-3:HBS.BAKER:836614?buttons=y&caption=Historical+Collections,+Baker+Library,+Harvard+Business+School redirects to https://iiif.lib.harvard.edu/manifests/view/ids:3910429)
-    - Restructure into [CSV file](../coin_and_conscience_data.csv) where each row represents a distinct artist/work/topic combination
+    - Restructure into [CSV file](../data/coin_and_conscience_data.csv) where each row represents a distinct artist/work/topic combination
 
 #### Reconcile person entries to Wikidata
 Got ahead of myself - this is more for the intended Phase 2 - but a convenient way to generate URIs for people. Some ambiguous names that required a bit more research, but all of the artists in the index appear to already have Wikidata entries. CSV file with Wikidata URIs added [here](../ontorefine/coin_and_conscience_data_augmented.csv)
